@@ -22,16 +22,15 @@ content:
       id:
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
-      captcha: false
+      captcha: true
 
   # Contact details (edit or remove options as required)
-  email: louis.tiao@sydney.edu.au
-  appointment_url: 'https://calendly.com/louistiao/30min'
+  email: brennon.shanks@chemeng.utah.edu
   contact_links:
     - icon: twitter
       icon_pack: fab
       name: DM Me
-      link: 'https://twitter.com/louistiao'
+      link: 'https://twitter.com/BrennonLShanks'
 
 design:
   columns: '2'
