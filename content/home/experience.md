@@ -25,7 +25,7 @@ experience:
   - title: Applied Scientist Intern
     company: Amazon Web Services
     company_url: ''
-    company_logo: aws
+    company_logo: 
     location: Cambridge, United Kingdom
     date_start: '2022-06-01'
     date_end: ''
@@ -34,7 +34,7 @@ experience:
   - title: Doctoral Placement Researcher
     company: Secondmind
     company_url: https://www.secondmind.ai/
-    company_logo: secondmind
+    company_logo: 
     location: Cambridge, United Kingdom
     date_start: '2021-10-01'
     date_end: '2022-05-01'
@@ -44,7 +44,7 @@ experience:
   - title: Applied Scientist Intern
     company: Amazon Web Services
     company_url: ''
-    company_logo: aws
+    company_logo: 
     location: Berlin, Germany
     date_start: '2019-06-01'
     date_end: '2019-12-01'
@@ -54,7 +54,7 @@ experience:
   - title: Software Engineer
     company: CSIRO's Data61
     company_url: https://data61.csiro.au/
-    company_logo: data61
+    company_logo: 
     location: Sydney, Australia
     date_start: '2016-07-01'
     date_end: '2019-04-01'
@@ -66,7 +66,7 @@ experience:
   - title: Software Engineer
     company: National ICT Australia (NICTA)
     company_url: ''
-    company_logo: nicta
+    company_logo: 
     location: Sydney, Australia
     date_start: '2015-05-01'
     date_end: '2016-06-30'
@@ -76,7 +76,7 @@ experience:
   - title: Research Intern
     company: Commonwealth Scientific and Industrial Research Organisation (CSIRO)
     company_url: https://www.csiro.au/
-    company_logo: csiro
+    company_logo: 
     location: Sydney, Australia
     date_start: '2013-11-01'
     date_end: '2014-02-01'
