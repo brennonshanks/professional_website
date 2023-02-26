@@ -67,7 +67,7 @@ social:
     link: https://scholar.google.com/citations?user=fYp9LkAAAAAJ&hl=en
   - icon: cv
     icon_pack: ai
-    link: uploads/02_26_2023cv.pdf
+    link: uploads/CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: brennon.shanks@chemeng.utah.edu
