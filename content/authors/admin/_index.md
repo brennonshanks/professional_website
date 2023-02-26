@@ -80,6 +80,6 @@ email: brennon.shanks@chemeng.utah.edu
 highlight_name: true
 ---
 
-Brennon Shanks is a person who stole Louis Tiaos entire webpage.
+Brennon Shanks is a statistical thermodynamics researcher that applies molecular dynamics, statistical mechanics, and machine learning to study liquid state materials.
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
