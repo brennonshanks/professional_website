@@ -14,7 +14,7 @@ role: Chemical Physics Researcher (PhD Candidate)
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Utah Department of Chemical Engineering
+  - name: Chemical Engineering at University of Utah
     url: https://hoepfner.che.utah.edu/
   - name: Energy Frontier Research Center
     url: https://efrcmuse.utah.edu/
