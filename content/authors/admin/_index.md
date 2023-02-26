@@ -51,20 +51,20 @@ social:
     link: '/#contact'
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/louistiao
+    link: https://twitter.com/BrennonLShanks
     label: Follow me on Twitter
     display:
       header: true
   - icon: github
     icon_pack: fab
-    link: https://github.com/ltiao
+    link: https://github.com/brennonshanks
     label: Follow me on GitHub
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/ltiao
+    link: https://www.linkedin.com/in/brennon-shanks-365601b4/
   - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: ai
-    link: https://scholar.google.co.uk/citations?user=5teyYXcAAAAJ
+    link: https://scholar.google.com/citations?user=fYp9LkAAAAAJ&hl=en
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
@@ -80,6 +80,6 @@ email: brennon.shanks@chemeng.utah.edu
 highlight_name: true
 ---
 
-Louis Tiao is a machine learning researcher and PhD candidate at the University of Sydney. His research interests are in probabilistic machine learning, and specifically includes approximate Bayesian inference, Gaussian processes, and its applications to areas such as Bayesian optimization and graph representation learning.
+Brennon Shanks is a person who stole Louis Tiaos entire webpage.
 
 <!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
