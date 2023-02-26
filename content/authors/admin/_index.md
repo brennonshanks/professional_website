@@ -1,42 +1,45 @@
 ---
 # Display name
-title: Louis Tiao
+title: Brennon Shanks
 
 # Full name (for SEO)
-first_name: Louis
-last_name: Tiao
+first_name: Brennon
+last_name: Shanks
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Machine Learning Researcher (PhD Candidate)
+role: Chemical Physics Researcher (PhD Candidate)
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Sydney
-    url: https://www.sydney.edu.au/
-  - name: CSIRO's Data61
-    url: https://www.data61.csiro.au/
+  - name: University of Utah
+    url: https://hoepfner.che.utah.edu/
+  - name: Energy Frontier Research Center
+    url: https://efrcmuse.utah.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Thanks for stopping by! Let's connect -- drop me a message or follow me
+bio: 
 
 # Interests to show in About widget
 interests:
+  - Neutron Scattering
+  - Molecular Dynamics
+  - Statistical Mechanics
+  - Quantum Mechanics
   - Probabilistic Machine Learning
-  - Approximate Bayesian Inference
   - Gaussian Processes
 
 # Education to show in About widget
 education:
   courses:
-    - course: Ph.D. in Computer Science (Machine Learning)
-      institution: University of Sydney
-      year: 2022 (expected)
-    - course: B.Sc. (Honours 1st Class) in Computer Science (Artificial Intelligence and Mathematics)
-      institution: University of New South Wales
-      year: 2015
+    - course: Ph.D. in Chemical Engineering
+      institution: University of Utah
+      year: 2024 (expected)
+    - course: B.E. in Chemical Engineering and Mathematics
+      institution: Ohio State University
+      year: 2019
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -71,7 +74,7 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: louis.tiao@sydney.edu.au
+email: brennon.shanks@chemeng.utah.edu
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
