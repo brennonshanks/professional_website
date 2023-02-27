@@ -24,11 +24,11 @@ Molecular simulations are ubiquitous across a broad range of chemical engineerin
 
 Course Objectives <br>
 -- Review classical mechanics of simple systems <br>
--- Review the fundamentals of classical thermodynamics including the 1st-3rd laws, equations of state, maxwell relations and the fundamental relation <br>
+-- Review the fundamentals of classical thermodynamics including the 1st-3rd laws, equations of state, and the fundamental relation <br>
 -- Conceptualize how to apply classical mechanics to systems of many-particles <br>
 -- Understand entropy from the atomic perspective (Gibbs entropy)<br>
 -- Derive basic properties of the microcanonical, canonical, grand canonical, and isothermal-isobaric ensembles <br>
--- Relate the mathematical foundations of statistical mechanics to numerical approaches (i.e. molecular dynamics and Monte Carlo methods) <br>
+-- Relate the mathematical foundations of statistical mechanics to numerical approaches  <br>
 -- Learn and implement HOOMD software package for basic molecular simulations <br>
 -- Analyze and interpret output data from simulations and connect these results to classical thermodynamics <br>
 
