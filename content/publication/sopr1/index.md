@@ -7,7 +7,7 @@ authors:
 - Michael P. Hoepfner
 
 date: "2022-12-05T00:00:00Z"
-doi: "10.1021/acs.jpclett.2c03163"
+doi: 
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2022-12-05T00:00:00Z"
@@ -53,13 +53,7 @@ focal_point: ""
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
+#   Otherwise, set `projects: []`
 projects: []
 
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
 ---
