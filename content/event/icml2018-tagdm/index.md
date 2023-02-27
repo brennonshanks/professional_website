@@ -27,7 +27,7 @@ tags:
 featured: true
 
 image:
-  caption: 'Stockholmsmässan. Stockholm, Sweden. Image credit: **Edwin Bonilla**'
+  caption: 
   focal_point: Right
 
 links:
