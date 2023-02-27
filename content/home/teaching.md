@@ -16,7 +16,7 @@ design:
   columns: '2'
 ---
 
-## COMP9418: Advanced Topics in Statistical Machine Learning ([UNSW Sydney])  
+## CHEM5XXX: Introduction to Molecular Simulation ([University of Utah])  
 
 The course has a primary focus on probabilistic machine learning methods, 
 covering the topics of exact and approximate inference in directed and 
@@ -44,14 +44,3 @@ Markov models (HMMs) for speech recognition, conditional random fields (CRFs)
 for named-entity recognition, and Gaussian processes (GPs) for regression and
 classification.
 
-[NumPy]: http://www.numpy.org/
-[SciPy]: https://www.scipy.org/
-[Matplotlib]: https://matplotlib.org/
-[Seaborn]: https://seaborn.pydata.org/
-[Pandas]: https://pandas.pydata.org/
-[IPython/Jupyter notebooks]: http://jupyter.org/
-[scikit-learn]: http://scikit-learn.org/
-[TensorFlow]: https://www.tensorflow.org/
-[JupyterLab]: https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
-[COMP9418]: http://www.handbook.unsw.edu.au/postgraduate/courses/2017/COMP9418.html
-[UNSW Sydney]: https://www.unsw.edu.au/
