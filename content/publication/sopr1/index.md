@@ -1,16 +1,15 @@
 ---
-
-title: Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement
+title: 'Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement'
 authors:
 - admin
 - Jeffrey J. Potoff
 - Michael P. Hoepfner
 
 date: "2022-12-05T00:00:00Z"
-doi: 
+doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2022-12-05T00:00:00Z"
+publishDate: '2022-09-01T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -25,7 +24,7 @@ publication_short: *JPCL*
 abstract: Deriving transferable pair potentials from experimental neutron and X-ray scattering measurements has been a longstanding challenge in condensed matter physics. State-of-the-art scattering analysis techniques estimate real-space microstructure from reciprocal-space total scattering data by refining pair potentials to obtain agreement between simulated and experimental results. Prior attempts to apply these potentials with molecular simulations have revealed inaccurate predictions of thermodynamic fluid properties. In this Letter, a machine learning assisted structure-inversion method applied to neutron scattering patterns of the noble gases (Ne, Ar, Kr, and Xe) is shown to recover transferable pair potentials that accurately reproduce both microstructure and vapor–liquid equilibria from the triple to critical point. Therefore, it is concluded that a single neutron scattering measurement is sufficient to predict macroscopic thermodynamic properties over a wide range of states and provide novel insight into local atomic forces in dense monatomic systems.
 
 # Summary. An optional shortened abstract.
-summary: Transferable force fields derived from a single neutron diffraction measurement are shown to predict complex emergent properties in liquids.
+# summary: Transferable force fields derived from a single neutron diffraction measurement are shown to predict complex emergent properties in liquids.
 
 tags:
 featured: true
@@ -54,5 +53,4 @@ focal_point: ""
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`
 projects: []
-
 ---
