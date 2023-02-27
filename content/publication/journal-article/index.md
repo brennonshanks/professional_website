@@ -7,7 +7,6 @@ authors:
 author_notes:
 date: "2022-12-05T00:00:00Z"
 doi: "10.1021/acs.jpclett.2c03163"
-draft: true
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2022-12-05T00:00:00Z"
@@ -28,7 +27,6 @@ abstract: Deriving transferable pair potentials from experimental neutron and X-
 summary: Transferable force fields derived from a single neutron diffraction measurement are shown to predict complex emergent properties in liquids.
 
 tags:
-- Source Themes
 featured: true
 
 # links:
