@@ -6,7 +6,7 @@
 # Appearance
 
 appearance:
-  theme_day: ocean
+  theme_day: cyberpunk
   theme_night: minimal
   font: classic
   font_size: S
@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Louis C Tiao. This work is licensed under {license}'
+    notice: '© {year} Brennon L. Shanks. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -68,7 +68,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/ltiao/tiao.io'
+    url: https://github.com/brennonshanks/website/
     content_dir: content
     branch: main
   avatar:
@@ -77,7 +77,7 @@ features:
   comment:
     provider: disqus
     disqus:
-      shortname: louis-tiao
+      shortname: 
       show_count: true
   search:
     provider: wowchemy
