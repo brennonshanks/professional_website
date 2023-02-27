@@ -34,7 +34,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: [http://arxiv.org/pdf/1512.04133v1](https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.2c03163)
+url_pdf: https://pubs.acs.org/doi/abs/10.1021/acs.jpclett.2c03163
 url_code: 'https://github.com/hoepfnergroup/SOPR'
 url_dataset: ''
 url_poster: ''
