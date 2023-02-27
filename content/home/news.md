@@ -1,4 +1,4 @@
----
+<!-- ---
 # An instance of the Pages widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: collection
@@ -37,3 +37,4 @@ design:
   view: compact
   columns: '2'
 ---
+ -->
