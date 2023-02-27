@@ -4,7 +4,7 @@ title: "Transferable Force Fields from Experimental Scattering Data with Machine
 publication_types:
   - "2"
 authors:
-  - B.L.Shanks
+  - admin
 doi: 10.1021/acs.jpclett.2c03163
 publication: Journal of Physical Chemistry Letters
 publication_short: JPCL
