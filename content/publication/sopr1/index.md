@@ -1,4 +1,3 @@
----
 title: Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement
 authors:
 - admin
@@ -63,5 +62,5 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
----
+
 
