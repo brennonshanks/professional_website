@@ -1,27 +1,27 @@
 ---
-title: "Contributed Talk: Cycle-Consistent Adversarial Learning as Approximate Bayesian Inference"
+title: "Contributed Talk: Transferable force field development with structure-optimized potential refinement"
 
-event: ICML 2018 Workshop on Theoretical Foundations and Applications of Deep Generative Models
-event_url: "https://sites.google.com/view/tadgm"
+event: Combining Multi-Scale and Scattering for Structural Analysis of Complex Systems
+event_url: 
 
-location: Stockholm, Sweden
+location: Lausanne, Switzerland
 
 summary: ''
 abstract: ''
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2018-07-14T15:20:00'
-date_end: '2018-07-14T15:30:00'
+date: '2022-01-25T14:55:00'
+# date_end: '2018-07-14T15:30:00'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: '2018-07-14T15:30:00'
+publishDate: 
 
 authors:
 - admin
 tags:
-- Machine Learning
+- Neutron Scattering
 
 # Is this a featured talk? (true/false)
 featured: true
@@ -34,7 +34,7 @@ links:
   - icon: twitter
     icon_pack: fab
     name: Follow
-    url: https://twitter.com/louistiao
+    url: https://twitter.com/BrennonLShanks
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -52,7 +52,6 @@ slides: ""
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects:
-  - implicit-models
+projects = []
 ---
 
