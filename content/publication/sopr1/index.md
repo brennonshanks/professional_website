@@ -1,9 +1,9 @@
 ---
 title: 'Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement'
 authors:
-- admin
-- Jeffrey J. Potoff
-- Michael P. Hoepfner
+  - admin
+  - Jeffrey J. Potoff
+  - Michael P. Hoepfner
 
 date: "2022-12-05T00:00:00Z"
 doi: ''
