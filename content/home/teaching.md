@@ -18,29 +18,18 @@ design:
 
 ## CHEM5XXX: Introduction to Molecular Simulation ([University of Utah])  
 
-The course has a primary focus on probabilistic machine learning methods, 
-covering the topics of exact and approximate inference in directed and 
-undirected probabilistic graphical models - continuous latent variable 
-models, structured prediction models, and non-parametric models based on 
-Gaussian processes. 
+Chemical Engineering 5XXX – Introduction to Statistical Mechanics and Molecular Simulations 
 
-{{< figure src="cs9418-lab-screenshots/gp-regression-title.png" caption="Lab exercise on Gaussian Process Regression, running in JupyterLab." >}}
+Molecular simulations are ubiquitous across a broad range of chemical engineering disciplines, including pharmaceutical development, energy storage technology, and chemical process design. This course introduces undergraduate level chemical engineering students to the fundamentals and applications of molecular simulations in the chemical industry. The first half of the course reviews classical thermodynamics and mechanics, leading to an introduction to classical statistical mechanics. Building on these concepts, the second half of the course will focus on molecular simulation techniques, packages, and applications to modern engineering problems. 
 
-This course has a major emphasis on maintaining a good balance between theory 
-and practice. As the teaching assistant (TA) for this course, my primary 
-responsibility was to create lab exercises that aid students in gaining hands-on 
-experience with these methods, specifically applying them to real-world data 
-using the most current tools and libraries. 
-The labs were Python-based, and relied heavily on the Python scientific 
-computing and data analysis stack ([NumPy], [SciPy], [Matplotlib], [Seaborn], 
-[Pandas], [IPython/Jupyter notebooks]), and the popular 
-machine learning libraries [scikit-learn] and [TensorFlow].
+Course Objectives
+-- Review classical mechanics of simple systems
+-- Review the fundamentals of classical thermodynamics including the 1st-3rd laws, equations of state, maxwell relations and the fundamental relation
+-- Conceptualize how to apply classical mechanics to systems of many-particles
+-- Understand entropy from the atomic perspective (Gibbs entropy)
+-- Derive basic properties of the microcanonical, canonical, grand canonical, and isothermal-isobaric ensembles
+-- Relate the mathematical foundations of statistical mechanics to numerical approaches (i.e. molecular dynamics and Monte Carlo methods)
+-- Learn and implement HOOMD software package for basic molecular simulations
+-- Analyze and interpret output data from simulations and connect these results to classical thermodynamics 
 
-Students were given the chance to experiment with a broad range of methods 
-on various problems, such as Markov chain Monte Carlo (MCMC) for Bayesian 
-logistic regression, probabilistic PCA (PPCA), factor analysis (FA) and 
-independent component analysis (ICA) for dimensionality reduction, hidden 
-Markov models (HMMs) for speech recognition, conditional random fields (CRFs) 
-for named-entity recognition, and Gaussian processes (GPs) for regression and
-classification.
 
