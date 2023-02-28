@@ -5,7 +5,7 @@ headless: true
 weight: 80
 title: Posts
 subtitle: null
-active: true
+active: false
 content:
   filters:
     folders:
@@ -22,5 +22,5 @@ content:
   order: desc
 design:
   view: card
-  columns: "2"
+  columns: "1"
 ---
