@@ -2,7 +2,7 @@
 title: Kirkwood-Buff Theory of Fluid Thermodynamics
 date: 2023-02-28T05:15:48.353Z
 draft: false
-featured: false
+featured: true
 image:
   filename: featured.png
   focal_point: Smart
