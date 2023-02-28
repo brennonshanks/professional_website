@@ -14,6 +14,6 @@ design:
 
 f﻿olders:
 
-\-﻿ projects
+\-﻿ Projects
 
 \-﻿--
