@@ -31,4 +31,9 @@ image:
   filename: featured
   focal_point: Smart
   preview_only: false
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/BrennonLShanks
 ---
