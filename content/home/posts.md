@@ -22,5 +22,5 @@ content:
   order: desc
 design:
   view: card
-  columns: "1"
+  columns: "2"
 ---
