@@ -16,7 +16,7 @@ abstract: A Bayesian optimized (n-6) Mie force field for noble gases benchmarked
   with machine learning potentials and further that structure-optimized
   potentials are transferable to the prediction of emergent thermodynamic
   behavior.
-location: Scuola Normale Superiore, Piazza Dei Cavalieri 7, 56126 Pisa, Italy.
+location: Scuola Normale Superiore, Pisa, Italy
 date: 2022-03-16T06:55:00.000Z
 date_end: 2022-03-18T16:58:04.622Z
 all_day: false
