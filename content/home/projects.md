@@ -1,9 +1,9 @@
 ---
 widget: collection
-widget_id: projects
+widget_id: recent-posts
 headless: true
 weight: 30
-title: Projects
+title: Recent Posts
 active: true
 design:
   columns: "2"
