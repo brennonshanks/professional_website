@@ -18,7 +18,7 @@ content:
     exclude_future: false
     exclude_past: false
   count: 5
-  offset: 1
+  offset: 0
   order: desc
 design:
   view: card
