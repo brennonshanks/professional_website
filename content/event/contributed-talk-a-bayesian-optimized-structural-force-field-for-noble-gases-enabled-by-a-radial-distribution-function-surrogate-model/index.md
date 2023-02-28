@@ -20,6 +20,11 @@ location: Scuola Normale Superiore, Pisa, Italy
 date: 2022-03-16T09:00:00.000Z
 date_end: 2022-03-18T16:00:00.000Z
 all_day: true
+links:
+  - icon: twitter
+    icon_pack: fab
+    name: Follow
+    url: https://twitter.com/BrennonLShanks
 event: Recent Advances in Machine Learning Accelerated Molecular Dynamics
 event_url: https://www.cecam.org/workshop-details/1063
 publishDate: 2023-02-28T17:55:25.013Z
@@ -28,12 +33,7 @@ featured: false
 authors:
   - admin
 image:
-  filename: featured
+  filename: featured.png
   focal_point: Smart
   preview_only: false
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/BrennonLShanks
 ---
