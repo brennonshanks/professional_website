@@ -35,7 +35,7 @@ title: "Contributed Talk: Transferable force field development with
 location: Lausanne, Switzerland
 date: 2022-01-25T14:55:00
 date_end: 2023-02-28T17:53:16.479Z
-all_day: false
+all_day: true
 event_url: https://www.cecam.org/workshop-details/144
 featured: true
 authors:
