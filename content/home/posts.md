@@ -1,6 +1,6 @@
 ---
 widget: collection
-widget_id: posts
+widget_id: Posts
 headless: true
 weight: 80
 title: Posts
@@ -18,7 +18,7 @@ content:
     exclude_future: false
     exclude_past: false
   count: 5
-  offset: 0
+  offset: 1
   order: desc
 design:
   view: card
