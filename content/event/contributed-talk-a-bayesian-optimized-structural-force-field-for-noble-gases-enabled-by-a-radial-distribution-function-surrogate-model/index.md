@@ -17,9 +17,9 @@ abstract: A Bayesian optimized (n-6) Mie force field for noble gases benchmarked
   potentials are transferable to the prediction of emergent thermodynamic
   behavior.
 location: Scuola Normale Superiore, Pisa, Italy
-date: 2022-03-16T06:55:00.000Z
-date_end: 2022-03-18T16:58:04.622Z
-all_day: false
+date: 2022-03-16T09:00:00.000Z
+date_end: 2022-03-18T16:00:00.000Z
+all_day: true
 event: Recent Advances in Machine Learning Accelerated Molecular Dynamics
 event_url: https://www.cecam.org/workshop-details/1063
 publishDate: 2023-02-28T17:55:25.013Z
