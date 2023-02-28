@@ -5,7 +5,7 @@ headless: true
 weight: 100
 title: Publications
 subtitle: ""
-active: true
+active: false
 content:
   filters:
     folders:
