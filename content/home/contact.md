@@ -14,13 +14,13 @@ content:
       ? id
     netlify:
       captcha: false
-  email: louis.tiao@sydney.edu.au
-  appointment_url: https://calendly.com/louistiao/30min
+  email: brennon.shanks@chemeng.utah.edu
+  appointment_url: 
   contact_links:
     - icon: twitter
       icon_pack: fab
       name: DM Me
-      link: https://twitter.com/louistiao
+      link: https://twitter.com/BrennonLShanks
 design:
   columns: "2"
 ---
