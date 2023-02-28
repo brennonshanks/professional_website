@@ -42,11 +42,6 @@ authors:
   - admin
 url_video: ""
 url_slides: ""
-links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/BrennonLShanks
 event: Combining Multi-Scale and Scattering for Structural Analysis of Complex Systems
 publishDate: 2023-02-28T17:54:47.371Z
 tags:
