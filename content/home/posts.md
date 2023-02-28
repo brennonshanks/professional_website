@@ -1,6 +1,6 @@
 ---
 widget: collection
-widget_id: recent-posts
+widget_id: posts
 headless: true
 weight: 80
 title: Recent Posts
