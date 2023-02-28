@@ -1,5 +1,5 @@
 ---
-widget: collection
+block: collection
 widget_id: recent-posts
 headless: true
 weight: 80
