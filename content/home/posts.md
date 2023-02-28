@@ -2,7 +2,7 @@
 widget: collection
 widget_id: posts
 headless: true
-weight: 80
+weight: 20
 title: Recent Posts
 subtitle: null
 active: true
