@@ -5,7 +5,7 @@ headless: true
 weight: 80
 title: Posts
 subtitle: null
-active: false
+active: true
 content:
   filters:
     folders:
