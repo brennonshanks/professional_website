@@ -5,6 +5,8 @@ publication_types:
   - "2"
 authors:
   - admin
+  - J. J. Potoff
+  - M. P. Hoepfner
 doi: 10.1021/acs.jpclett.2c03163
 publication: Journal of Physical Chemistry Letters
 publication_short: ""
@@ -25,6 +27,11 @@ abstract: Deriving transferable pair potentials from experimental neutron and
   dense monatomic systems.
 draft: false
 featured: true
+tags:
+  - neutron scattering
+  - statistical mechanics
+  - inversion
+  - coarse graining
 image:
   filename: featured.png
   focal_point: Smart
