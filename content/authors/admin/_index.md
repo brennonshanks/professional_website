@@ -1,28 +1,7 @@
 ---
-# Display name
 title: Brennon Shanks
-
-# Full name (for SEO)
-first_name: Brennon
-last_name: Shanks
-
-# Is this the primary user of the site?
-superuser: true
-
-# Role/position/tagline
 role: Chemical Physics Researcher (PhD Candidate)
-
-# Organizations/Affiliations to show in About widget
-organizations:
-  - name: Chemical Engineering at University of Utah
-    url: https://hoepfner.che.utah.edu/
-  - name: Energy Frontier Research Center
-    url: https://efrcmuse.utah.edu/
-
-# Short bio (displayed in user profile at end of posts)
-bio: 
-
-# Interests to show in About widget
+bio: null
 interests:
   - Neutron Scattering
   - Molecular Dynamics
@@ -30,25 +9,10 @@ interests:
   - Quantum Mechanics
   - Probabilistic Machine Learning
   - Gaussian Processes
-
-# Education to show in About widget
-education:
-  courses:
-    - course: Ph.D. in Chemical Engineering
-      institution: University of Utah
-      year: 2024 (expected)
-    - course: B.E. in Chemical Engineering and Mathematics
-      institution: Ohio State University
-      year: 2019
-
-# Social/Academic Networking
-# For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
-#   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
-#   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: /#contact
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/BrennonLShanks
@@ -62,20 +26,29 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/brennon-shanks-365601b4/
-  - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
+  - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=fYp9LkAAAAAJ&hl=en
   - icon: cv
     icon_pack: ai
     link: uploads/CV.pdf
-
-# Enter email to display Gravatar (if Gravatar enabled in Config)
-email: brennon.shanks@chemeng.utah.edu
-
-# Highlight the author in author lists? (true/false)
+organizations:
+  - name: Chemical Engineering at University of Utah
+    url: https://hoepfner.che.utah.edu/
+  - name: Energy Frontier Research Center
+    url: https://efrcmuse.utah.edu/
+education:
+  courses:
+    - course: Ph.D. in Chemical Engineering
+      institution: University of Utah
+      year: 2024 (expected)
+    - course: B.E. in Chemical Engineering and Mathematics
+      institution: Ohio State University
+      year: 2019
+superuser: true
+last_name: Shanks
 highlight_name: true
+first_name: Brennon
+email: brennon.shanks@chemeng.utah.edu
 ---
-
-Brennon Shanks is a statistical thermodynamics researcher that applies molecular dynamics, statistical mechanics, and machine learning to study liquid state materials.
-
-<!-- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
+I am a statistical thermodynamics researcher that applies molecular dynamics, statistical mechanics, and machine learning to study liquid state materials. My current research projects include developing machine learning approaches for neutron scattering analysis, thermodynamic characterization of high pressure and temperature liquids and liquid metals, and fundamental analysis of many-body interactions from neutron scattering experiments.
