@@ -29,7 +29,7 @@ authors:
   - admin
 image:
   filename: featured.png
-  focal_point: Smart
+  focal_point: LEFT
   preview_only: false
   caption: Marginal posterior distribution on the sigma parameter of the (n-6) Mie
     potential (yellow curve) and MCMC samples of the same distribution color
