@@ -24,6 +24,5 @@ image:
   filename: featured.png
   focal_point: Smart
   preview_only: false
-  caption: Partial structure factor decomposition for benzene from the neutron
-    total structure factor.
+  caption: ""
 ---
