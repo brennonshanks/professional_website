@@ -47,8 +47,7 @@ publishDate: 2023-02-28T17:54:47.371Z
 tags:
   - Neutron Scattering
 image:
-  caption: Logo for the Combinning Multiscale Simulation and Scattering for
-    Structural Analysis of Complex Systems conference at CECAM.
+  caption: ""
   focal_point: LEFT
 url_code: ""
 ---
