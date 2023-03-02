@@ -1,5 +1,6 @@
 ---
-title: Characterizing self-assembly in biological liquids with machine learning
+title: "Contributed Talk: Characterizing self-assembly in biological liquids
+  with machine learning"
 abstract: Neutron scattering is a powerful experimental technique to
   characterize the molecular structures of biological materials. In this study,
   a machine learning accelerated Bayesian optimization framework for neutron
