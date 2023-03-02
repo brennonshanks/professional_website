@@ -49,6 +49,6 @@ tags:
 image:
   caption: Logo for the Combinning Multiscale Simulation and Scattering for
     Structural Analysis of Complex Systems conference at CECAM.
-  focal_point: Right
+  focal_point: LEFT
 url_code: ""
 ---
