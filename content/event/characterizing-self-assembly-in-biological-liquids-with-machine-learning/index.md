@@ -1,13 +1,14 @@
 ---
 title: "Contributed Talk: Characterizing self-assembly in biological liquids
   with machine learning"
-abstract: Neutron scattering is a powerful experimental technique to
-  characterize the molecular structures of biological materials. In this study,
-  a machine learning accelerated Bayesian optimization framework for neutron
-  scattering analysis is presented in the context of biological materials.
-  Parallel Gaussian processes are found to improve the computational efficiency
-  of molecular simulations and scattering analysis to enable the study of
-  macromolecular biomolecules.
+abstract: Wide-angle neutron scattering (WANS) is a powerful experimental
+  technique to characterize atomic structures but has not been fully explored in
+  biological molecules due to computational constraints. In this study, parallel
+  Gaussian processes are shown to improve the computational efficiency of
+  neutron scattering analysis algorithms sufficiently to enable the study of
+  macromolecular biomolecules. A review of neutron scattering techniques and
+  their ability to resolve macromolecular structure and function is also
+  discussed.
 location: Salt Lake City, UT
 date: 2021-01-31T18:09:28.811Z
 date_end: 2021-02-01T07:00:00.000Z
@@ -20,7 +21,7 @@ featured: false
 authors:
   - admin
 image:
-  filename: featured
+  filename: featured.png
   focal_point: Smart
   preview_only: false
 ---
