@@ -31,4 +31,9 @@ image:
   filename: featured.png
   focal_point: Smart
   preview_only: false
+  caption: Marginal posterior distribution on the sigma parameter of the (n-6) Mie
+    potential (yellow curve) and MCMC samples of the same distribution color
+    coded according to number of samples. The marginal distribution represents
+    the probability of the model parameter for a given experimental structure
+    factor observartion.
 ---
