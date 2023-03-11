@@ -103,7 +103,7 @@ Final Project	30%
 <br>
 <br>
 
-90%+          A
+90% and up  A
 <br>
 85-90%      A -  
 <br>
@@ -113,7 +113,7 @@ Final Project	30%
 <br>
 70-75%      B -
 <br>
-<70%          C
+<70%        C
 <br>
 <br>
 
