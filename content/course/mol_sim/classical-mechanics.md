@@ -7,6 +7,8 @@ tags:
   - classical-mechanics
 ---
 
+<!--more-->
+
 ## Newton's Equation of Motion
 
 ## Langrange and Hamilton Equation of Motion
