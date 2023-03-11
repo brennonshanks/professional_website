@@ -19,9 +19,16 @@ main:
   - name: Talks
     url: '#talks'
     weight: 50
+  - name: Courses
+    weight: 60
+    identifier: courses
+  - name: Molecular Simulations
+    PageRef: course/mol-sim/_index.md
+    weight: 10
+    parent: courses
   - name: Contact
     url: '#contact'
-    weight: 60
+    weight: 70
 #   - name: CV
 #     url: uploads/CV.pdf
 #     weight: 70
