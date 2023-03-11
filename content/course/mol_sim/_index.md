@@ -89,7 +89,7 @@ Midterm 2   	20%
 Final Project	30%
 <br>
 
->90%          A
+90%+          A
 <br>
 85-90%      A -  
 <br>
