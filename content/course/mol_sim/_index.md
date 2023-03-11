@@ -3,7 +3,7 @@ title: 📊 CH EN 5960 Molecular Simulations
 linkTitle: CH EN 5960 Molecular Simulations
 type: book
 tags:
-  - current
+  - courses
 ---
 
 {{< figure src="featured.jpg" >}}
