@@ -1,6 +1,6 @@
 ---
 title: 📊 CH EN 5960: Introduction to Molecular Simulations
-linkTitle: CH EN 5960: Introduction to Molecular Simulations
+linkTitle: CH EN 5960 Molecular Simulations
 type: book
 tags:
   - courses
