@@ -1,7 +1,7 @@
 ---
 title: Thermodynamics
 type: book
-weight: 20
+weight: 30
 ---
 
 ## An Axiomatic Approach to Classical Thermodynamics
