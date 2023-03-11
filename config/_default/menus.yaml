@@ -22,7 +22,7 @@ main:
   - name: Courses
     weight: 60
     identifier: courses
-  - name: Molecular Simulations
+  - name: CH EN 5960 Molecular Simulations
     PageRef: course/mol-sim/_index.md
     weight: 10
     parent: courses
