@@ -10,6 +10,13 @@ baseURL: '/' # Website URL
 ## LANGUAGE
 ############################
 
+cascade:
+  # Docs folder options
+  - _target:
+      path: /course/**
+    editable: true
+    show_breadcrumb: true
+
 defaultContentLanguage: en
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
