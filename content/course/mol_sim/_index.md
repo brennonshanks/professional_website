@@ -102,20 +102,6 @@ Midterm 2   	20%
 Final Project	30%
 <br>
 <br>
-
-90%-100%    A
-<br>
-85-90%      A minus  
-<br>
-80-85%      B plus
-75-80%      B
-<br>
-70-75%      B minus
-<br>
-<70%        C
-<br>
-<br>
-
 Exam Policy
 <br>
 Midterm exams will be open book and notes, and exam problems will reflect problems from the homework assignments.
