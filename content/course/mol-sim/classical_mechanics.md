@@ -92,7 +92,7 @@ $$
   \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{z}}\bigg) - \frac{\partial L}{\partial z} = 0
 $$
 
-where $z$ is the vertical position and $\dot{z}$ is the vertical velocity.
+   where $z$ is the vertical position and $\dot{z}$ is the vertical velocity.
 
 3. 
 
