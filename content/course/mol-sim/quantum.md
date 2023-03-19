@@ -9,4 +9,3 @@ tags:
 
 <!--more-->
 
-{{% staticref "uploads/functional_analysis.pdf" "newtab" %}}Functional Analysis Notes{{% /staticref %}}
