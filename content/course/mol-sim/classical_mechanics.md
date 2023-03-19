@@ -94,13 +94,13 @@ $$
 
 3. Visualizing a mechanical system from the equation of motion.
 
-(a) Use words and draw a picture for a physical system described by the Lagrangian,
+1. Use words and draw a picture for a physical system described by the Lagrangian,
 
 $$
   L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
 $$
 
-(b) Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for the system.
+2. Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for the system.
 
 4. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
 
