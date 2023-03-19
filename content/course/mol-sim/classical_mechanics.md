@@ -94,7 +94,9 @@ $$
 
 3. 
 
-4. (Bonus) 
+4. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
+
+![screen reader text](infatwood.png "Visual for the infinite Atwood's machine")
 
 ## Problem Set 2
 
