@@ -83,6 +83,23 @@ where the total energy $E$ is now the sum of the kinetic and potential energies 
 
 ## Langrange and Hamilton Equation of Motion
 
-## Equations of Motion for Many-Particle Systems
+## Problem Set 1
+1.
 
-## Problem Set 3
+2.
+
+3.
+
+4. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. Use the following definition for the Langrange and Langrange's equation of motion, 
+
+$$
+  L = \frac{1}{2}m\dot{z}^2 - mgz
+$$
+
+$$
+  \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{z}}\bigg) - \frac{\partial L}{\partial z} = 0
+$$
+
+where $m$ is the particle mass, $z$ is the vertical position, $\dot{z}$ is the vertical velocity, and $g$ is a gravitational constant.
+
+## Problem Set 2
