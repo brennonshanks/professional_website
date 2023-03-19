@@ -11,13 +11,13 @@ tags:
 
 ## Newton's Equation of Motion
 
-First consider an \textbf{inertial frame of reference}, which is a reference environment for a mechanical system such that when a material point or particle is subject to no net force, the velocity of the particle is unchanged. In such a reference frame, particles follow \textbf{Newton's equation of motion},
+First consider an inertial frame of reference, which is a reference environment for a mechanical system such that when a material point or particle is subject to no net force, the velocity of the particle is unchanged. In such a reference frame, particles follow Newton's equation of motion,
 
 \begin{equation}
     \mathbf{F} = m\frac{d^2 \mathbf{r}}{dt^2}
 \end{equation}
 
-\noindent where $\mathbf{F}$ is the force, $m$ is the object's mass, and $\mathbf{r}$ is the object's position. This relation suggests that if the mechanical state of the system ($\mathbf{r}, \mathbf{v} \equiv \frac{d\mathbf{r}}{dt}$) is known at some initial time (t = 0), then the mechanical state of the system at arbitrary t is completely determined. The integral of the force over a path is called \textbf{work}, 
+\noindent where $\mathbf{F}$ is the force, $m$ is the object's mass, and $\mathbf{r}$ is the object's position. This relation suggests that if the mechanical state of the system ($\mathbf{r}, \mathbf{v} \equiv \frac{d\mathbf{r}}{dt}$) is known at some initial time (t = 0), then the mechanical state of the system at arbitrary t is completely determined. The integral of the force over a path is called work, 
 
 \begin{equation}
     W = \int \mathbf{F} \cdot d\mathbf{r}
@@ -29,7 +29,7 @@ First consider an \textbf{inertial frame of reference}, which is a reference env
     W = \oint \mathbf{F_C} \cdot d\mathbf{r}
 \end{equation}
 
-\noindent where the symbol $\oint$ indicates that the path is closed. If this integral is zero, then the force $\mathbf{F_C}$ is called conservative. \textbf{Conservative forces} do not depend on the path that the particle takes; rather, they depend only on the initial and final points of the trajectory. We call work that only depends on the position of a particle with respect to some external potential the work done by the \textbf{potential energy},
+\noindent where the symbol $\oint$ indicates that the path is closed. If this integral is zero, then the force $\mathbf{F_C}$ is called conservative. Conservative forces do not depend on the path that the particle takes; rather, they depend only on the initial and final points of the trajectory. We call work that only depends on the position of a particle with respect to some external potential the work done by the potential energy,
 
 \begin{equation}
     W_{A \rightarrow B} = \psi (\mathbf{r_A},\mathbf{r_B}) 
@@ -47,7 +47,7 @@ First consider an \textbf{inertial frame of reference}, which is a reference env
     W = \int m\frac{d^2 \mathbf{r}}{dt^2} \cdot \frac{d\mathbf{r}}{dt}dt = \frac{1}{2}m[\mathbf{v}\cdot\mathbf{v}]_{t_1}^{t_2} =\frac{1}{2}m[v_2^2 - v_1^2]
 \end{equation}
 
-\noindent and we call this work due to the motion of the particle the work from the \textbf{kinetic energy}, $mv^2/2$. Now, let's consider the movement of a particle in a conservative force field, $\psi(\mathbf{r})$, subject to some external force $\mathbf{F_{ext}}$, 
+\noindent and we call this work due to the motion of the particle the work from the kinetic energy, $mv^2/2$. Now, let's consider the movement of a particle in a conservative force field, $\psi(\mathbf{r})$, subject to some external force $\mathbf{F_{ext}}$, 
 
 \begin{equation}
     \mathbf{F_{ext}} -\nabla \psi(\mathbf{r}) = m\frac{d^2 \mathbf{r}}{dt^2} 
@@ -65,7 +65,7 @@ First consider an \textbf{inertial frame of reference}, which is a reference env
     W = \Delta PE + \Delta KE = \Delta E
 \end{equation}
 
-\noindent Thus, under no external force ($\mathbf{F_{ext}} = \mathbf{0}$), the \textbf{mechanical energy} (E) of a particle does not change with time. Such a quantity is a constant of motion.
+\noindent Thus, under no external force ($\mathbf{F_{ext}} = \mathbf{0}$), the mechanical energy (E) of a particle does not change with time. Such a quantity is a constant of motion.
 
 Of course, in the statistical theory of liquids we need to extend Newton's equations of motion to systems of many particles. The result is a system of equations describing the positions and velocities of each particle,
 
@@ -80,7 +80,6 @@ Of course, in the statistical theory of liquids we need to extend Newton's equat
 \end{equation}
 
 \noindent where the total energy $E$ is now the sum of the kinetic and potential energies of all particles plus the configuration dependent potential energy of the particle-particle interactions, $\phi (\mathbf{r_1}, ..., \mathbf{r_N})$. For a system of many particles, the terms in the total energy are dependent on both the particle velocities ($\mathbf{v_i}$) and positions ($\mathbf{r_i}$) of every particle in the system. Since velocity and position are both three-dimensional, each particle contributes 6-dimensions to the many particle system. In total, the many particle system can therefore be described by a $6N$-dimensional phase space of $3N$-dimensions in velocity and $3N$-dimensions in position. 
-
 
 ## Langrange and Hamilton Equation of Motion
 
