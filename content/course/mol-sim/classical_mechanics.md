@@ -94,7 +94,7 @@ $$
 
 3. Visualizing a mechanical system from the equation of motion.
 
-  - Use words and draw a picture for a physical system described by the Lagrangian,
+  - Use words and draw a picture for a physical system described by the Lagrangian in polar coordinates,
 
   $$
     L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
