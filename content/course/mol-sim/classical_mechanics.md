@@ -86,20 +86,24 @@ where the total energy $E$ is now the sum of the kinetic and potential energies 
 ## Problem Set 1
 1. 
 
-2.
-
-3. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. Use the following definition for the Langrange and Langrange's equation of motion, 
-
-$$
-  L = \frac{1}{2}m\dot{z}^2 - mgz
-$$
+2. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
 
 $$
   \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{z}}\bigg) - \frac{\partial L}{\partial z} = 0
 $$
 
-where $m$ is the particle mass, $z$ is the vertical position, $\dot{z}$ is the vertical velocity, and $g$ is a gravitational constant.
+where $z$ is the vertical position and $\dot{z}$ is the vertical velocity.
+
+3. 
 
 4. (Bonus) 
 
 ## Problem Set 2
+
+1.
+
+2.
+
+3.
+
+4.
