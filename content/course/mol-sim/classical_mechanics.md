@@ -94,9 +94,9 @@ $$
 
 3. (a) Use words to describe a system with the Lagrangian,
 
-      $$
-        L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
-      $$
+$$
+  L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
+$$
 
    (b) Find the conjugate momenta $p_r, p_\theta$  and write the Hamiltonian for the system.
 
