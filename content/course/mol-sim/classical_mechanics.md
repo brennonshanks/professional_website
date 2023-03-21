@@ -102,9 +102,9 @@ $$
   H = \sum_{bonds} K_b (b - b_0)^2 + \sum_{angles} K_\theta (\theta - b_\theta)^2 + \sum_{torsions} K_\phi (1 + cos(\nu \phi - \delta)) + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
 $$
 
-4. Consider the following physical system in which masses $M, m_1, and m_2$ move at the speeds and directions indicated in the figure below. Solve for the acceleration of $M$ and $m_2$. (Hint) Use the Lagrange equation of motion on both the coordinate $x$ and $y$ and solve the system of equations for $\doubledot{x}$ and $\doubledot{y}$.
-5. 
-6. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
+4. Consider the following physical system in which masses $M, m_1, and m_2$ move at the speeds and directions indicated in the figure below. Solve for the acceleration of $M$ and $m_2$. (Hint) Use the Lagrange equation of motion on both the coordinate $x$ and $y$ and solve the system of equations for $\ddot{x}$ and $\ddot{y}$.
+
+5. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
 
 ![screen reader text](infatwood.png)
 
