@@ -221,7 +221,7 @@ $$
   L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
 $$
 
-3. In molecular modeling, the Hamilton equations of motion are solved numerically given some Hamiltonian. While we will go into detail on what these Hamiltonians look like later, for now just identify the kinetic and potential parts of the following molecular Hamiltonian ($K$ is a spring constant and $r_{ij}$ is the distance between atoms $i$ and $j$).
+3. In molecular modeling, the Hamilton equations of motion are solved numerically given some Hamiltonian. While we will go into detail on the specifics of these Hamiltonians later in the course, for now just identify the kinetic and potential parts of the following molecular Hamiltonian ($K$ is a spring constant and $r_{ij}$ is the distance between atoms $i$ and $j$).
 
 $$
   H = \sum_{bonds} K_b (b - b_0)^2 + \sum_{angles} K_\theta (\theta - b_\theta)^2 + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
