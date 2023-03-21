@@ -84,25 +84,27 @@ where the total energy $E$ is now the sum of the kinetic and potential energies 
 ## Langrange and Hamilton Equation of Motion
 
 ## Problem Set 1
-1. 
-
-2. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
+1. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
 
 $$
   \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{z}}\bigg) - \frac{\partial L}{\partial z} = 0
 $$
 
-3. Visualizing a mechanical system from the equation of motion.
+2. Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for a system with the following Lagrangian,
 
-  - Use words and draw a picture for a physical system described by the Lagrangian in polar coordinates,
+$$
+  L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
+$$
 
-  $$
-    L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
-  $$
+3. Identify the kinetic and potential parts of the following molecular Hamiltonian.
 
-  - Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for the system.
+$$
+  H = \sum_{bonds} K_b (b - b_0)^2 + \sum_{angles} K_\theta (\theta - b_\theta)^2 + \sum_{torsion} K_\phi (1 + cos(\nu \phi - \delta)) + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
+$$
 
-4. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
+4. 
+
+5. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
 
 ![screen reader text](infatwood.png)
 
