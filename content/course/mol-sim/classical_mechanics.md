@@ -104,6 +104,8 @@ $$
 
 4. Consider the following physical system in which masses $M, m_1$, and $m_2$ move at the speeds and directions indicated in the figure below. Solve for the acceleration of $M$ and $m_2$. (Hint) Use the Lagrange equation of motion on both the coordinate $x$ and $y$ and solve the system of equations for $\ddot{x}$ and $\ddot{y}$.
 
+![screen reader text](pulley.png)
+
 5. (Bonus) Consider the infinite Atwood’s machine. All the masses are equal to m, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
 
 ![screen reader text](infatwood.png)
