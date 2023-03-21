@@ -157,7 +157,7 @@ $$
     H = L - p_i \dot{q_i}
 $$
 
-where $-H = \mathcal{H}$ is known as the \textbf{Hamiltonian} for particle $i$. Generalizing to $f$ particles, the Hamiltonian can be expressed as,
+where $-H = \mathcal{H}$ is known as the Hamiltonian for particle $i$. Generalizing to $f$ particles, the Hamiltonian can be expressed as,
 
 $$
     \mathcal{H} = \sum_{i=1}^f p_i \dot{q_i} - L
