@@ -207,6 +207,7 @@ which are known as Hamilton's equations of motion.
 
 References
 1. Kusaka, I. Statistical Mechanics for Engineers. (Springer International Publishing, 2015). doi:10.1007/978-3-319-13809-1.
+2. https://hockygroup.hosting.nyu.edu/exercise/md.html
 
 ## Problem Set 1
 1. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
