@@ -4,7 +4,7 @@ type: book
 weight: 20
 math: true
 tags:
-  - classical_mechanics
+  - classical-mechanics
 ---
 
 <!--more-->
