@@ -233,9 +233,9 @@ $$
 
 ## Problem Set 2
 
-1. Two masses $m_1$ and $m_2$ are oscillating attached by a spring with spring constant $k$. Determine the frequency of oscillation of the two masses $\omega$ using the Lagrangian of the system assuming there no external forces in the system.
+1. Two masses $m_1$ and $m_2$ are oscillating attached by a spring with spring constant $k$. Determine the frequency of oscillation of the two masses $\omega$ using the Lagrangian of the system assuming there are no external forces acting on the system.
 
-2.
+2. Using python, code the velocity-verlet algorithm for a 1-D harmonic oscillator and plot your simulated trajectory compared to the analytical solution.
 
 3. The dispersion energy in molecular systems is often modeled by the Lennard-Jones potential, which gives the potential energy of two particles separated by a distance $r_{ij} = |\mathbf{r_i} - \mathbf{r_j}|$. Using Python, plot the Lennard-Jones potential and Lennard-Jones force (on separate plots) for a system with $\sigma = 1$, $\epsilon = 1$ for $0.9 \leq r \leq 4$. At what $r$ is the force zero? If two particles with a Lennard-Jones potential interaction are closer together than the radius of zero force, will they attract or repel each other (think about what the sign of the force means)?
 
