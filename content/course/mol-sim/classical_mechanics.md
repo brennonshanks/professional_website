@@ -224,7 +224,7 @@ $$
 3. In molecular modeling, the Hamilton equations of motion are solved numerically given some Hamiltonian. While we will go into detail on the specifics of these Hamiltonians later in the course, for now just identify the kinetic and potential parts of the following molecular Hamiltonian ($K$ is a spring constant and $r_{ij}$ is the distance between atoms $i$ and $j$).
 
 $$
-  H = \sum_{particles} \frac{p_i^2}{2m_i} + \sum_{bonds} K_b (b - b_0)^2 + \sum_{angles} K_\theta (\theta - b_\theta)^2 + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
+  H = \sum_{particles} \frac{p_i^2}{2m_i} + \sum_{bonds} K_b (b - b_0)^2 + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
 $$
 
 4. Consider the following physical system in which masses $M, m_1$, and $m_2$ move at the speeds and directions indicated in the figure below. Solve for the acceleration of $M$ and $m_2$. (Hint) Use the Lagrange equation of motion on both the coordinate $x$ and $y$ and solve the system of equations for $\ddot{x}$ and $\ddot{y}$.
