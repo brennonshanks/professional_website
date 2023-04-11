@@ -7,8 +7,6 @@ math: true
 
 <!--more-->
 
-## Primer
-
 An agglomerate of matter consists of an enormous amount of atoms. A single glass of water contains somewhere between $10^{24}$ and $10^{25}$ atoms alone! From a classical mechanics point of view, modeling the glass of water would require solving momentum equations for all $10^{25}$ atoms simultaneously. Clearly, this is beyond even the most powerful supercomputers that exist today. So, the question becomes, how can we study systems composed of an inconceivable number of particles without appealing to classical mechanics?
 
 The characteristic time period of an atomic motion is on the order of $10^{-15}$ seconds. Therefore, even during a measurement of a system that is captured in a single microsecond, the atoms of a typical solid still go through ten million vibrations. This implies that a macroscopic measurement senses only averages of the atomic coordinates. A map of how the atomic coordinates change is known as a normal mode. A normal mode is a coupled motion of atomic coordinates that include divergence (increase in particle density), convergence (decrease in particle density), and vibration. Some normal modes can be seen macroscopically, such as a change in volume or electric dipole. Others, like atomic vibrations, cannot be seen and are therefore "lost" in macroscopic observation. Classical Thermodynamics is concerned with normal modes that are observable on a macroscopic scale.
