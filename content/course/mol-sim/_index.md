@@ -1,5 +1,5 @@
 ---
-title: 📊 CHEN 5960 Molecular Simulations
+title: 📊 CH EN 5960 Molecular Simulations
 linkTitle: CH EN 5960 Molecular Simulations
 type: book
 tags:
