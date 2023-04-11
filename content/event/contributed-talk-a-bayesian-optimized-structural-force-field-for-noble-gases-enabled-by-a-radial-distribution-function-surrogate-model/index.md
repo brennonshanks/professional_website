@@ -1,5 +1,5 @@
 ---
-title: "Contributed Talk: A Bayesian optimized structural force field for noble
+title: "A Bayesian optimized structural force field for noble
   gases enabled by a radial distribution function surrogate model"
 abstract: A Bayesian optimized (n-6) Mie force field for noble gases benchmarked
   to experimental neutron diffraction measurements of the radial distribution
