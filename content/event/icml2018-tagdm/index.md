@@ -30,7 +30,7 @@ abstract: >-
 slides: ""
 url_pdf: ""
 summary: ""
-title: "Contributed Talk: Transferable force field development with
+title: "Transferable force field development with
   structure-optimized potential refinement"
 location: Lausanne, Switzerland (remote)
 date: 2022-01-25T14:55:00
