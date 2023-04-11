@@ -37,6 +37,8 @@ $$
     dU = d_{inc} W + d_{inc} Q
 $$
 
+were $d_{inc}$ represents an "incomplete" differential of the quantity.
+
 ## Equilibrium Thermodynamics
 
 Thermodynamics is concerned with both reversible and irreversible processes, but for now let us consider equilibrium thermodynamics. An equilibrium state is a state of the system that, given a certain set of internal parameters U, V, and $N_i$ (i = 1, ..., n), the system tends to evolve towards. This leads us to the first postulate.
