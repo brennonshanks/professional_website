@@ -15,27 +15,27 @@ The characteristic time period of an atomic motion is on the order of $10^{-15}$
 
 By taking this macroscopic view, we lose a sense of how the motions of atomic coordinates can transfer energy. In Thermodynamics, we refer to this "invisible" mode of energy transfer as heat. From the Classical Mechanics perspective, heat is non-existent, since the energy of the system is completely characterized by generalized momentum and position for each particle. From this perspective, conservation of energy of a closed system requires that the change in energy be directly equal to the classical mechanical work done on the system, W'.
 
-\begin{equation}
+$$
     \Delta E = W'
-\end{equation}
+$$
 
 To accommodate the fact that we cannot observe all forms of energy transfer macroscopically (what we will call work), we must split the W' into observable energy transfer, W, and unobservable energy transfer, Q (heat). This gives us the first law of thermodynamics. 
 
-\begin{equation}
+$$
     \Delta E = W + Q
-\end{equation}
+$$
 
 Now, in thermodynamics we are not typically concerned with the motion of a system in space or its change in position with respect to an external field, so we can simplify our energy conservation equation to simply include the internal energy, U.
 
-\begin{equation}
+$$
     \Delta U = W + Q
-\end{equation}
+$$
 
 W and Q are path functions, meaning that they depend on the exact way that changes are brought about by them. W is a path function because, in defining it, we have lost track of microscopic displacements, whereas classical mechanical work W' is a path-independent function. An infinitesimal view of this equation is shown below.
 
-\begin{equation}
+$$
     dU = \dbar W + \dbar Q
-\end{equation}
+$$
 
 ## Equilibrium Thermodynamics
 
@@ -53,21 +53,21 @@ Postulate 3. Entropy is additive over subsequent subsystems. Furthermore, S is a
 
 There are immediate consequences of this postulate which are listed below.
 
-\begin{equation}
+$$
 S = \sum_{\alpha}S^{(\alpha)}
-\end{equation}
+$$
 
 Corollary 1: The entropy of a simple system is a homogeneous, first-order function of the extensive parameters.
 
-\begin{equation}
+$$
   S(\lambda U, \lambda V, \lambda N) = \lambda S(U, V, N)
-\end{equation}
+$$
 
 Corollary 2: The monotonic property implies that temperature is non-negative. In other words, 
 
-\begin{equation}
+$$
   \left(\frac{\partial S}{\partial U}\right )_{V,N} > 0
-\end{equation}
+$$
 
 Corollary 3: Entropy can be inverted with respect to energy because it is a single-valued, continuous, and differentiable function with respect to S, V, N.
 
@@ -77,21 +77,21 @@ Postulate 4: The entropy of any system vanishes in the state when T = 0.
 
 Entropy can change as a result of internal or external processes. We express the differential change in entropy as, 
 
-\begin{equation}
+$$
 dS = \dbar{S_e} + \dbar{S_i}
-\end{equation}
+$$
 
 We now accept that the expression for $\dbar{S_e}$ is given by,
 
-\begin{equation}
+$$
 \dbar{S_e} = \frac{\dbar{Q}}{T} 
-\end{equation}
+$$
 
 On the other hand, an important consequence of of the second law is that, 
 
-\begin{equation}
-\dbar{S_i} \geq 0 
-\end{equation}
+$$
+d{S_i} \geq 0 
+$$
 
 Equality holds in the previous equation when the process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
 
