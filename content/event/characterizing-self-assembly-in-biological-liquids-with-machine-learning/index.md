@@ -1,5 +1,5 @@
 ---
-title: "Contributed Talk: Characterizing self-assembly in biological liquids
+title: "Characterizing self-assembly in biological liquids
   with machine learning"
 abstract: Wide-angle neutron scattering (WANS) is a powerful experimental
   technique to characterize atomic structures but has not been fully explored in
