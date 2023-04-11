@@ -34,7 +34,7 @@ $$
 W and Q are path functions, meaning that they depend on the exact way that changes are brought about by them. W is a path function because, in defining it, we have lost track of microscopic displacements, whereas classical mechanical work W' is a path-independent function. An infinitesimal view of this equation is shown below.
 
 $$
-    dU = \dbar W + \dbar Q
+    dU = d_{inc} W + d_{inc} Q
 $$
 
 ## Equilibrium Thermodynamics
@@ -43,48 +43,46 @@ Thermodynamics is concerned with both reversible and irreversible processes, but
 
 Postulate 1. There exist particular states, called equilibrium states, that are completely characterized by U, V, $N_i$ (i = 1, ..., n).
 
-Note that in more complex systems, we require an inclusion of elastic strain parameters and electric dipole moment (also macroscopically measurable properties). A system at macroscopic equilibrium is a system where all representative atomic states of the system exist in the time scale of a macroscopic measurement.
+A system at macroscopic equilibrium is a system where all representative atomic states of the system exist in the time scale of a macroscopic measurement.
 
 Postulate 2. There exists a function, S, such that, S = S(U,V,N). Furthermore, the extensive parameters take values so that this function is maximized over the manifold of constrained equilibrium states.
 
-This postulate applies only to equilibrium states, but in general not to non-equilibrium states. The following two postulates apply to properties of the entropy.
+This postulate applies only to equilibrium states. The following two postulates apply to properties of S.
 
-Postulate 3. Entropy is additive over subsequent subsystems. Furthermore, S is a continuous, differentiable, and a monotonically increasing function of energy.
+Postulate 3. S is additive over subsequent subsystems. Furthermore, S is a continuous, differentiable, and a monotonically increasing function of energy.
 
 There are immediate consequences of this postulate which are listed below.
 
 $$
-S = \sum_{\alpha}S^{(\alpha)}
+    S = \sum_{\alpha}S^{(\alpha)}
 $$
 
 Corollary 1: The entropy of a simple system is a homogeneous, first-order function of the extensive parameters.
 
 $$
-  S(\lambda U, \lambda V, \lambda N) = \lambda S(U, V, N)
+    S(\lambda U, \lambda V, \lambda N) = \lambda S(U, V, N)
 $$
 
 Corollary 2: The monotonic property implies that temperature is non-negative. In other words, 
 
 $$
-  \left(\frac{\partial S}{\partial U}\right )_{V,N} > 0
+    \left(\frac{\partial S}{\partial U}\right)_{V,N} > 0
 $$
 
 Corollary 3: Entropy can be inverted with respect to energy because it is a single-valued, continuous, and differentiable function with respect to S, V, N.
 
 Postulate 4: The entropy of any system vanishes in the state when T = 0.
 
-## The 2nd Law of the Thermodynamics
-
 Entropy can change as a result of internal or external processes. We express the differential change in entropy as, 
 
 $$
-dS = \dbar{S_e} + \dbar{S_i}
+    dS = d_{inc}{S_e} + d_{inc}{S_i}
 $$
 
-We now accept that the expression for $\dbar{S_e}$ is given by,
+We now accept that the expression for $d_{inc}{S_e}$ is given by,
 
 $$
-\dbar{S_e} = \frac{\dbar{Q}}{T} 
+d_{inc}{S_e} = \frac{d_{inc}{Q}}{T} 
 $$
 
 On the other hand, an important consequence of of the second law is that, 
@@ -93,5 +91,8 @@ $$
 d{S_i} \geq 0 
 $$
 
-Equality holds in the previous equation when the process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
+Equality holds in the previous equation when the thermodynamic process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
 
+## Problem Set 3
+
+## Problem Set 4
