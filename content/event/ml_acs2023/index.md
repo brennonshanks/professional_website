@@ -5,7 +5,7 @@ location: San Francisco, CA
 date: 2023-08-13T18:09:28.811Z
 date_end: 2023-08-17T07:00:00.000Z
 all_day: true
-event: ACS Computers in Chemistry
+event: ACS Machine Learning in Chemistry
 event_url: https://www.acs.org/events/all-events/acs-fall-2023.html
 publishDate: 2023-03-02T18:09:28.842Z
 draft: false
