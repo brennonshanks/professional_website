@@ -34,7 +34,7 @@ tags:
   - coarse graining
 image:
   filename: featured.png
-  focal_point: Smart
+  focal_point: Center
   preview_only: false
 date: 2022-12-05T18:29:49.516Z
 ---
