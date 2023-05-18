@@ -5,7 +5,6 @@ type: book
 tags:
   - courses
 ---
-
 {{< toc hide_on="xl" >}}
 
 ## Course Overview
