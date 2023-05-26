@@ -93,6 +93,8 @@ $$
 
 Equality holds in the previous equation when the thermodynamic process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
 
+Consequences of these postulates include: the fundamental equation, equations of state, the Euler relation, Gibbs-Duhem relation, Maxwell relations, and free energies. Notes on these will be provided in the lectures.
+
 ## Problem Set 3
 
 ## Problem Set 4
