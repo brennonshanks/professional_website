@@ -100,7 +100,7 @@ which essentially just amounts to counting all of the atoms of species $\alpha$ 
 Now that we have introduced the singlet particle density functional, we will proceed to the pair density functional, which by a similar definition is given as,
 
 $$
-    \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \sum^{N_\alpha}_{i_\alpha = 1} \sum^{N_\beta}_{k_\beta = 1} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})\delta(\mathbf{r_{k_\beta}} - \mathbf{r_2})
+    \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \sum^{N_\alpha} \sum^{N_\beta}_{k_\beta = 1} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})\delta(\mathbf{r_{k_\beta}} - \mathbf{r_2})
 $$
 
 which can be understood in a similar way as the single particle density functional. First, give the functional two vectors and then determine if (1) vector 1 points to the position of a particle with label $\alpha$ and (2) vector 2 points to the position of a particle with label $\beta$. If both statements are true then the functional returns a $\delta$ distribution at that pair of vectors, and if not it returns a zero. As in the previous equation, the summation goes over all of the known positions of both particles. In this case, the integral over the entire space is,
@@ -116,7 +116,7 @@ Note that to this point we have simply looked a system of particles with fixed p
 We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just apply Equation \eqref{average} to the integrals of the singlet and pair density functionals to obtain,
 
 $$
-    \hat{\rho_{\alpha^{(1)}} (\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
+    \hat{\rho_{\alpha^{(1)}}} (\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
 $$
 
 $$
@@ -126,7 +126,7 @@ $$
 which by linearity of the expectation gives,
 
 $$
-    \int_v \hat{\rho_{\alpha^{(1)}}(\mathbf{r_1}) dv = \langle N_\alpha \rangle
+    \int_v \hat{\rho_{\alpha^{(1)}}}(\mathbf{r_1}) dv = \langle N_\alpha \rangle
 $$
 
 $$
@@ -136,23 +136,19 @@ $$
 Furthermore, by linearity of the expectation we can combine these two equations in the following clever way,
 
 $$
-\begin{split}
-        \int_{v_1} \int_{v_2} [\hat{\rho_{\alpha, \beta}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) - \hat{\rho_{\alpha^{(1)}}}(\mathbf{r_1}) \hat{\rho_{\beta^{(1)}}(\mathbf{r_2})] dv_1 dv_2 = & \\ [\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle]  - \langle N_\alpha \rangle \delta_{\alpha  \beta}
-\end{split}
+        \int_{v_1} \int_{v_2} [\hat{\rho_{\alpha, \beta}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) - \hat{\rho_{\alpha^{(1)}}}(\mathbf{r_1}) \hat{\rho_{\beta^{(1)}}}(\mathbf{r_2})] dv_1 dv_2 = [\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle]  - \langle N_\alpha \rangle \delta_{\alpha  \beta}
 $$
 
 We can further simplify this expression by noting that the means of the density functionals take on specific forms in fluids. For example, the mean of the single density functional of a species $\alpha$ is just the concentration (in atoms/volume) of that species $c_\alpha$. The mean of the pair density functional is given a special definition in terms of the radial distribution function, which is just,
 
 $$
-    \hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = c_\alpha c_\beta g_{\alpha, \beta}(r)
+    \hat{\rho_{\alpha, \beta}}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = c_\alpha c_\beta g_{\alpha, \beta}(r)
 $$
 
 Plugging these definitions into our integral equation, we obtain,
 
 $$
-\begin{split}
-     \int_{v} [g_{\alpha, \beta}(r) - 1] dv = & \\ v\frac{\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle}{\langle N_\alpha \rangle \langle N_\beta \rangle}  -  \frac{\delta_{\alpha  \beta}}{\langle N_\alpha \rangle}
-\end{split}
+     \int_{v} [g_{\alpha, \beta}(r) - 1] dv = v\frac{\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle}{\langle N_\alpha \rangle \langle N_\beta \rangle}  -  \frac{\delta_{\alpha  \beta}}{\langle N_\alpha \rangle}
 $$
 
 which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take eq \eqref{kbintegral} and substitute in eq \eqref{gcpd} and we obtain,
