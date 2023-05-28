@@ -6,7 +6,7 @@ date: 2023-07-29T18:09:28.811Z
 date_end: 2023-08-04T07:00:00.000Z
 all_day: true
 event: Gordon Research Conferences Chemistry and Physics of Liquids
-event_url: [www.grc.org/chemistry-and-physics-of-liquids-conference/2023/](www.grc.org/chemistry-and-physics-of-liquids-conference/2023/)
+event_url: www.grc.org/chemistry-and-physics-of-liquids-conference/2023/
 publishDate: 2023-03-02T18:09:28.842Z
 draft: false
 featured: false
