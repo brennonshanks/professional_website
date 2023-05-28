@@ -154,7 +154,7 @@ $$
 which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take eq \eqref{kbintegral} and substitute in eq \eqref{gcpd} and we obtain,
 
 $$
-    c_\alpha c_\beta G_{\alpha, \beta} + \delta_{\alpha, \beta}c_\alpha = \frac{\beta}{v}\bigg(\frac{\partial \mu_\alpha}{\partial N_\beta}\bigg)_{T, V, N_{i \neq \beta}}
+    c_\alpha c_\beta G_{\alpha, \beta} + \delta_{\alpha, \beta}c_\alpha = \frac{\beta}{v}\bigg(\frac{\partial \mu_\alpha}{\partial N_\beta}\bigg)
 $$
 
 where we have defined,
