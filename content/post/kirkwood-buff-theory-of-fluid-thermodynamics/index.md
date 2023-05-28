@@ -29,27 +29,27 @@ $$
 
 that can be directly related to classical thermodynamics by its relation to the Helmholtz free energy,
 
-\begin{equation}
+$$
     F = -kT\log(Z)
-\end{equation}
+$$
 
-\noindent The grand canonical ensemble is just an expansion on the concept of the canonical ensemble; in fact, the grand canonical ensemble is just the union of canonical ensembles with different values for the number of particles $N$. Therefore the probability distribution function is just a Boltzmann distribution with an additional contribution from the number of particles and chemical potential,
+The grand canonical ensemble is just an expansion on the concept of the canonical ensemble; in fact, the grand canonical ensemble is just the union of canonical ensembles with different values for the number of particles $N$. Therefore the probability distribution function is just a Boltzmann distribution with an additional contribution from the number of particles and chemical potential,
 
-\begin{equation}
+$$
     p(\mathbf{r_N}, \mathbf{p_N}, N) = \frac{e^{-\beta (\mathcal{H} - N \mu)}}{\Xi}
-\end{equation}
+$$
 
-\noindent where the $\Xi$ is the grand partition function,
+where the $\Xi$ is the grand partition function,
 
-\begin{equation}
+$$
     \Xi = \sum_{N = 0}^\infty \frac{\exp(N \beta \mu)}{h^{3N} N!} \int \int \exp(-\beta \mathcal{H}) d\mathbf{r}^N d\mathbf{p}^N
-\end{equation}
+$$
 
-\noindent where the sum spans over all possible numbers of particles that the constant $\mu V T$ system can exist in. Just as in the canonical ensemble, we can take averages of any quantity-of-interest with respect to the grand canonical ensemble by taking the product of the actual observable $A$ by its corresponding probability and integrating over the entire phase space,
+where the sum spans over all possible numbers of particles that the constant $\mu V T$ system can exist in. Just as in the canonical ensemble, we can take averages of any quantity-of-interest with respect to the grand canonical ensemble by taking the product of the actual observable $A$ by its corresponding probability and integrating over the entire phase space,
 
-\begin{equation}\label{average}
+$$
     \langle A \rangle = \sum_{N = 0}^\infty \frac{1}{h^{3N} N!} \int \int A(\mathbf{r_N}, \mathbf{p_N}) p(\mathbf{r_N}, \mathbf{p_N}, N) d\mathbf{r}^N d\mathbf{p}^N
-\end{equation}
+$$
 
 \noindent The final piece we need is a relation between the averages of the number of particles. Looking at the partition function $\Xi$, we can see that differentiation with respect to $\mu_i$ will give us the following expression,
 
