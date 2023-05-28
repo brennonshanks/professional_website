@@ -116,28 +116,28 @@ Note that to this point we have simply looked a system of particles with fixed p
 We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just apply Equation \eqref{average} to the integrals of the singlet and pair density functionals to obtain,
 
 $$
-    \hat{\rho_\alpha^{(1)}} (\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
+    \hat{\rho_{\alpha^{(1)}} (\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
 $$
 
 $$
-    \hat{\rho_\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \langle \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) \rangle
+    \hat{\rho_{\alpha, \beta}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \langle \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) \rangle
 $$
 
 which by linearity of the expectation gives,
 
 $$
-    \int_v \hat{\rho}_\alpha^{(1)}(\mathbf{r_1}) dv = \langle N_\alpha \rangle
+    \int_v \hat{\rho_{\alpha^{(1)}}(\mathbf{r_1}) dv = \langle N_\alpha \rangle
 $$
 
 $$
-    \int_{v_1} \int_{v_2} \hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) dv_1 dv_2 = \langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \delta_{\alpha  \beta}
+    \int_{v_1} \int_{v_2} \hat{\rho_{\alpha, \beta}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) dv_1 dv_2 = \langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \delta_{\alpha  \beta}
 $$
 
 Furthermore, by linearity of the expectation we can combine these two equations in the following clever way,
 
 $$
 \begin{split}
-        \int_{v_1} \int_{v_2} [\hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) - \hat{\rho}_\alpha^{(1)}(\mathbf{r_1}) \hat{\rho}_\beta^{(1)}(\mathbf{r_2})] dv_1 dv_2 = & \\ [\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle]  - \langle N_\alpha \rangle \delta_{\alpha  \beta}
+        \int_{v_1} \int_{v_2} [\hat{\rho_{\alpha, \beta}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) - \hat{\rho_{\alpha^{(1)}}}(\mathbf{r_1}) \hat{\rho_{\beta^{(1)}}(\mathbf{r_2})] dv_1 dv_2 = & \\ [\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle]  - \langle N_\alpha \rangle \delta_{\alpha  \beta}
 \end{split}
 $$
 
