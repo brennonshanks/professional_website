@@ -116,11 +116,11 @@ Note that to this point we have simply looked a system of particles with fixed p
 We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just apply Equation \eqref{average} to the integrals of the singlet and pair density functionals to obtain,
 
 $$
-    \hat{(\rho)}_\alpha^{(1)}(\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
+    \hat{\rho_\alpha^{(1)}} (\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
 $$
 
 $$
-    \hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \langle \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) \rangle
+    \hat{\rho_\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \langle \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) \rangle
 $$
 
 which by linearity of the expectation gives,
