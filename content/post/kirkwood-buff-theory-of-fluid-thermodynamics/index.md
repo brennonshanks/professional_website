@@ -51,113 +51,107 @@ $$
     \langle A \rangle = \sum_{N = 0}^\infty \frac{1}{h^{3N} N!} \int \int A(\mathbf{r_N}, \mathbf{p_N}) p(\mathbf{r_N}, \mathbf{p_N}, N) d\mathbf{r}^N d\mathbf{p}^N
 $$
 
-\noindent The final piece we need is a relation between the averages of the number of particles. Looking at the partition function $\Xi$, we can see that differentiation with respect to $\mu_i$ will give us the following expression,
+The final piece we need is a relation between the averages of the number of particles. Looking at the partition function $\Xi$, we can see that differentiation with respect to $\mu_i$ will give us the following expression,
 
-\begin{equation}
+$$
     \frac{\partial \Xi}{\partial \mu_i} = \sum_{N = 0}^\infty N_i \frac{\exp(N \beta \mu)}{h^{3N} N!} \int \int \exp(-\beta \mathcal{H}) d\mathbf{r}^N d\mathbf{p}^N = \beta \Xi \langle N_i \rangle
-\end{equation}
+$$
 
-\noindent Similarly,
+Similarly,
 
-\begin{equation}
+$$
     \frac{\partial^2 \Xi}{\partial \mu_i \partial \mu_j} = \sum_{N = 0}^\infty N_i N_j \frac{\exp(N \beta \mu)}{h^{3N} N!} \int \int \exp(-\beta \mathcal{H}) d\mathbf{r}^N d\mathbf{p}^N = \beta^2 \Xi \langle N_i N_j \rangle
-\end{equation}
+$$
 
-\noindent But we can also consider the second derivative of the partition function in an equivalent way,
+But we can also consider the second derivative of the partition function in an equivalent way,
 
-\begin{equation}
+$$
     \frac{\partial^2 \Xi}{\partial \mu_i \partial \mu_j} = \frac{\partial}{\partial \mu_j} \beta \Xi \langle N_i \rangle = \beta\bigg(\langle N_i \rangle\frac{\partial \Xi}{\partial \mu_j} + \Xi \frac{\partial \langle N_i \rangle}{\partial \mu_j}\bigg)
-\end{equation}
+$$
 
-\begin{equation}
+$$
     = \beta \bigg(\beta \langle N_i \rangle \langle N_j \rangle \Xi + \Xi \frac{\partial \langle N_i \rangle}{\partial \mu_j}\bigg) 
-\end{equation}
+$$
 
-\noindent Equating the two expressions gives,
+Equating the two expressions gives,
 
-\begin{equation}
+$$
     \beta^2 \Xi \langle N_i N_j \rangle = \beta \bigg(\beta \langle N_i \rangle \langle N_j \rangle \Xi + \Xi \frac{\partial \langle N_i \rangle}{\partial \mu_j}\bigg) 
-\end{equation}
+$$
 
-\begin{equation}\label{gcpd}
+$$
     \langle N_i N_j \rangle - \langle N_i \rangle \langle N_j \rangle  =  \beta^{-1} \frac{\partial \langle N_i \rangle}{\partial \mu_j} 
-\end{equation}
+$$
 
-\subsection*{Density Functionals}
+Now, consider a region of some volume, $v$, which contains $N_1, ..., N_k$ molecules of $k$-species. First, define the single particle density functional for species $\alpha$ as,
 
-Consider a region of some volume, $v$, which contains $N_1, ..., N_k$ molecules of $k$-species. First, define the single particle density functional for species $\alpha$ as,
-
-\begin{equation}
+$$
     \rho_\alpha^{(1)}(\mathbf{r_1}) = \sum^{N_\alpha}_{i_\alpha = 1} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})
-\end{equation}
+$$
 
-\noindent where the $\delta$ is understood as the Dirac-$\delta$ function. Let's consider the content of this equation fully before proceeding. The term $\rho_\alpha^{(1)}(\mathbf{r_1})$ is explicitly referring to the number density (in atoms/volume units) as a function of position ($\mathbf{r_1}$, also known as configuration space), of a specific species $\alpha$. We can evaluate this functional in the following way. Suppose we are given some vector $\mathbf{r}$, defined with respect to some pre-defined (and arbitrary) coordinate system. Then we just check if that vector points to (or corresponds with) the position of a particle with label $\alpha$. If it does, the functional returns a $\delta$ distribution at that vector, and if not, a zero. Then, the integral of the single particle density functional over the entire volume is just exactly equal to the number of particles of species $\alpha$ such that,
+where the $\delta$ is understood as the Dirac-$\delta$ function. Let's consider the content of this equation fully before proceeding. The term $\rho_\alpha^{(1)}(\mathbf{r_1})$ is explicitly referring to the number density (in atoms/volume units) as a function of position ($\mathbf{r_1}$, also known as configuration space), of a specific species $\alpha$. We can evaluate this functional in the following way. Suppose we are given some vector $\mathbf{r}$, defined with respect to some pre-defined (and arbitrary) coordinate system. Then we just check if that vector points to (or corresponds with) the position of a particle with label $\alpha$. If it does, the functional returns a $\delta$ distribution at that vector, and if not, a zero. Then, the integral of the single particle density functional over the entire volume is just exactly equal to the number of particles of species $\alpha$ such that,
 
-\begin{equation}
+$$
     \int_v \rho_\alpha^{(1)}(\mathbf{r_1}) dv = N_\alpha
-\end{equation}
+$$
 
-\noindent which essentially just amounts to counting all of the atoms of species $\alpha$ in the given system. \newline
+which essentially just amounts to counting all of the atoms of species $\alpha$ in the given system. 
 
-\noindent Now that we have introduced the singlet particle density functional, we will proceed to the pair density functional, which by a similar definition is given as,
+Now that we have introduced the singlet particle density functional, we will proceed to the pair density functional, which by a similar definition is given as,
 
-\begin{equation}
+$$
     \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \sum^{N_\alpha}_{i_\alpha = 1} \sum^{N_\beta}_{k_\beta = 1} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})\delta(\mathbf{r_{k_\beta}} - \mathbf{r_2})
-\end{equation}
+$$
 
-\noindent which can be understood in a similar way as the single particle density functional. First, give the functional two vectors and then determine if (1) vector 1 points to the position of a particle with label $\alpha$ and (2) vector 2 points to the position of a particle with label $\beta$. If both statements are true then the functional returns a $\delta$ distribution at that pair of vectors, and if not it returns a zero. As in the previous equation, the summation goes over all of the known positions of both particles. In this case, the integral over the entire space is,
+which can be understood in a similar way as the single particle density functional. First, give the functional two vectors and then determine if (1) vector 1 points to the position of a particle with label $\alpha$ and (2) vector 2 points to the position of a particle with label $\beta$. If both statements are true then the functional returns a $\delta$ distribution at that pair of vectors, and if not it returns a zero. As in the previous equation, the summation goes over all of the known positions of both particles. In this case, the integral over the entire space is,
 
-\begin{equation}
+$$
     \int_{v_1} \int_{v_2} \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) dv_1 dv_2 = N_\alpha N_\beta - N_\alpha \delta_{\alpha  \beta}
-\end{equation}
+$$
 
-\noindent since in the first integral we will find all particles of label $\beta$ given a specific vector for label $\alpha$, then the second integral will find $N_\beta$ particles for all positions of particles $\alpha$. Thus, the total number of counts where $\rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2})$ is non-zero is $N_\alpha N_\beta$. However, if $\alpha = \beta$ then we will double count the vectors $N_\alpha$ times, so we need to subtract $N_\alpha \delta_{\alpha \beta}$ in this case. \newline 
+since in the first integral we will find all particles of label $\beta$ given a specific vector for label $\alpha$, then the second integral will find $N_\beta$ particles for all positions of particles $\alpha$. Thus, the total number of counts where $\rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2})$ is non-zero is $N_\alpha N_\beta$. However, if $\alpha = \beta$ then we will double count the vectors $N_\alpha$ times, so we need to subtract $N_\alpha \delta_{\alpha \beta}$ in this case.  
 
-\noindent Note that to this point we have simply looked a system of particles with fixed positions. Of course, in real physical systems the particles are always moving and we observe the averages of the motions. Therefore, we need to consider an ensemble of systems that represent the average behavior of the system, which amounts to taking the ensemble average of the density functionals. \newline
+Note that to this point we have simply looked a system of particles with fixed positions. Of course, in real physical systems the particles are always moving and we observe the averages of the motions. Therefore, we need to consider an ensemble of systems that represent the average behavior of the system, which amounts to taking the ensemble average of the density functionals. \newline
 
-\noindent We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just apply Equation \eqref{average} to the integrals of the singlet and pair density functionals to obtain,
+We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just apply Equation \eqref{average} to the integrals of the singlet and pair density functionals to obtain,
 
-\begin{equation}
-    \hat{\rho}_\alpha^{(1)}(\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
-\end{equation}
+$$
+    \hat{(\rho)}_\alpha^{(1)}(\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
+$$
 
-\begin{equation}
+$$
     \hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \langle \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) \rangle
-\end{equation}
+$$
 
-\noindent which by linearity of the expectation gives,
+which by linearity of the expectation gives,
 
-\begin{equation}
+$$
     \int_v \hat{\rho}_\alpha^{(1)}(\mathbf{r_1}) dv = \langle N_\alpha \rangle
-\end{equation}
+$$
 
-\begin{equation}
+$$
     \int_{v_1} \int_{v_2} \hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) dv_1 dv_2 = \langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \delta_{\alpha  \beta}
-\end{equation}
+$$
 
-\noindent Furthermore, by linearity of the expectation we can combine these two equations in the following clever way,
+Furthermore, by linearity of the expectation we can combine these two equations in the following clever way,
 
-\begin{equation}
-\begin{split}
+$$
         \int_{v_1} \int_{v_2} [\hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) - \hat{\rho}_\alpha^{(1)}(\mathbf{r_1}) \hat{\rho}_\beta^{(1)}(\mathbf{r_2})] dv_1 dv_2 = & \\ [\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle]  - \langle N_\alpha \rangle \delta_{\alpha  \beta}
-\end{split}
-\end{equation}
+$$
 
-\noindent We can further simplify this expression by noting that the means of the density functionals take on specific forms in fluids. For example, the mean of the single density functional of a species $\alpha$ is just the concentration (in atoms/volume) of that species $c_\alpha$. The mean of the pair density functional is given a special definition in terms of the radial distribution function, which is just,
+We can further simplify this expression by noting that the means of the density functionals take on specific forms in fluids. For example, the mean of the single density functional of a species $\alpha$ is just the concentration (in atoms/volume) of that species $c_\alpha$. The mean of the pair density functional is given a special definition in terms of the radial distribution function, which is just,
 
-\begin{equation}
+$$
     \hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = c_\alpha c_\beta g_{\alpha, \beta}(r)
-\end{equation}
+$$
 
-\noindent Plugging these definitions into our integral equation, we obtain,
+Plugging these definitions into our integral equation, we obtain,
 
-\begin{equation}\label{kbintegral}
-\begin{split}
+$$
      \int_{v} [g_{\alpha, \beta}(r) - 1] dv = & \\ v\frac{\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle}{\langle N_\alpha \rangle \langle N_\beta \rangle}  -  \frac{\delta_{\alpha  \beta}}{\langle N_\alpha \rangle}
-\end{split}
-\end{equation}
+$$
 
-\noindent which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take eq \eqref{kbintegral} and substitute in eq \eqref{gcpd} and we obtain,
+which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take eq \eqref{kbintegral} and substitute in eq \eqref{gcpd} and we obtain,
 
 \begin{equation}
     c_\alpha c_\beta G_{\alpha, \beta} + \delta_{\alpha, \beta}c_\alpha = \frac{\beta}{v}\bigg(\frac{\partial \mu_\alpha}{\partial N_\beta}\bigg)_{T, V, N_{i \neq \beta}}
