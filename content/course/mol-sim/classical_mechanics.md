@@ -213,7 +213,7 @@ References
 1. Show that a conservative force, $F_C$ is independent of the choice of $r_A$. Show,
 
 $$
-  \grad \psi (r_A', r) = \grad \psi (r_A, r)
+  \del \psi (r_A', r) = \del \psi (r_A, r)
 $$
 
 2. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
