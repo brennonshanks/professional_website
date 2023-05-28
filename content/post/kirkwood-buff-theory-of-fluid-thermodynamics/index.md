@@ -21,13 +21,13 @@ $$
     p(\mathbf{r_N}, \mathbf{p_N}) = \frac{1}{h^{3N} N!} \frac{e^{-\beta \mathcal{H}}}{Z}
 $$
 
-\noindent where $Z$ is the canonical partition function,
+where $Z$ is the canonical partition function,
 
-\begin{equation}
+$$
     Z = \frac{1}{h^{3N} N!} \int \int \exp (-\beta \mathcal{H}) d\mathbf{r} d\mathbf{p}
-\end{equation}
+$$
 
-\noindent that can be directly related to classical thermodynamics by its relation to the Helmholtz free energy,
+that can be directly related to classical thermodynamics by its relation to the Helmholtz free energy,
 
 \begin{equation}
     F = -kT\log(Z)
