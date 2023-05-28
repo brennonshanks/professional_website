@@ -3,7 +3,7 @@ widget: collection
 widget_id: posts
 headless: true
 weight: 20
-title: Recent Posts
+title: Posts
 active: true
 design:
   columns: "2"
