@@ -113,7 +113,7 @@ since in the first integral we will find all particles of label $\beta$ given a 
 
 Note that to this point we have simply looked a system of particles with fixed positions. Of course, in real physical systems the particles are always moving and we observe the averages of the motions. Therefore, we need to consider an ensemble of systems that represent the average behavior of the system, which amounts to taking the ensemble average of the density functionals. \newline
 
-We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just apply Equation \eqref{average} to the integrals of the singlet and pair density functionals to obtain,
+We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just substitute the thermodynamic averages to the integrals of the singlet and pair density functionals to obtain,
 
 $$
     \hat{\rho_{\alpha^{(1)}}} (\mathbf{r_1}) = \langle \rho_\alpha^{(1)}(\mathbf{r_1}) \rangle
@@ -151,7 +151,7 @@ $$
      \int_{v} [g_{\alpha, \beta}(r) - 1] dv = v\frac{\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle}{\langle N_\alpha \rangle \langle N_\beta \rangle}  -  \frac{\delta_{\alpha  \beta}}{\langle N_\alpha \rangle}
 $$
 
-which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take eq \eqref{kbintegral} and substitute in eq \eqref{gcpd} and we obtain,
+which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take the KB integral equation and substitute in the grand canonical partition function result to obtain,
 
 $$
     c_\alpha c_\beta G_{\alpha, \beta} + \delta_{\alpha, \beta}c_\alpha = \frac{\beta}{v}\bigg(\frac{\partial \mu_\alpha}{\partial N_\beta}\bigg)
