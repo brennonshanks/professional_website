@@ -12,19 +12,18 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-\section{Stability of Thermodynamic Systems}
 
-\noindent The requirement that the second derivative of energy be positive gives rise to some interesting findings. To see this, let's first construct an intrinsic system and a complimentary subsystem from a composite, isolated system. The complimentary subsystem is assumed to be much larger than the intrinsic subsystem.  The fundamental relation is given by,
+The requirement that the second derivative of energy be positive gives rise to some interesting findings. To see this, let's first construct an intrinsic system and a complimentary subsystem from a composite, isolated system. The complimentary subsystem is assumed to be much larger than the intrinsic subsystem.  The fundamental relation is given by,
 
-\begin{equation}
+$$
     U' = X_t u (x_0, x_1, ..., x_{t-1}+ \tilde{X}_t  \tilde{u} (\tilde{x}_0, \tilde{x}_1, ..., \tilde{x}_{t-1})
-\end{equation}
+$$
 
-\noindent where $X_t$ represents some parameter of the fundamental relation that is being held constant. Furthermore, the smallness of the intrinsic system compared to the complementary system requires that,
+where $X_t$ represents some parameter of the fundamental relation that is being held constant. Furthermore, the smallness of the intrinsic system compared to the complementary system requires that,
 
-\begin{equation}
+$$
     |d\tilde{x}_i| << |dx_i|
-\end{equation}
+$$
 
 \noindent Now, any changes in the $x_i$ leads to a total change in energy. We can express the energy change in terms of a Taylor expansion such that, 
 
