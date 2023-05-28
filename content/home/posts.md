@@ -1,6 +1,6 @@
 ---
 widget: collection
-widget_id: posts
+widget_id: post
 headless: true
 weight: 20
 title: Posts
