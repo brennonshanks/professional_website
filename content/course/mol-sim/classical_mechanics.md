@@ -234,10 +234,6 @@ $$
   H = \sum_{particles} \frac{p_i^2}{2m_i} + \sum_{bonds} K_b (b - b_0)^2 + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
 $$
 
-4. Consider the following physical system in which masses $M, m_1$, and $m_2$ move at the speeds and directions indicated in the figure below. Solve for the acceleration of $M$ and $m_2$. (Hint) Use the Lagrange equation of motion on both the coordinate $x$ and $y$ and solve the system of equations for $\ddot{x}$ and $\ddot{y}$.
-
-![screen reader text](pulley.png)
-
 ## Problem Set 2
 
 1. Two masses $m_1$ and $m_2$ are oscillating attached by a spring with spring constant $k$. Determine the frequency of oscillation of the two masses $\omega$ using the Lagrangian of the system assuming there are no external forces acting on the system.
