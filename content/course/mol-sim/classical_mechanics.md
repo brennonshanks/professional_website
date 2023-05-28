@@ -210,19 +210,25 @@ References
 2. https://hockygroup.hosting.nyu.edu/exercise/md.html
 
 ## Problem Set 1
-1. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
+1. Show that a conservative force, $F_C$ is independent of the choice of $r_A$. Show,
+
+$$
+  \grad \psi (r_A', r) = \grad \psi (r_A, r)
+$$
+
+2. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
 
 $$
   \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{z}}\bigg) - \frac{\partial L}{\partial z} = 0
 $$
 
-2. Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for a system with the following Lagrangian,
+3. Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for a system with the following Lagrangian,
 
 $$
   L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
 $$
 
-3. In molecular modeling, the Hamilton equations of motion are solved numerically given some Hamiltonian. While we will go into detail on the specifics of these Hamiltonians later in the course, for now just identify the kinetic and potential parts of the following molecular Hamiltonian ($K$ is a spring constant and $r_{ij}$ is the distance between atoms $i$ and $j$).
+4. In molecular modeling, the Hamilton equations of motion are solved numerically given some Hamiltonian. While we will go into detail on the specifics of these Hamiltonians later in the course, for now just identify the kinetic and potential parts of the following molecular Hamiltonian ($K$ is a spring constant and $r_{ij}$ is the distance between atoms $i$ and $j$).
 
 $$
   H = \sum_{particles} \frac{p_i^2}{2m_i} + \sum_{bonds} K_b (b - b_0)^2 + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
