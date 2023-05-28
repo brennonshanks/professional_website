@@ -136,7 +136,9 @@ $$
 Furthermore, by linearity of the expectation we can combine these two equations in the following clever way,
 
 $$
+\begin{split}
         \int_{v_1} \int_{v_2} [\hat{\rho}_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) - \hat{\rho}_\alpha^{(1)}(\mathbf{r_1}) \hat{\rho}_\beta^{(1)}(\mathbf{r_2})] dv_1 dv_2 = & \\ [\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle]  - \langle N_\alpha \rangle \delta_{\alpha  \beta}
+\end{split}
 $$
 
 We can further simplify this expression by noting that the means of the density functionals take on specific forms in fluids. For example, the mean of the single density functional of a species $\alpha$ is just the concentration (in atoms/volume) of that species $c_\alpha$. The mean of the pair density functional is given a special definition in terms of the radial distribution function, which is just,
@@ -148,19 +150,21 @@ $$
 Plugging these definitions into our integral equation, we obtain,
 
 $$
+\begin{split}
      \int_{v} [g_{\alpha, \beta}(r) - 1] dv = & \\ v\frac{\langle N_\alpha N_\beta \rangle - \langle N_\alpha \rangle \langle N_\beta \rangle}{\langle N_\alpha \rangle \langle N_\beta \rangle}  -  \frac{\delta_{\alpha  \beta}}{\langle N_\alpha \rangle}
+\end{split}
 $$
 
 which is precisely the relationship needed to connect the integrals of the radial distribution function with thermodynamic properties from the grand canonical ensemble. Just take eq \eqref{kbintegral} and substitute in eq \eqref{gcpd} and we obtain,
 
-\begin{equation}
+$$
     c_\alpha c_\beta G_{\alpha, \beta} + \delta_{\alpha, \beta}c_\alpha = \frac{\beta}{v}\bigg(\frac{\partial \mu_\alpha}{\partial N_\beta}\bigg)_{T, V, N_{i \neq \beta}}
-\end{equation}
+$$
 
-\noindent where we have defined,
+where we have defined,
 
-\begin{equation}
+$$
     G_{\alpha, \beta} = \int_{v} [g_{\alpha, \beta}(r) - 1] dv
-\end{equation}
+$$
 
-\noindent From here, we can use thermodynamic relationships to derive a number of properties of multi-component systems in terms of the Kirkwood-Buff integrals since we know the relationship between thermodynamic derivatives and measurable thermodynamic properties.
+From here, we can use thermodynamic relationships to derive a number of properties of multi-component systems in terms of the Kirkwood-Buff integrals since we know the relationship between thermodynamic derivatives and measurable thermodynamic properties.
