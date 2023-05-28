@@ -86,7 +86,7 @@ $$
 Now, consider a region of some volume, $v$, which contains $N_1, ..., N_k$ molecules of $k$-species. First, define the single particle density functional for species $\alpha$ as,
 
 $$
-    \rho_\alpha^{(1)}(\mathbf{r_1}) = \sum^{N_\alpha}_{i_\alpha = 1} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})
+    \rho_\alpha^{(1)}(\mathbf{r_1}) = \sum^{N_\alpha} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})
 $$
 
 where the $\delta$ is understood as the Dirac-$\delta$ function. Let's consider the content of this equation fully before proceeding. The term $\rho_\alpha^{(1)}(\mathbf{r_1})$ is explicitly referring to the number density (in atoms/volume units) as a function of position ($\mathbf{r_1}$, also known as configuration space), of a specific species $\alpha$. We can evaluate this functional in the following way. Suppose we are given some vector $\mathbf{r}$, defined with respect to some pre-defined (and arbitrary) coordinate system. Then we just check if that vector points to (or corresponds with) the position of a particle with label $\alpha$. If it does, the functional returns a $\delta$ distribution at that vector, and if not, a zero. Then, the integral of the single particle density functional over the entire volume is just exactly equal to the number of particles of species $\alpha$ such that,
@@ -100,7 +100,7 @@ which essentially just amounts to counting all of the atoms of species $\alpha$ 
 Now that we have introduced the singlet particle density functional, we will proceed to the pair density functional, which by a similar definition is given as,
 
 $$
-    \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \sum^{N_\alpha} \sum^{N_\beta}_{k_\beta = 1} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})\delta(\mathbf{r_{k_\beta}} - \mathbf{r_2})
+    \rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = \sum^{N_\alpha} \sum^{N_\beta} \delta(\mathbf{r_{i_\alpha}} - \mathbf{r_1})\delta(\mathbf{r_{k_\beta}} - \mathbf{r_2})
 $$
 
 which can be understood in a similar way as the single particle density functional. First, give the functional two vectors and then determine if (1) vector 1 points to the position of a particle with label $\alpha$ and (2) vector 2 points to the position of a particle with label $\beta$. If both statements are true then the functional returns a $\delta$ distribution at that pair of vectors, and if not it returns a zero. As in the previous equation, the summation goes over all of the known positions of both particles. In this case, the integral over the entire space is,
@@ -142,7 +142,7 @@ $$
 We can further simplify this expression by noting that the means of the density functionals take on specific forms in fluids. For example, the mean of the single density functional of a species $\alpha$ is just the concentration (in atoms/volume) of that species $c_\alpha$. The mean of the pair density functional is given a special definition in terms of the radial distribution function, which is just,
 
 $$
-    \hat{\rho_{\alpha, \beta}}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = c_\alpha c_\beta g_{\alpha, \beta}(r)
+    \hat{\rho_{\alpha, \beta}}^{(2)}(\mathbf{r_1}, \mathbf{r_2}) = c_\alpha c_\beta g_{\alpha, \beta}(r)
 $$
 
 Plugging these definitions into our integral equation, we obtain,
