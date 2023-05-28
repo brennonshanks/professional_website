@@ -13,7 +13,7 @@ image:
   preview_only: false
 ---
 
-The Kirkwood-Buff solution theory was presented in a landmark paper in 1951. The theory relates particle number fluctuations in the grand canonical ensemble to integrals of the radial distribution function. In this short introduction to the topic, we will introduce the statistical mechanics required to understand Kirkwood-Buff solution theory as well as provide details on the numerical computation of the Kirkwood-Buff integrals from experimental data. 
+The Kirkwood-Buff solution theory was presented in a landmark paper in 1951. The theory relates particle number fluctuations in the grand canonical ensemble to integrals of the radial distribution function. In this short introduction to the topic, we will introduce the statistical mechanics required to understand Kirkwood-Buff solution theory. 
 
 An ensemble of systems that have constant chemical potential, volume, and temperature belong to the so-called grand canonical ensemble. Recall that in the canonical ensemble (constant number of particles, volume, and temperature), the probability distribution function is given by the Boltzmann distribution,
 
