@@ -239,10 +239,20 @@ $$
 1. Derive Lagrange's equation of motion from Hamilton's equation of motion.
 
 $$
-  \frac{\partial H}{\partial p_i} = \dot{q_i}, \frac{\partial H}{\partial \dot{p_i}} = q_i, \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}
+  \frac{\partial H}{\partial p_i} = \dot{q_i}, \frac{\partial H}{\partial q_i} = \dot{p_i}, \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}
 $$
 
+$$
+ H = L(q^f, p^f, t)
+$$
 
+$$
+  L = L(q^f, \dot{q^f}, t)
+$$
+
+$$
+  H := \sum^f p_i \dot{q_i} - L
+$$
 
 2. Consider the infinite Atwood’s machine. All the masses are equal to $m$, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
 
