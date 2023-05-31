@@ -210,7 +210,7 @@ References
 2. https://hockygroup.hosting.nyu.edu/exercise/md.html
 
 ## Problem Set 1
-1. Show that a conservative force, $F_C$ is independent of the choice of $r_A$. Show,
+1. Show that a conservative force, $F_C$ is independent of the choice of $r_A$ by showing,
 
 $$
   \nabla \psi (r_A', r) = \nabla \psi (r_A, r)
@@ -236,7 +236,13 @@ $$
 
 ## Problem Set 2
 
-1. Two masses $m_1$ and $m_2$ are oscillating attached by a spring with spring constant $k$. Determine the frequency of oscillation of the two masses $\omega$ using the Lagrangian of the system assuming there are no external forces acting on the system.
+1. Derive Lagrange's equation of motion from Hamilton's equation of motion.
+
+$$
+  \frac{\partial H}{\partial p_i} = \dot{q_i}, \frac{\partial H}{\partial \dot{p_i}} = q_i, \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}
+$$
+
+
 
 2. Consider the infinite Atwood’s machine. All the masses are equal to $m$, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
 
