@@ -105,11 +105,11 @@ $$
   S = aN + NR\log{}\frac{U^{3/2}V}{N^{5/2}}
 $$
 
-(a) Find the equation of state of the gas of the form $P = P(T, V, N)$.
+1.  Find the equation of state of the gas of the form $P = P(T, V, N)$.
 
-(b) Show that $U = \frac{3}{2}PV$.
+2. Show that $U = \frac{3}{2}PV$.
 
-(c) Show that $PV^{5/3} = c$ where $c$ is a constant.
+3. Show that $PV^{5/3} = c$ where $c$ is a constant.
 
 3. The fundamental equation of a pure system is given by,
 
@@ -119,11 +119,11 @@ $$
 
 where $a$ is a positive constant. The system is held at 0.3 MPa.
 
-(a) What is $b$?
+1. What is $b$?
 
-(b) Find $U/V$.
+2. Find $U/V$.
 
-(c) Find $\mu$ in J/mol when $N/V = 0.1$ $(mol/cm^3)$ 
+3. Find $\mu$ in J/mol when $N/V = 0.1$ $(mol/cm^3)$ 
 
 
 ## Problem Set 4
