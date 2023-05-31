@@ -97,9 +97,11 @@ Consequences of these postulates include: the fundamental equation, equations of
 
 ## Problem Set 3
 
-1. Why can the fundamental relation $S = S(U,V, N_i)$  be inverted to give an equivalent fundamental relation of the form $U = U(S, V, N_i)$?
+1. Why is work path-independent if we use classical mechanics to keep track of every particle in a macroscopic system, but path-dependent when we use thermodynamics and lump molecular interactions into the heat term? 
 
-2. A pure gas is well described by the fundamental equation,
+2. Why can the fundamental relation $S = S(U,V, N_i)$  be inverted to give an equivalent fundamental relation of the form $U = U(S, V, N_i)$?
+
+3. A pure gas is well described by the fundamental equation,
 
 $$
   S = aN + NR\log{}\frac{U^{3/2}V}{N^{5/2}}
@@ -111,7 +113,7 @@ b. Show that $U = \frac{3}{2}PV$.
 
 c. Show that $PV^{5/3} = c$ where $c$ is a constant.
 
-3. The fundamental equation of a pure system is given by,
+4. The fundamental equation of a pure system is given by,
 
 $$
   S = a(UVN)^b
