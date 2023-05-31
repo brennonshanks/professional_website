@@ -148,7 +148,7 @@ $$
 that can recover the Lagrangian for the classical time evolution of the system. One way to construct this function is to consider that the momentum corresponding to a specific generalized velocity, $\dot{q_i}$, is just the derivative of the Lagrangian with respect to $\dot{q_i}$, or equivalently the slope of the tangent line to the Lagrangian at $\dot{q_i}$. If we visualize the Lagrangian as a function of $\dot{q_i}$, then the tangent lines along this function will intersect the y-axis ($\dot{q_i} = 0$) as a function of the value of $p_i$. Therefore, we anticipate that our new function $H$ is determined when these tangent lines intersect the y-axis, occurring precisely when,
 
 $$
-    p_i = \frac{\partial L}{\partial \dot{q_i}} \bigg|_{\dot{q_i}} = \frac{L - H}{\dot{q_i} - 0}
+    p_i = \frac{\partial L}{\partial \dot{q_i}} \bigg| = \frac{L - H}{\dot{q_i} - 0}
 $$
 
 leading to the following relation,
@@ -239,7 +239,7 @@ $$
 1. Derive Lagrange's equation of motion from Hamilton's equation of motion.
 
 $$
-  \frac{\partial H}{\partial p_i} = \dot{q_i}, \frac{\partial H}{\partial q_i} = \dot{p_i}, \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}
+  \frac{\partial H}{\partial p_i} = \dot{q_i}, \frac{\partial H}{\partial q_i} = -\dot{p_i}, \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}
 $$
 
 $$
