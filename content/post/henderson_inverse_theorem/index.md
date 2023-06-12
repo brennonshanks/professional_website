@@ -22,5 +22,5 @@ $$
 with the same radial distribution function, $g^{(2)}(\mathbf{r_i},\mathbf{r_j})$,
 
 $$
-g^{(2)}(\mathbf{r_i},\mathbf{r_j}) = \bigg\langle \sum_i \sum_j \delta(\mathbf{r} - \mathbf{r_i}) \delta(\mathbf{r}' - \mathbf{r_j}) \bigg\rangle
+g^{(2)}(\mathbf{r_i},\mathbf{r_j}) = \frac{1}{\rho^2}\bigg\langle \sum_i \sum_j \delta(\mathbf{r} - \mathbf{r_i}) \delta(\mathbf{r}' - \mathbf{r_j}) \bigg\rangle
 $$
