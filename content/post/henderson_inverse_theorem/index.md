@@ -18,3 +18,9 @@ The content of the Henderson Inverse Theorem is as follows: Two systems with Ham
 $$
   \mathcal{H} = \sum_i \frac{p_i^2}{2m} + \frac{1}{2} \sum_{i \neq j} u(|\mathbf{r_i} - \mathbf{r_j}|)
 $$
+
+with the same radial distribution function, $g^{(2)}(\mathbf{r_i},\mathbf{r_j})$,
+
+$$
+g^{(2)}(\mathbf{r_i},\mathbf{r_j}) = \bigg\langle \sum_i \sum_j \delta(\mathbf{r} - \mathbf{r_i}) \delta(\mathbf{r}' - \mathbf{r_j}) \bigg\rangle
+$$
