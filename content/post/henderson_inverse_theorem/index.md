@@ -13,6 +13,8 @@ image:
   preview_only: false
 ---
 
+\bf{The Henderson Inverse Theorem}
+
 The content of the Henderson Inverse Theorem is as follows: Two systems with Hamiltonians of the form,
 
 $$
@@ -26,6 +28,10 @@ g^{(2)}(\mathbf{r_i},\mathbf{r_j}) = \frac{1}{\rho^2}\bigg\langle \sum_i \sum_j 
 $$
 
 have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
+
+Proof: We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system.
+
+\bf{The Gibbs Inequality}
 
 Proof: Let $\rho_1$ and $\rho_2$ be positive, trace-class, and linear density operators on a Hilbert space, $H$, such that $Tr(\rho_i) = 1$. Then we can express the states $\rho_1$ and $\rho_2$ in an arbitrary basis of $H$ such that,
 
@@ -60,4 +66,12 @@ Note that since $\log x \leq x - 1$,
 $$
 \sum_{\alpha} p_\alpha \log \frac{q_\alpha}{p_\alpha} \leq \sum_{\alpha} [q_\alpha - p_\alpha] = 0
 $$
+
+and finally, since the trace is a linear operator, this means that,
+
+$$
+Tr(\rho_1 \log (\rho_2)) \leq Tr(\rho_1 \log (\rho_1))
+$$
+
+\bf{The Gibbs-Bogoliubov Inequality}
 
