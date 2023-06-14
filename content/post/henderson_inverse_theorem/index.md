@@ -27,3 +27,5 @@ $$
 
 have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
 
+Proof: Let $w_1$ and $w_2$ be trace-class, linear density operators on a Hilbert space, $H$, such that $Tr(w_i) = 1$. 
+
