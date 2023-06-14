@@ -30,6 +30,6 @@ have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most
 Proof: Let $\rho_1$ and $\rho_2$ be positive, trace-class, and linear density operators on a Hilbert space, $H$, such that $Tr(\rho_i) = 1$. Then we can express the states $\rho_1$ and $\rho_2$ in an arbitrary basis of $H$ such that,
 
 $$
-\rho_1 = \sum_\alpha p_\alpha \bra{alpha} \ket{\alpha}
+\rho_1 = \sum_\alpha p_\alpha \braket{\alpha}{\alpha}
 $$
 
