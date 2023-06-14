@@ -37,3 +37,9 @@ $$
 \rho_2 = \sum_\alpha q_\alpha \ket{\alpha} \bra{\alpha}
 $$
 
+We then compute the difference between the cross entropy, $\rho_1 \log (\rho_2)$, and information of entropy of $\rho_1$, $\rho_1 \log (\rho_1)$,
+
+$$
+\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1)
+$$
+
