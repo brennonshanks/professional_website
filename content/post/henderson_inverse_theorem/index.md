@@ -98,3 +98,15 @@ But $Tr(\rho_1\mathcal{H_2})$ is just the expectation of $\mathcal{H_2}$ over sy
 $$
 F_2 \leq \langle \mathcal{H_2} \rangle_1  - T S_1
 $$
+
+For system 1, 
+
+$$
+F_1 \leq \langle \mathcal{H_1} \rangle_1  - T S_1
+$$
+
+Combining the two expressions gives us the Gibbs-Bogoliubov inequality,
+
+$$
+F_2 \leq F_1 + \langle \mathcal{H_2} - \mathcal{H_1} \rangle_1
+$$
