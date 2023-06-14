@@ -13,23 +13,9 @@ image:
   preview_only: false
 ---
 
-## The Henderson Inverse Theorem
+The Henderson Inverse Theorem is an important result on the relationship between the radial distribution function and pairwise additive potential in a statistical ensemble. This theorem is the basis for the structure-optimized potential refinement algorithm and provides a variational solution to the statistical mechanical inverse problem. 
 
-The content of the Henderson Inverse Theorem is as follows: Two systems with Hamiltonians of the form,
-
-$$
-  \mathcal{H} = \sum_i \frac{p_i^2}{2m} + \frac{1}{2} \sum_{i \neq j} u(|\mathbf{r_i} - \mathbf{r_j}|)
-$$
-
-with the same radial distribution function, $g^{(2)}(\mathbf{r_i},\mathbf{r_j})$,
-
-$$
-g^{(2)}(\mathbf{r_i},\mathbf{r_j}) = \frac{1}{\rho^2}\bigg\langle \sum_i \sum_j \delta(\mathbf{r} - \mathbf{r_i}) \delta(\mathbf{r}' - \mathbf{r_j}) \bigg\rangle
-$$
-
-have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
-
-Proof: We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system while the Gibbs-Bogoliubov inequality establish important relationships between the free energy and entropy in the canonical ensemble.
+We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system while the Gibbs-Bogoliubov inequality establish important relationships between the free energy and entropy in the canonical ensemble.
 
 ## The Gibbs Inequality
 
@@ -75,7 +61,7 @@ $$
 
 ## The Gibbs-Bogoliubov Inequality
 
-Suppose we take the state $\rho_2$ in the canonical ensemble so that,
+Proof: Suppose we take the state $\rho_2$ in the canonical ensemble so that,
 
 $$
 \rho_2 = \exp(-\beta \mathcal{H_2}) / Z
@@ -110,3 +96,21 @@ Combining the two expressions gives us the Gibbs-Bogoliubov inequality,
 $$
 F_2 \leq F_1 + \langle \mathcal{H_2} - \mathcal{H_1} \rangle_1
 $$
+
+## The Henderson Inverse Theorem 
+
+The content of the Henderson Inverse Theorem is as follows: Two systems with Hamiltonians of the form,
+
+$$
+  \mathcal{H} = \sum_i \frac{p_i^2}{2m} + \frac{1}{2} \sum_{i \neq j} u(|\mathbf{r_i} - \mathbf{r_j}|)
+$$
+
+with the same radial distribution function, $g^{(2)}(\mathbf{r_i},\mathbf{r_j})$,
+
+$$
+g^{(2)}(\mathbf{r_i},\mathbf{r_j}) = \frac{1}{\rho^2}\bigg\langle \sum_i \sum_j \delta(\mathbf{r} - \mathbf{r_i}) \delta(\mathbf{r}' - \mathbf{r_j}) \bigg\rangle
+$$
+
+have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
+
+Proof:
