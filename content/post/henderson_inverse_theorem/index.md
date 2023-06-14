@@ -52,6 +52,12 @@ $$
 Taking the trace of this operator we obtain,
 
 $$
-Tr(\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1)) = \sum_{\alpha} [p_\alpha \log (q_\alpha) - p_\alpha \log (p_\alpha)] = \sum_{\alpha} [p_\alpha \log \bigg(\frac{q_\alpha}{p_\alpha}\bigg)]
+Tr(\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1)) = \sum_{\alpha} [p_\alpha \log (q_\alpha) - p_\alpha \log (p_\alpha)] = \sum_{\alpha} p_\alpha \log \frac{q_\alpha}{p_\alpha}
+$$
+
+Note that since $\log x \leq x - 1$,
+
+$$
+\sum_{\alpha} p_\alpha \log \frac{q_\alpha}{p_\alpha} \leq \sum_{\alpha} [q_\alpha - p_\alpha] = 0
 $$
 
