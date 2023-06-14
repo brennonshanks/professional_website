@@ -1,6 +1,6 @@
 ---
 title: The Henderson Inverse Theorem
-date: 2023-05-26T05:53:47.038Z
+date: 2023-06-13T05:53:47.038Z
 draft: false
 featured: false
 authors:
