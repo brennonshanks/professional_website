@@ -1,6 +1,6 @@
 ---
 title: Brennon Shanks
-role: Chemical Physics Researcher (PhD Candidate)
+role: PhD Candidate in Chemical Engineering
 bio: null
 interests:
   - Neutron Scattering
