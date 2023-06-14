@@ -27,5 +27,9 @@ $$
 
 have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
 
-Proof: Let $w_1$ and $w_2$ be trace-class, linear density operators on a Hilbert space, $H$, such that $Tr(w_i) = 1$. 
+Proof: Let $\rho_1$ and $\rho_2$ be positive, trace-class, and linear density operators on a Hilbert space, $H$, such that $Tr(\rho_i) = 1$. Then the relative entropy between $\rho_1$ and $\rho_2$, describing the statistical divergence between quantum states $\rho_1$ and $\rho_2$, is given by,
+
+$$
+D_{KL}(\rho_2 || \rho_1)
+$$
 
