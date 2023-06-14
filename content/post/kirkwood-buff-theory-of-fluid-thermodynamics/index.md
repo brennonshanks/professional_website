@@ -111,7 +111,7 @@ $$
 
 since in the first integral we will find all particles of label $\beta$ given a specific vector for label $\alpha$, then the second integral will find $N_\beta$ particles for all positions of particles $\alpha$. Thus, the total number of counts where $\rho_{\alpha, \beta}^{(2)}(\mathbf{r_1}, \mathbf{r_2})$ is non-zero is $N_\alpha N_\beta$. However, if $\alpha = \beta$ then we will double count the vectors $N_\alpha$ times, so we need to subtract $N_\alpha \delta_{\alpha \beta}$ in this case.  
 
-Note that to this point we have simply looked a system of particles with fixed positions. Of course, in real physical systems the particles are always moving and we observe the averages of the motions. Therefore, we need to consider an ensemble of systems that represent the average behavior of the system, which amounts to taking the ensemble average of the density functionals. \newline
+Note that to this point we have simply looked a system of particles with fixed positions. Of course, in real physical systems the particles are always moving and we observe the averages of the motions. Therefore, we need to consider an ensemble of systems that represent the average behavior of the system, which amounts to taking the ensemble average of the density functionals.
 
 We then need to evaluate the average of the density functionals in the grand canonical ensemble. Rather than write these explicitly, we just substitute the thermodynamic averages to the integrals of the singlet and pair density functionals to obtain,
 
