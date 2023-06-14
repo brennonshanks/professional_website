@@ -33,3 +33,7 @@ $$
 \rho_1 = \sum_\alpha p_\alpha \ket{\alpha} \bra{\alpha}
 $$
 
+$$
+\rho_2 = \sum_\alpha q_\alpha \ket{\alpha} \bra{\alpha}
+$$
+
