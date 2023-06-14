@@ -22,7 +22,7 @@ content:
   # Choose how many pages you would like to offset by
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
-  order: asc
+  order: desc
 design:
   columns: "2"
   background:
