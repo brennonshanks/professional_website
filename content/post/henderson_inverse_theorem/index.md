@@ -84,6 +84,17 @@ $$
 where $\beta$ is the inverse thermal energy, \mathcal{H_2} is the Hamiltonian, and $Z$ is the partition function. Then for some $\rho_1$ we have,
 
 $$
-Tr(\rho_1 (-\beta \mathcal{H_2} - \log Z)) \leq Tr(\rho_1 \log (\rho_1)) = -\beta S_1
+Tr(\rho_1 (-\beta \mathcal{H_2} - \log Z)) \leq Tr(\rho_1 \log (\rho_1)) = - S_1 / k_B
 $$
 
+where $S_1 = -k_B Tr(\rho_1 \log (\rho_1))$ is the entropy of system 1 and $k_B$ is the Boltzmann constant. Since the trace is a linear operator, we can separate the argument of the trace on the left hand side and divide both sides by the thermodynamic $\beta$ to obtain,
+
+$$
+- Tr(\rho_1\mathcal{H_2}) - k_BT \log Tr(Z) \leq - T S_1
+$$
+
+But $Tr(\rho_1\mathcal{H_2})$ is just the expectation of $\mathcal{H_2}$ over system state 1 and $k_BT \log Tr(Z)$ is the definition of the Helmholtz free energy in the Canonical ensemble. Thus,
+
+$$
+F_2 \leq \langle \mathcal{H_2} \rangle_1  - T S_1
+$$
