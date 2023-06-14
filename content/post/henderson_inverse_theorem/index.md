@@ -40,6 +40,6 @@ $$
 We then compute the difference between the cross entropy, $\rho_1 \log (\rho_2)$, and information of entropy of $\rho_1$, $\rho_1 \log (\rho_1)$,
 
 $$
-\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1) = \sum_{\alpha,\beta} [p_\alpha \ket{\alpha} \bra{\alpha} \log (q_\alpha \ket{\beta} \bra{\beta}) ]
+\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1) = \sum_{\alpha,\beta} [p_\alpha \ket{\alpha} \bra{\alpha} \log (q_\beta) \ket{\beta} \bra{\beta} ]
 $$
 
