@@ -29,7 +29,7 @@ $$
 
 have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
 
-Proof: We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system.
+Proof: We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system while the Gibbs-Bogoliubov inequality establish important relationships between the free energy and entropy in the canonical ensemble.
 
 ## The Gibbs Inequality
 
@@ -74,4 +74,16 @@ Tr(\rho_1 \log (\rho_2)) \leq Tr(\rho_1 \log (\rho_1))
 $$
 
 ## The Gibbs-Bogoliubov Inequality
+
+Suppose we take the state $\rho_2$ in the canonical ensemble so that,
+
+$$
+\rho_2 = \exp(-\beta \mathcal{H_2}) / Z
+$$
+
+where $\beta$ is the inverse thermal energy, \mathcal{H_2} is the Hamiltonian, and $Z$ is the partition function. Then for some $\rho_1$ we have,
+
+$$
+Tr(\rho_1 (-\beta \mathcal{H_2} - \log Z)) \leq Tr(\rho_1 \log (\rho_1)) = -\beta S_1
+$$
 
