@@ -46,6 +46,12 @@ $$
 and since ${\alpha}$ and ${\beta}$ are orthonormal bases,
 
 $$
-\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1) = \sum_{\alpha} [p_\alpha \log (q_\alpha) - p_\alpha \log (p_\alpha)]\ket{\alpha} \bra{\alpha}
+= \sum_{\alpha} [p_\alpha \log (q_\alpha) - p_\alpha \log (p_\alpha)]\ket{\alpha} \bra{\alpha}
+$$
+
+Taking the trace of this operator we obtain,
+
+$$
+Tr(\rho_1 \log (\rho_2) - \rho_1 \log (\rho_1)) = \sum_{\alpha} [p_\alpha \log (q_\alpha) - p_\alpha \log (p_\alpha)] = \sum_{\alpha} [p_\alpha \log \bigg(\frac{q_\alpha}{p_\alpha}\bigg)]
 $$
 
