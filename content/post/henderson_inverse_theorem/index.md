@@ -13,7 +13,7 @@ image:
   preview_only: false
 ---
 
-The Henderson Inverse Theorem
+## The Henderson Inverse Theorem
 
 The content of the Henderson Inverse Theorem is as follows: Two systems with Hamiltonians of the form,
 
@@ -31,7 +31,7 @@ have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most
 
 Proof: We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system.
 
-The Gibbs Inequality
+## The Gibbs Inequality
 
 Proof: Let $\rho_1$ and $\rho_2$ be positive, trace-class, and linear density operators on a Hilbert space, $H$, such that $Tr(\rho_i) = 1$. Then we can express the states $\rho_1$ and $\rho_2$ in an arbitrary basis of $H$ such that,
 
@@ -73,5 +73,5 @@ $$
 Tr(\rho_1 \log (\rho_2)) \leq Tr(\rho_1 \log (\rho_1))
 $$
 
-The Gibbs-Bogoliubov Inequality
+## The Gibbs-Bogoliubov Inequality
 
