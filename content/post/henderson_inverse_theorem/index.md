@@ -13,7 +13,7 @@ image:
   preview_only: false
 ---
 
-\bf{The Henderson Inverse Theorem}
+\boldfont{The Henderson Inverse Theorem}
 
 The content of the Henderson Inverse Theorem is as follows: Two systems with Hamiltonians of the form,
 
