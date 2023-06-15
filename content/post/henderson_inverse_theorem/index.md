@@ -145,7 +145,7 @@ $$
 
 a contradiction. Therefore, our premise that the radial distribution functions are equal while the pairwise additive potential energies differ by a trivial constant must be false. The only other possible difference between the potential energies is constant, so this must be true to satisfy the Gibbs-Bogoliubiv inequality.
 
-The Henderson Inverse Theorem is a valuable tool to predict this unique (up to a constant) potential energy function from the radial distribution function of a fluid. It is often employed in coarse-grained models under the name of iterative Boltzmann inversion and in experimental data with empirical potential structure refinement (EPSR) or structure-optimized potential refinement (SOPR) [1].
+The Henderson Inverse Theorem is a valuable tool to predict this unique (up to a constant) potential energy function from the radial distribution function of a fluid. It is often employed in coarse-grained models under the name of iterative Boltzmann inversion (IBI) and in experimental data with empirical potential structure refinement (EPSR) or structure-optimized potential refinement (SOPR) [1].
 
 [1] Brennon L. Shanks, Jeffrey J. Potoff, and Michael P. Hoepfner The Journal of Physical Chemistry Letters 2022 13 (49), 11512-11520
 DOI: 10.1021/acs.jpclett.2c03163
