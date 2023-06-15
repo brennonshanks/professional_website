@@ -113,4 +113,40 @@ $$
 
 have pair potentials, $u(|\mathbf{r_i} - \mathbf{r_j}|)$, that differ by at most a trivial constant.
 
-Proof:
+Proof: Suppose that two systems with a pairwise additive Hamiltonian have equal radial distribution functions and $u_1 - u_2 \neq c$ where $c$ is some constant. Then,
+
+$$
+\langle \mathcal{H_2} - \mathcal{H_1} \rangle_1 \neq c
+$$
+
+and since the Helmholtz free energies are constants,
+
+$$
+F_2 - F_1 < \langle \mathcal{H_2} - \mathcal{H_1} \rangle_1
+$$
+
+where we lose the possibility of equality from the Gibbs-Bogoliubov inequality. Now, we can expand the expectation of the Hamiltonian in terms of the radial distribution function (since the system is pairwise additive) so that,
+
+$$
+F_2 - F_1 < \frac{n}{2} \int [u_2 - u_1] g_1(\mathbf{r}) d^3\mathbf{r}
+$$
+
+and the same holds for a swap of the indices,
+
+$$
+F_1 - F_2 < \frac{n}{2} \int [u_1 - u_2] g_2(\mathbf{r}) d^3\mathbf{r}
+$$
+
+Combining these two equations gives,
+
+$$
+0 < 0
+$$
+
+a contradiction. Therefore, our premise that the radial distribution functions are equal while the pairwise additive potential energies differ by a trivial constant must be false. The only other possible difference between the potential energies is constant, so this must be true to satisfy the Gibbs-Bogoliubiv inequality.
+
+The Henderson Inverse Theorem is a valuable tool to predict this unique (up to a constant) potential energy function from the radial distribution function of a fluid. It is often employed in coarse-grained models under the name of iterative Boltzmann inversion and in experimental data with empirical potential structure refinement (EPSR) or structure-optimized potential refinement (SOPR) [1].
+
+[1] Brennon L. Shanks, Jeffrey J. Potoff, and Michael P. Hoepfner The Journal of Physical Chemistry Letters 2022 13 (49), 11512-11520
+DOI: 10.1021/acs.jpclett.2c03163
+
