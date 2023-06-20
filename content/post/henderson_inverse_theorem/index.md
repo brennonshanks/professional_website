@@ -15,7 +15,7 @@ image:
 
 The Henderson Inverse Theorem is an important result on the relationship between the radial distribution function and pairwise additive potential in a statistical ensemble. This theorem is the basis for the structure-optimized potential refinement algorithm and provides a variational solution to the statistical mechanical inverse problem. 
 
-We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system while the Gibbs-Bogoliubov inequality establish important relationships between the free energy and entropy in the canonical ensemble.
+We first need to establish the Gibbs and Gibbs-Bogoliubov inequalities for a quantum system. The Gibbs inequality is an important result about the information entropy of a system while the Gibbs-Bogoliubov inequality establishes an important relationship between the free energy and entropy in the canonical ensemble.
 
 ## The Gibbs Inequality
 
@@ -29,7 +29,7 @@ $$
 \rho_2 = \sum_\alpha q_\alpha \ket{\alpha} \bra{\alpha}
 $$
 
-We then compute the difference between the cross entropy, $\rho_1 \log (\rho_2)$, and information of entropy of $\rho_1$, $\rho_1 \log (\rho_1)$,
+We then compute the difference between the cross entropy, $\rho_1 \log (\rho_2)$, and information entropy of $\rho_1$, $\rho_1 \log (\rho_1)$,
 
 $$
 \rho_1 \log (\rho_2) - \rho_1 \log (\rho_1) = \sum_{\alpha,\beta} [p_\alpha \ket{\alpha} \bra{\alpha} \log (q_\beta) \ket{\beta} \bra{\beta} - p_\alpha \ket{\alpha} \bra{\alpha} \log (p_\beta) \ket{\beta} \bra{\beta}]
