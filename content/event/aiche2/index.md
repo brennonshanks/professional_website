@@ -6,7 +6,7 @@ date: 2023-11-05T18:09:28.811Z
 date_end: 2023-11-09T07:00:00.000Z
 all_day: true
 event: American Institute of Chemical Engineers Annual Meeting
-event_url: [https://aiche.confex.com/aiche/2023/meetingapp.cgi/Session/52329]
+event_url: https://aiche.confex.com/aiche/2023/meetingapp.cgi/Session/52329
 publishDate: 2023-07-13T18:09:28.842Z
 draft: false
 featured: false
