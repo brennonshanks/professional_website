@@ -44,7 +44,7 @@ $$
 We can neglect higher order terms of $\tilde{u}$ since we are assuming that the changes in the independent variables are very small for the complimentary system. Now, since the composite system is isolated, the change in internal energy for the composite system vanishes,
 
 $$
-    0 = X_t\sum_{i}\frac{\partial u}{\partial x_i}dx_i + \tilde{X}_t\sum_{i}\frac{\partial \tilde{u}}{\partial \tilde{x}_i}d \tilde{x}_i
+    0 = X_t\sum_{i}\frac{\partial u}{\partial x_i}dx_i + \tilde{X_t}\sum_{i}\frac{\partial \tilde{u}}{\partial \tilde{x_i}}d \tilde{x_i}
 $$
 
 This leads us to the usual results that all of the intensive parameters (T, P, $\mu_i$) are the same in each subsystem at equilibrium. In other words, the composite system is homogeneous. However, we now turn our attention to the second requirement; namely, 
