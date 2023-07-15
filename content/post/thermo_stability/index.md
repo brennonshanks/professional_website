@@ -104,7 +104,7 @@ $$
 Thus, we require that all of the $\psi_{jj}^{(j-1)}$ be positive such that,
 
 $$
-    \psi_{jj}^{(j-1)} = \bigg(\frac{\partial P_j}{\partial x_j}\bigg)_{P_0, P_1 ... P_{j-1},x_{j+1},x_{j+2}...x_{t-1}} > 0 
+    \psi_{jj}^{(j-1)} = \bigg(\frac{\partial P_j}{\partial x_j}\bigg)_{P_{0}, P_{1} ... P_{j-1},x_{j+1},x_{j+2}...x_{t-1}} > 0 
 $$
 
 So, what exactly does this mean? Common terms that must be positive according to this definition are,
