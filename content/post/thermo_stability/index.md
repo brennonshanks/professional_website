@@ -16,7 +16,7 @@ image:
 The thermodynamic requirement that the second derivative of energy be positive gives rise to some interesting results on thermodynamic system stability. To see this, let's first construct an intrinsic system and a complimentary subsystem from a composite, isolated system. The complimentary subsystem is assumed to be much larger than the intrinsic subsystem.  The fundamental relation is given by,
 
 $$
-    U' = X_t u (x_0, x_1, ..., x_{t-1}+ \tilde{X_t}  \tilde{u} (\tilde{x_0}, \tilde{x_1}, ..., \tilde{x_{t-1}})
+    U' = X_t u (x_0, x_1, ..., x_{t-1}) + \tilde{X_t}  \tilde{u} (\tilde{x_0}, \tilde{x_1}, ..., \tilde{x_{t-1}})
 $$
 
 where $X_t$ represents some parameter of the fundamental relation that is being held constant. Furthermore, the smallness of the intrinsic system compared to the complementary system requires that,
