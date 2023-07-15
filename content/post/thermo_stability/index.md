@@ -1,6 +1,6 @@
 ---
 title: Thermodynamic Stability Criterion
-date: 2023-07-16T05:53:47.038Z
+date: 2023-07-14T05:53:47.038Z
 draft: false
 featured: false
 authors:
