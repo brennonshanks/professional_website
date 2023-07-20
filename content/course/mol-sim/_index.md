@@ -1,5 +1,5 @@
 ---
-title: 📊 Molecular Simulations
+title: 📊 Introduction to Molecular Simulations
 linkTitle: Molecular Simulations
 type: book
 tags:
