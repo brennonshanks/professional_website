@@ -1,5 +1,5 @@
 ---
-title: Path Integral Structure Optimized Potential Refinement
+title: Structure Refinement with Explicit Nuclear Quantum Effects
 date: 2023-07-19T05:53:47.038Z
 draft: false
 featured: false
