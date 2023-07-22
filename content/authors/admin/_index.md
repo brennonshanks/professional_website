@@ -1,5 +1,5 @@
 ---
-title: Brennon Shanks
+title: Brennon L. Shanks
 role: PhD Candidate in Chemical Engineering
 bio: null
 interests:
@@ -53,4 +53,4 @@ email: brennon.shanks@chemeng.utah.edu
 ---
 I am a statistical thermodynamics researcher that applies molecular dynamics, statistical mechanics, and machine learning to study liquid state materials. My current research projects include developing machine learning approaches for neutron scattering analysis, thermodynamic characterization of high pressure and temperature liquids and liquid metals, and fundamental analysis of many-body interactions from neutron scattering experiments.
 
-T﻿his website contains a list of publications, projects, talks, teaching and course materials, as well as an overview of my current projects. I will also occasionally post Jupyter notebooks highlighting useful machine learning techniques as well as derivations of statistical and quantum mechanical relations.
+T﻿his website contains posts, projects, publications, talks, teaching and course materials. I will also occasionally post Jupyter notebooks highlighting useful machine learning techniques as well as derivations of statistical and quantum mechanical relations that are relevant to the investigation of atomic structure and interactions. 
