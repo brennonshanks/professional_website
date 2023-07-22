@@ -1,5 +1,5 @@
 ---
-title: Characterizing Many-Body Interactions with Neutron Diffraction
+title: Many-Body Effects from Neutron Diffraction
 date: 2023-07-19T05:53:47.038Z
 draft: false
 featured: false
