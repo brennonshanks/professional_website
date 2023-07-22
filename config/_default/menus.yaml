@@ -10,9 +10,9 @@ main:
   - name: Posts
     url: '#posts'
     weight: 20
-#   - name: Projects
-#     url: '#projects'
-#     weight: 30
+  - name: Projects
+    url: '#projects'
+    weight: 30
   - name: Publications
     url: '#featured'
     weight: 40
@@ -33,6 +33,3 @@ main:
   - name: Contact
     url: '#contact'
     weight: 70
-#   - name: CV
-#     url: uploads/CV.pdf
-#     weight: 70
