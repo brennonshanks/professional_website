@@ -14,7 +14,7 @@ content:
   filters:
     # Folders to display content from
     folders:
-      - projects
+      - project
     # Uncomment below to only show content with specific tags:
 #    tags:
 #      - Machine Learning
@@ -38,10 +38,14 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Physics
-      tag: Physics
+    - name: Thermodynamics
+      tag: thermodynamics
+    - name: Statistical Mechanics
+      tag: statistical mechanics
+    - name: Quantum Mechanics
+      tag: quantum mechanics
     - name: Machine Learning
-      tag: Machine Learning
+      tag: machine learning
 
   # Default filter toolbar button (e.g. 0 corresponds to the first `filter_button` instance above)
   filter_default: 0
