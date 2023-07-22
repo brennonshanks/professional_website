@@ -1,5 +1,5 @@
 ---
-title: Structure Refinement with Explicit Nuclear Quantum Effects
+title: Path Integral Structure Potential Refinement 
 date: 2023-07-19T05:53:47.038Z
 draft: false
 featured: false
