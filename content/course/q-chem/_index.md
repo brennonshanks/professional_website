@@ -2,6 +2,7 @@
 title: 📊 Quantum Mechanics for Engineers
 linkTitle: Quantum Mechanics
 type: book
+draft: true
 tags:
   - courses
 ---
