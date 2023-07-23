@@ -1,7 +1,7 @@
 ---
 title: Local Gaussian Process Approximations
 date: 2023-07-19T05:53:47.038Z
-draft: false
+draft: true
 featured: false
 authors:
   - admin
