@@ -30,8 +30,9 @@ featured: true
 tags:
   - neutron scattering
   - statistical mechanics
-  - inversion
-  - coarse graining
+  - quantum mechanics
+  - thermodynamics
+  - machine learning
 image:
   filename: featured.png
   focal_point: Center
