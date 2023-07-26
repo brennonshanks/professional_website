@@ -10,6 +10,7 @@ authors:
 doi: 10.1021/acs.jpclett.2c03163
 publication: Journal of Physical Chemistry Letters
 publication_short: ""
+url_code : https://github.com/hoepfnergroup/SOPR
 abstract: Deriving transferable pair potentials from experimental neutron and
   X-ray scattering measurements has been a longstanding challenge in condensed
   matter physics. State-of-the-art scattering analysis techniques estimate
