@@ -1,6 +1,5 @@
 ---
-title: "Transferable Force Fields from Experimental Scattering Data with Machine
-  Learning Assisted Structure Refinement "
+title: "Classifying a Highly Polymorphic Tree Species across Landscapes Using Airborne Imaging Spectroscopy"
 publication_types:
   - "2"
 authors:
