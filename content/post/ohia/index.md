@@ -1,3 +1,18 @@
+---
+title: 'Ohi'a Lehua Population Model with a Spatial Gaussian Process Classifier
+date: 2023-07-28T12:00:00.000Z
+draft: false
+featured: false
+authors:
+  - admin
+tags:
+  - machine learning
+image:
+  filename: ""
+  focal_point: Smart
+  preview_only: false
+---
+
 # 'Ohi'a Lehua Population Model with a Spatial Gaussian Process Classifier
 
 Airborn imaging spectroscopy is a valuable method to characterize the distribution of plant life for ecological, agricultural, and environmental research. In this study, spectroscopy measurements of 'Ohi'a Lehua, a keystone tree species on the Big Island of Haw'aii, were collected for tree samples at various locations across the island. This data was used to train support vector machine (SVM) and spectral unmixing (SU) machine learning models to identify the tree species based on the measured spectra. Then, airborn imaging spectroscopy was used to record spectroscopic measurements spanning the whole island. The SVM and SU models were implemented to predict the spatial distribution of 'Ohi'a Lehua based on the airborn imaging spectroscopy data. 
