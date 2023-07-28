@@ -17,6 +17,7 @@ draft: false
 featured: true
 tags:
   - machine learning
+url_code: https://github.com/brennonshanks/professional_website/tree/main/content/post/ohia/gpc-code
 image:
   filename: featured.png
   focal_point: Center
