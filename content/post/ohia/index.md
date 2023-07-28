@@ -78,6 +78,8 @@ The kernel, or covariance function, describes how the function varies as the inp
 
 Here we implement the GaussianProcessClassifier function from scikit-learn with a radial basis function. Details of the scikit-learn function can be found at this link: https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.GaussianProcessClassifier.html
 
+For details on how to implement a GPC from scratch, see the following post: https://winstonsullivan.netlify.app/project/gplr/
+
 
 ```python
 num = 100                                # defines the number of test points across the map in x- and y-direction
