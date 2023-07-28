@@ -1,8 +1,5 @@
 # Ohi'a Population Distribution with a Spatial Gaussian Process Classifier
 
-
-
-
 ```python
 # libraries
 import numpy as np
