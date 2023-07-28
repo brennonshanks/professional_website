@@ -1,5 +1,5 @@
 ---
-title: Bayesian Optimization for Molecular Simulation of Fluid Structure
+title: Bayesian Optimization for Simulation of Fluid Structure
 date: 2023-07-27T12:00:00.000Z
 draft: false
 featured: false
