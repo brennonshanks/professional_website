@@ -1,6 +1,6 @@
 ---
-title: Quantifying Many-Body Effects with Neutron Scattering
-date: 2023-07-19T05:53:47.038Z
+title: Many-Body/Quantum Effects from Neutron Scattering
+date: 2023-07-26T12:00:00.000Z
 draft: false
 featured: false
 authors:
