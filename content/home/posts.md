@@ -19,17 +19,6 @@ content:
     exclude_future: false
     exclude_past: false
     publication_type: ''
-  filter_button:
-    - name: All
-      tag: '*'
-    - name: Thermodynamics
-      tag: thermodynamics
-    - name: Statistical Mechanics
-      tag: statistical mechanics
-    - name: Quantum Mechanics
-      tag: quantum mechanics
-    - name: Machine Learning
-      tag: machine learning
 
   # Choose how many pages you would like to offset by
   offset: 0
