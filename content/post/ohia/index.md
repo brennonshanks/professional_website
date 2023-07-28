@@ -5,6 +5,7 @@ draft: false
 featured: false
 authors:
   - admin
+  - Megan M. Seeley
 tags:
   - machine learning
 image:
