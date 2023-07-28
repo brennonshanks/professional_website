@@ -1,5 +1,5 @@
 ---
-title: Bayesian Force Field Optimization for Self-Assembly
+title: Bayesian Force-Fields for Self-Assembly
 date: 2023-07-27T12:00:00.000Z
 draft: false
 featured: false
