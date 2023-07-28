@@ -1,5 +1,5 @@
 ---
-title: Many-Body/Quantum Effects from Neutron Scattering
+title: Many-Body Effects from Neutron Scattering
 date: 2023-07-26T12:00:00.000Z
 draft: false
 featured: false
