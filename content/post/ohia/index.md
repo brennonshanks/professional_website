@@ -71,7 +71,7 @@ plt.show()
 
 ## Gaussian Process Classification for Spatial Ohia Population Distribution
 
-A Gaussian Process is a kernel-based, non-parametric machine learning model used for regression and classification that is mathematically equivalent to a single layer neural network with infinite nodes. A Gaussian process acts as a probabilistic function approximator that takes in model outputs and provides an estimate for the distribution of functions that fi a set of training data. 
+A Gaussian Process is a kernel-based, non-parametric machine learning model used for regression and classification that is mathematically equivalent to a single layer neural network with infinite nodes. A Gaussian process acts as a probabilistic function approximator that takes in model outputs and provides an estimate for the distribution of functions that fit a set of training data. 
 
 The kernel, or covariance function, describes how the function varies as the input parameters change. For instance, in physical modeling we are usually dealing with differentiable and continuous functions, and the proper choice of covariance function can encapsulate this information. The kernel function usually contains a set of parameters known as hyperparameters which need to be optimized for the given training data.  
 
