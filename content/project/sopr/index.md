@@ -25,7 +25,7 @@ SOPR has been successfully implemented in noble gas fluids [1] and more recently
 
 2. Furthermore, we want to continue to implement SOPR for systems in which understanding the structure and self-assembly are critical. Since the SOPR potentials are also transferable to other thermodynamic properties, we aim to also evaluate complex thermodynamic quantities in systems where experimental data is difficult or impossible to obtain. Such systems include high temperature and pressure liquid metals, supercritical fluids, and complicated mixtures of liquid organics.
 
-[1]  1. Shanks, B. L., Potoff, J. J. & Hoepfner, M. P. Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement. J. Phys. Chem. Lett. 11512–11520 (2022) doi:10.1021/acs.jpclett.2c03163.
+[1] B.L. Shanks, J.J. Potoff, M.P. Hoepfner. Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement. J. Phys. Chem. Lett. 11512–11520 (2022) doi:10.1021/acs.jpclett.2c03163.
 
 [2] A.R. Shazed, B.L. Shanks, M.P. Hoepfner, (In review) Structure-optimized potential refinement for molecular liquids (2023)
 
