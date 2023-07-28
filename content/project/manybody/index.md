@@ -16,4 +16,4 @@ image:
   preview_only: false
 ---
 
-Neutron and X-ray diffraction measurements of fluid structures offer the unique capability of quantifying many-body interactions at the same length scale as interatomic interactions. By comparing SOPR predicted interaction potentials to quantum mechanical calculations of the atomic pair potentials, we can quantify many-body interactions in the liquid state at a previously inaccessible scale.
+Neutron/X-ray diffraction measurements can be utilized to quantify many-body interactions at the same length scale as the interatomic interactions. We use a combination of electron structure theory and structure-optimized potential refinement to directly quantify the influence of third- and higher-order effects for real fluid ensembles.  
