@@ -1,5 +1,5 @@
 ---
-title: Many-Body Effects from Neutron Diffraction
+title: Quantifying Many-Body Effects with Neutron Diffraction
 date: 2023-07-19T05:53:47.038Z
 draft: false
 featured: false
