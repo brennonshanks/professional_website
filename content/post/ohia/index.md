@@ -160,8 +160,3 @@ plt.show()
 Based on these distributions, the SVM model is more likely to reasonably model the true distribution of 'Ohi'a Lehua.
 
 [1] Seeley, M.M.; Vaughn, N.R.; Shanks, B.L.; Martin, R.E.; König, M.; Asner, G.P. Classifying a Highly Polymorphic Tree Species across Landscapes Using Airborne Imaging Spectroscopy. Preprints 2023, 2023071570. https://doi.org/10.20944/preprints202307.1570.v1
-
-
-```python
-
-```
