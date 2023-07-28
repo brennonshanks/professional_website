@@ -35,18 +35,7 @@ content:
   # To show all items, set `tag` to "*".
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove toolbar, delete/comment all instances of `filter_button` below.
-  filter_button:
-    - name: All
-      tag: '*'
-    - name: Thermodynamics
-      tag: thermodynamics
-    - name: Statistical Mechanics
-      tag: statistical mechanics
-    - name: Quantum Mechanics
-      tag: quantum mechanics
-    - name: Machine Learning
-      tag: machine learning
-
+  
   # Default filter toolbar button (e.g. 0 corresponds to the first `filter_button` instance above)
   filter_default: 0
 
