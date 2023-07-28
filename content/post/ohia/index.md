@@ -6,6 +6,7 @@ featured: false
 authors:
   - admin
   - Megan M. Seeley
+url_code: https://github.com/brennonshanks/professional_website/tree/main/content/post/ohia/gpc-code
 tags:
   - machine learning
 image:
