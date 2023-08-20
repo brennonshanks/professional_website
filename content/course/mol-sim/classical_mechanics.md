@@ -59,7 +59,7 @@ $$
     W = \int \mathbf{F_{ext}} \cdot d\mathbf{r} = \int \left[\nabla \psi(\mathbf{r}) + m\frac{d^2 \mathbf{r}}{dt^2}\right]\cdot d\mathbf{r}
 $$
 
-which gives the classic expression that the work performed by the system on a particle is equal to the change in mechanical energy of the particle,
+which gives the classic expression that the work performed on the system is equal to the change in mechanical energy of the system,
 
 $$
     W = \Delta PE + \Delta KE = \Delta E
