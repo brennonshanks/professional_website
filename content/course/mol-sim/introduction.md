@@ -1,4 +1,3 @@
-
 ---
 title: Course Introduction
 type: book
