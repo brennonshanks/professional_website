@@ -207,7 +207,6 @@ which are known as Hamilton's equations of motion.
 
 References
 1. Kusaka, I. Statistical Mechanics for Engineers. (Springer International Publishing, 2015). doi:10.1007/978-3-319-13809-1.
-2. https://hockygroup.hosting.nyu.edu/exercise/md.html
 
 ## Problem Set 1
 1. Show that a conservative force, $F_C$ is independent of the choice of $r_A$ by showing,
@@ -260,7 +259,7 @@ $$
 
 3. Using Python, code the velocity-verlet algorithm for a 1-D harmonic oscillator and plot your simulated trajectory compared to the analytical solution. 
 
-4. The dispersion energy in molecular systems is often modeled by the Lennard-Jones potential, which gives the potential energy of two particles separated by a distance $r_{ij} = |\mathbf{r_i} - \mathbf{r_j}|$. Using Python, plot the Lennard-Jones potential and Lennard-Jones force (on separate plots) for a system with $\sigma = 1$, $\epsilon = 1$ for $0.9 \leq r \leq 4$. At what $r$ is the force zero? If two particles with a Lennard-Jones potential interaction are closer together than the radius of zero force, will they attract or repel each other (think about what the sign of the force means)?
+4. The dispersion energy in molecular systems is often modeled by the Lennard-Jones potential, which gives the potential energy of two particles separated by a distance $r_{ij} = |\mathbf{r_i} - \mathbf{r_j}|$. Using Python, plot the Lennard-Jones potential and Lennard-Jones force (on separate plots) for a system with $\sigma = 1$, $\epsilon = 1$ for $0.9 \leq r \leq 4$. At what $r$ are the potential energy and force equal to zero? If two particles with a Lennard-Jones potential interaction are closer together than the radius of zero force, will they attract or repel each other?
 
 $$
   v(r_{ij}) = 4 \epsilon \bigg[ \bigg(\frac{\sigma}{r_{ij}}\bigg)^{12} - \bigg(\frac{\sigma}{r_{ij}}\bigg)^6 \bigg]
