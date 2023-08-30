@@ -116,7 +116,7 @@ Let's now consider how we could implement this algorithm numerically. We know $\
 
 ### The Velocity-Verlet Algorithm
 
-We can amend much the problems with the Euler algorithm by including an additional term to the velocity so that,
+We can amend the problem with the Euler algorithm by including an additional term to the velocity so that,
 
 $$
     \mathbf{v}_i(t + \Delta t) = \mathbf{v}_i(t) + \frac{\Delta t}{m_i} \mathbf{F}_i + \frac{\Delta t^2}{2m_i} \frac{d \mathbf{F}_i}{dt} + \mathcal{O}(\Delta t^3)
