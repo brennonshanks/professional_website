@@ -81,6 +81,89 @@ $$
 
 where the total energy $E$ is now the sum of the kinetic and potential energies of all particles plus the configuration dependent potential energy of the particle-particle interactions, $\phi (\mathbf{r_1}, ..., \mathbf{r_N})$. For a system of many particles, the terms in the total energy are dependent on both the particle velocities ($\mathbf{v_i}$) and positions ($\mathbf{r_i}$) of every particle in the system. Since velocity and position are both three-dimensional, each particle contributes 6-dimensions to the many particle system. In total, the many particle system can therefore be described by a $6N$-dimensional phase space of $3N$-dimensions in velocity and $3N$-dimensions in position. 
 
+## Numerical Time-Evolution of the Equations of Motion
+
+Numerically, we will solve Newton's equation of motion iteratively over a series of short timesteps, $\Delta t$. The general strategy looks like this,
+
+1. Given $\mathbf{r}_i(t)$ and $\mathbf{v}_i(t)$, calculate the force on particle $i$, $\mathbf{F}_i(t)$.
+2. Integrate equations of motion over a timestep, $\Delta t$, to obtain $\mathbf{r}_i(t + \Delta t)$ and $\mathbf{v}_i(t + \Delta t)$.
+3. Calculate new forces, $\mathbf{F}_i(t + \Delta t)$
+4. Repeat.
+
+### The Euler Algorithm
+
+Let's think about how we can move between step 1 and 2 in our general strategy. We want the quantity $\mathbf{r}_i(t + \Delta t)$ given an initial position $\mathbf{r}_i(t)$, so we can just express the new position as a Taylor expansion with the old term,
+
+$$
+    \mathbf{r}_i(t + \Delta t) = \mathbf{r}_i(t) + \frac{d\mathbf{r}_i}{dt}\bigg|_t \Delta t + \frac{1}{2!} \frac{d^2\mathbf{r}_i}{dt^2}\bigg|_t \Delta t^2 + \mathcal{O}(\Delta t^3)
+$$
+
+and recognizing the definition of velocity, acceleration and force in the previous equation gives,
+
+$$
+      \mathbf{r}_i(t + \Delta t) = \mathbf{r}_i(t) + \mathbf{v}_i(t) \Delta t + \frac{\Delta t^2}{2m_i} \mathbf{F}_i + \mathcal{O}(\Delta t^3)
+$$
+
+where the $\mathcal{O}(\Delta t^3)$ are considered sufficiently small (so long as $\Delta t$ is small). Now, writing a similar Taylor expansion on the velocity we obtain,
+
+$$
+      \mathbf{v}_i(t + \Delta t) = \mathbf{v}_i(t) + \frac{\Delta t}{m_i} \mathbf{F}_i + \mathcal{O}(\Delta t^2)
+$$
+
+where once again we assume that $\mathcal{O}(\Delta t^2)$ term is small so long as $\Delta t$ is small enough. \newline 
+
+Let's now consider how we could implement this algorithm numerically. We know $\mathbf{r}_i(t)$ and $\mathbf{v}_i(t)$ and calculate $\mathbf{F}_i$ if we have some prescribed force field, $\mathbf{F}_i = - \nabla_i \psi$. We just need to choose a timestep and we can solve directly for both the updated position and velocity. What we will find is that this algorithm doesn't work; in fact, it does not satisfy the conservation of energy (see Problem Set 1, Question 3).
+
+### The Velocity-Verlet Algorithm
+
+We can amend much the problems with the Euler algorithm by including an additional term to the velocity so that,
+
+$$
+    \mathbf{v}_i(t + \Delta t) = \mathbf{v}_i(t) + \frac{\Delta t}{m_i} \mathbf{F}_i + \frac{\Delta t^2}{2m_i} \frac{d \mathbf{F}_i}{dt} + \mathcal{O}(\Delta t^3)
+$$
+
+In general, we don't know the time-derivative of the force, but we can express the force at time $t = t + \Delta t$ by using a Taylor expansion,
+
+$$
+     \mathbf{F}_i(t + \Delta t) = \mathbf{F}_i(t) + \frac{d \mathbf{F}_i}{dt}\Delta t + \mathcal{O}(\Delta t^2)
+$$
+
+so that,
+
+$$
+     \frac{d \mathbf{F}_i}{dt} = \frac{\mathbf{F}_i(t + \Delta t) - \mathbf{F}_i(t)}{\Delta t}
+$$
+
+to the first order. Now, we can just substitute this into our velocity equation to obtain,
+
+$$
+    \mathbf{v}_i(t + \Delta t) = \mathbf{v}_i(t) + \frac{\Delta t}{m_i} \mathbf{F}_i + \frac{\Delta t}{2m_i} ( \mathbf{F}_i(t + \Delta t) - \mathbf{F}_i(t)) + \mathcal{O}(\Delta t^3)
+$$
+
+which is known as the Velocity-Verlet algorithm. One interesting thing to notice here is that we now have a "future" term in our velocity equation, $\mathbf{F}_i(t + \Delta t)$. Do we really need to know the future to solve this algorithm? \newline 
+
+Technically, no. We can solve for the force $\mathbf{F}_i(t + \Delta t)$ by first calculating the force from the updated positions and then calculating the updated velocity. \newline 
+
+The implementation looks like this:
+
+1. Using current the current velocity, calculate the next positions.
+
+$$
+        \mathbf{r}_i(t + \Delta t) = \mathbf{r}_i(t) + \mathbf{v}_i(t) \Delta t + \frac{\Delta t^2}{2m_i} \mathbf{F}_i
+$$
+
+2. Given $ \mathbf{r}_i(t + \Delta t)$, compute force $\mathbf{F}_i(t + \Delta t)$.
+
+3. Finally, compute new velocities.
+   
+$$
+        \mathbf{v}_i(t + \Delta t) = \mathbf{v}_i(t) + \frac{\Delta t}{m_i} \mathbf{F}_i + \frac{\Delta t}{2m_i} ( \mathbf{F}_i(t + \Delta t) + \mathbf{F}_i(t))
+$$
+
+5. Repeat.
+
+The Velocity-Verlet integrator is easy to implement, has excellent numerical stability and long time energy conservation, but does have poor short time energy conservation. Alternative integrators that are equivalent to Velocity-Verlet are the Verlet and leapfrog algorithms.
+
 ## Langrange and Hamilton Equation of Motion
 
 For convenience, we introduce a quantity known as the Lagrangian, which for generalized coordinates $z, \dot{z}$ is the difference between the kinetic and potential energy,
@@ -207,60 +290,3 @@ which are known as Hamilton's equations of motion.
 
 References
 1. Kusaka, I. Statistical Mechanics for Engineers. (Springer International Publishing, 2015). doi:10.1007/978-3-319-13809-1.
-
-## Problem Set 1
-1. Show that a conservative force, $F_C$ is independent of the choice of $r_A$ by showing,
-
-$$
-  \nabla \psi (r_A', r) = \nabla \psi (r_A, r)
-$$
-
-2. Show that the Lagrangian reduces to Newton’s equation of motion for a particle in a uniform gravitational field. (Hint) First, write the correct form of the Lagrangian and then use the following definition for the Langrange equation of motion, 
-
-$$
-  \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot{z}}\bigg) - \frac{\partial L}{\partial z} = 0
-$$
-
-3. Find the conjugate momenta ($p_r, p_\theta$) and write the Hamiltonian for a system with the following Lagrangian,
-
-$$
-  L = m(\dot{r}^2 + r^2\theta^2)/2 - V(r)
-$$
-
-4. In molecular modeling, the Hamilton equations of motion are solved numerically given some Hamiltonian. While we will go into detail on the specifics of these Hamiltonians later in the course, for now just identify the kinetic and potential parts of the following molecular Hamiltonian ($K$ is a spring constant and $r_{ij}$ is the distance between atoms $i$ and $j$).
-
-$$
-  H = \sum_{particles} \frac{p_i^2}{2m_i} + \sum_{bonds} K_b (b - b_0)^2 + \sum_{non-bonded} \frac{q_i q_j}{r_{ij}} + \sum_{non-bonded} v(r_{ij})
-$$
-
-## Problem Set 2
-
-1. Derive Lagrange's equation of motion from Hamilton's equation of motion.
-
-$$
-  \frac{\partial H}{\partial p_i} = \dot{q_i}, \frac{\partial H}{\partial q_i} = -\dot{p_i}, \frac{\partial H}{\partial t} = -\frac{\partial L}{\partial t}
-$$
-
-$$
- H = L(q^f, p^f, t)
-$$
-
-$$
-  L = L(q^f, \dot{q^f}, t)
-$$
-
-$$
-  H := \sum^f p_i \dot{q_i} - L
-$$
-
-2. Consider the infinite Atwood’s machine. All the masses are equal to $m$, and all the pulleys and strings are massless. The masses are held fixed and then simultaneously released. What is the acceleration of the top mass?
-
-![screen reader text](infatwood.png)
-
-3. Using Python, code the velocity-verlet algorithm for a 1-D harmonic oscillator and plot your simulated trajectory compared to the analytical solution. 
-
-4. The dispersion energy in molecular systems is often modeled by the Lennard-Jones potential, which gives the potential energy of two particles separated by a distance $r_{ij} = |\mathbf{r_i} - \mathbf{r_j}|$. Using Python, plot the Lennard-Jones potential and Lennard-Jones force (on separate plots) for a system with $\sigma = 1$, $\epsilon = 1$ for $0.9 \leq r \leq 4$. At what $r$ are the potential energy and force equal to zero? If two particles with a Lennard-Jones potential interaction are closer together than the radius of zero force, will they attract or repel each other?
-
-$$
-  v(r_{ij}) = 4 \epsilon \bigg[ \bigg(\frac{\sigma}{r_{ij}}\bigg)^{12} - \bigg(\frac{\sigma}{r_{ij}}\bigg)^6 \bigg]
-$$
