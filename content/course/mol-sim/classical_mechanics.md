@@ -81,6 +81,8 @@ $$
 
 where the total energy $E$ is now the sum of the kinetic and potential energies of all particles plus the configuration dependent potential energy of the particle-particle interactions, $\phi (\mathbf{r_1}, ..., \mathbf{r_N})$. For a system of many particles, the terms in the total energy are dependent on both the particle velocities ($\mathbf{v_i}$) and positions ($\mathbf{r_i}$) of every particle in the system. Since velocity and position are both three-dimensional, each particle contributes 6-dimensions to the many particle system. In total, the many particle system can therefore be described by a $6N$-dimensional phase space of $3N$-dimensions in velocity and $3N$-dimensions in position. 
 
+{{< youtube H0BCYDXEDco >}}
+
 ## Numerical Time-Evolution of the Equations of Motion
 
 Numerically, we will solve Newton's equation of motion iteratively over a series of short timesteps, $\Delta t$. The general strategy looks like this,
