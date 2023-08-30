@@ -67,7 +67,7 @@ $$
 \rho_2 = \exp(-\beta \mathcal{H_2}) / Z
 $$
 
-where $\beta$ is the inverse thermal energy, \mathcal{H}_2 is the Hamiltonian, and $Z$ is the partition function. Then for some $\rho_1$ we have,
+where $\beta$ is the inverse thermal energy, $\mathcal{H_2}$ is the Hamiltonian, and $Z$ is the partition function. Then for some $\rho_1$ we have,
 
 $$
 Tr(\rho_1 (-\beta \mathcal{H_2} - \log Z)) \leq Tr(\rho_1 \log (\rho_1)) = - S_1 / k_B
