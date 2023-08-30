@@ -160,7 +160,7 @@ $$
         \mathbf{v}_i(t + \Delta t) = \mathbf{v}_i(t) + \frac{\Delta t}{m_i} \mathbf{F}_i + \frac{\Delta t}{2m_i} ( \mathbf{F}_i(t + \Delta t) + \mathbf{F}_i(t))
 $$
 
-5. Repeat.
+4. Repeat.
 
 The Velocity-Verlet integrator is easy to implement, has excellent numerical stability and long time energy conservation, but does have poor short time energy conservation. Alternative integrators that are equivalent to Velocity-Verlet are the Verlet and leapfrog algorithms.
 
