@@ -85,6 +85,8 @@ where the total energy $E$ is now the sum of the kinetic and potential energies 
 
 ## Numerical Time-Evolution of the Equations of Motion
 
+{{< youtube ii-N61PeeQU >}}
+
 Numerically, we will solve Newton's equation of motion iteratively over a series of short timesteps, $\Delta t$. The general strategy looks like this,
 
 1. Given $\mathbf{r}_i(t)$ and $\mathbf{v}_i(t)$, calculate the force on particle $i$, $\mathbf{F}_i(t)$.
