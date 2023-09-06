@@ -170,6 +170,8 @@ The Velocity-Verlet integrator is easy to implement, has excellent numerical sta
 
 ## Langrange and Hamilton Equation of Motion
 
+{{< youtube OpqJjKDPJBA >}}
+
 For convenience, we introduce a quantity known as the Lagrangian, which for generalized coordinates $z, \dot{z}$ is the difference between the kinetic and potential energy,
 
 $$
