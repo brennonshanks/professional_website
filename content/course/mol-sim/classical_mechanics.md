@@ -175,7 +175,7 @@ The Velocity-Verlet integrator is easy to implement, has excellent numerical sta
 For convenience, we introduce a quantity known as the Lagrangian, which for generalized coordinates $z, \dot{z}$ is the difference between the kinetic and potential energy,
 
 $$
-    L \equiv \frac{1}{2}m\dot z^2  - mgz
+    L \equiv KE - PE
 $$
 
 whose time integral is defined as the action,
