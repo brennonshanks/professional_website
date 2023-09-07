@@ -168,7 +168,7 @@ $$
 
 The Velocity-Verlet integrator is easy to implement, has excellent numerical stability and long time energy conservation, but does have poor short time energy conservation. Alternative integrators that are equivalent to Velocity-Verlet are the Verlet and leapfrog algorithms.
 
-## Langrange and Hamilton Equation of Motion
+## The Langrangian, Action and Hamilton's Principle
 
 {{< youtube OpqJjKDPJBA >}}
 
@@ -215,6 +215,76 @@ which can be evaluated to give the Lagrange equation of motion,
 $$
     \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot z}\bigg) - \frac{\partial L}{\partial z} = 0
 $$
+
+## Conservation Laws Derived from the Lagrangian
+
+{{< youtube HLr5ZeQUrBk >}}
+
+As a mechanical system evolves according to the classical equations of motion, its generalized coordinates and velocities change. However, the values of specific variables may remain constant - these are referred to as constants of motion or conserved quantities. First consider a mechanical system A composed of n-particles. The Lagrangian of this system is given by a function of the form,
+
+$$
+    L^A = L(\mathbf{r_1}, ..., \mathbf{r_n}, \mathbf{\dot r_1}, ..., \mathbf{\dot r_n}, t)
+$$
+
+Now, let's create an "identical copy" of mechanical system A and translate it to a different point in space. We will give it the name mechanical system B. The only difference between these two states is their position in space, and we assume there exist no interactions between them. The Lagrangian for system B is thus,
+
+$$
+    L^B = L(\mathbf{r_1} + \Delta \mathbf{r}, ..., \mathbf{r_n}+\Delta \mathbf{r}, \mathbf{\dot r_1}, ..., \mathbf{\dot r_n}, t)
+$$
+
+If the two systems are sufficiently far away that they do not interact with each other, the Lagrangian for each system should be the same. This is known as the homogeneity of space or translational invariance. Translational invariance will occur if there are no external fields, because if $\Delta \mathbf{r}$ moves the system in some position-dependent external fields the Lagrangians may change. Now let's consider what happens if we translate the system by some infinitesimal displacement, $\delta \mathbf{r}$. The difference $L^B - L^A$ can now be expressed as a first-order Taylor expansion such that,
+
+$$
+    L^B - L^A = \sum_{i=1}^N\bigg(\frac{\partial L}{\partial \mathbf{r_i}} \cdot \delta \mathbf{r}\bigg) + h.o.
+$$
+
+We can rexpress this relation in terms of the momentum $\mathbf{p}_i$ so that, 
+
+$$
+     L^B - L^A = \sum_{i=1}^N\bigg(\frac{\partial L}{\partial \mathbf{r_i}} \cdot \delta \mathbf{r}\bigg) = \sum_{i=1}^N\bigg(\frac{d \mathbf{p_i}}{dt} \cdot \delta \mathbf{r}\bigg) = \delta \mathbf{r} \frac{d}{dt}\sum_{i=1}^N \mathbf{p_i}
+$$
+
+where we have used the definition of momentum, $\frac{\partial L}{\partial \dot{\mathbf{r}_i}} = \mathbf{p_i}$. If the system is translationally invariant, then the difference $\delta L = L^B - L^A = 0$ for any $\delta \mathbf{r}$, which implies,
+
+$$
+    \frac{d}{dt}\sum_{i=1}^N \mathbf{p_i} = 0
+$$
+
+Thus, the total sum of the linear momentum of all N particles, defined as the total linear momentum, $\mathbf{P} = \sum_{i=1}^N \mathbf{p_i}$, for the system is zero. Therefore, the total linear momentum is a constant of motion. 
+
+Let's now turn our attention to the time dependence of the Lagrangian. The Lagrangian for our hypothetical system of f degrees of freedom has the Lagrangian given by,
+
+\begin{equation}
+    L = L(q_1,...,q_f, \dot q_1,..., \dot q_f,t)
+\end{equation}
+
+The chain rule tells us that,
+
+$$
+    \frac{dL}{dt} = \sum_{i=1}^f\frac{\partial L}{\partial q_i} \dot q_i + \sum_{i=1}^f\frac{\partial L}{\partial \dot q_i} \ddot q_i + \frac{\partial L}{\partial t}
+$$
+
+Applying the Lagrange equation of motion, we obtain,
+
+$$
+    \frac{dL}{dt} = \sum_{i=1}^f\frac{d}{dt} \bigg(\frac{\partial L}{\partial \dot q_i}\bigg) \dot q_i + \sum_{i=1}^f\frac{\partial L}{\partial \dot q_i} \ddot q_i + \frac{\partial L}{\partial t} = \sum_{i=1}^f \frac{d}{dt} \bigg(\frac{\partial L}{\partial \dot q_i} \dot q_i\bigg) + \frac{\partial L}{\partial t}
+$$
+
+In which we find that,
+
+$$
+    \frac{d}{dt}\bigg(\frac{\partial L}{\partial \dot q_i} \dot q_i - L\bigg) = -\frac{\partial L}{\partial t}
+$$
+
+By the definition for energy given before, this means that,
+
+$$
+    \frac{dh}{dt} = -\frac{\partial L}{\partial t}
+$$
+
+Now we may ask what would happen if we solve the Lagrangian today ($t_A$) and tomorrow ($t_B$). The results of this computation should not change, so we accept that this system obeys homogeneity of time. But this means that $\frac{\partial L}{\partial t}$ is identically zero. Therefore, energy is a conserved quantity.
+
+## Hamilton's Equations of Motion
 
 The Lagrange equation of motion is an expression of the relationships between the generalized position coordinates, $z$, and the generalized velocity coordinates, $\dot{z}$. However, suppose instead that we wanted to express the time-evolution of the classical system in terms of the momenta, $p_i$, which expressed through the Lagrangian is,
 
