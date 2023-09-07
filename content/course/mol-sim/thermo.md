@@ -95,13 +95,9 @@ Equality holds in the previous equation when the thermodynamic process is revers
 
 Consequences of these postulates include: the fundamental equation, equations of state, the Euler relation, Gibbs-Duhem relation, Maxwell relations, and free energies. Notes on these will be provided in the lectures.
 
-## Problem Set 3
+## Problem Set
 
-1. Why is work path-independent if we use classical mechanics to keep track of every particle in a macroscopic system, but path-dependent when we use thermodynamics and lump molecular interactions into the heat term? 
-
-2. Why can the fundamental relation $S = S(U,V, N_i)$  be inverted to give an equivalent fundamental relation of the form $U = U(S, V, N_i)$?
-
-3. A pure gas is well described by the fundamental equation,
+1. A pure gas is well described by the fundamental equation,
 
 $$
   S = aN + NR\log{}\frac{U^{3/2}V}{N^{5/2}}
@@ -113,7 +109,7 @@ b. Show that $U = \frac{3}{2}PV$.
 
 c. Show that $PV^{5/3} = c$ where $c$ is a constant.
 
-4. The fundamental equation of a pure system is given by,
+2. The fundamental equation of a pure system is given by,
 
 $$
   S = a(UVN)^b
@@ -127,17 +123,14 @@ b. Find $U/V$.
 
 c. Find $\mu$ in J/mol when $N/V = 0.1$ $(mol/cm^3)$ 
 
+3. Consider an isolated system separated into two compartments by a rigid, diathermal wall impermeable to all species and fixed by stops. Show that when the stops are removed and the wall is allowed to move that it moves towards the low pressure compartment from the high pressure compartment. Assume that the temperature is equal during the process.
 
-## Problem Set 4
-
-1. Consider an isolated system separated into two compartments by a rigid, diathermal wall impermeable to all species and fixed by stops. Show that when the stops are removed and the wall is allowed to move that it moves towards the low pressure compartment from the high pressure compartment. Assume that the temperature is equal during the process.
-
-2. Compute the coefficient of expansion $\alpha$ and the isothermal compressibility $\kappa_{T}$ in terms of $P$ and $V$ for a system that obeys the Van der Waals equation of state,
+4. Compute the coefficient of expansion $\alpha$ and the isothermal compressibility $\kappa_{T}$ in terms of $P$ and $V$ for a system that obeys the Van der Waals equation of state,
 
 $$
   P = \frac{NRT}{V-bn} - \frac{N^2a}{V^2}
 $$
 
-3. For an $n$-component system, how many Maxwell relations are there?
+5. For an $n$-component system, how many Maxwell relations are there?
 
-4. Using the Gibbs-phase rule, determine if it is possible to independently vary temperature and pressure in a system containing a solid and saturated solution of that solid.
+6. Using the Gibbs-phase rule, determine if it is possible to independently vary temperature and pressure in a system containing a solid and saturated solution of that solid.
