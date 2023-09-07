@@ -250,13 +250,13 @@ $$
     \frac{d}{dt}\sum_{i=1}^N \mathbf{p_i} = 0
 $$
 
-Thus, the total sum of the linear momentum of all N particles, defined as the total linear momentum, $\mathbf{P} = \sum_{i=1}^N \mathbf{p_i}$, for the system is zero. Therefore, the total linear momentum is a constant of motion. 
+Thus, the total sum of the linear momentum of all N particles, defined as the total linear momentum, $\mathbf{P}$, for the system is zero. Therefore, the total linear momentum is a constant of motion. 
 
 Let's now turn our attention to the time dependence of the Lagrangian. The Lagrangian for our hypothetical system of f degrees of freedom has the Lagrangian given by,
 
-\begin{equation}
+$$
     L = L(q_1,...,q_f, \dot q_1,..., \dot q_f,t)
-\end{equation}
+$$
 
 The chain rule tells us that,
 
