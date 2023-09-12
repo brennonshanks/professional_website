@@ -9,9 +9,9 @@ tags:
 
 <!--more-->
 
-{{< youtube H0BCYDXEDco >}}
-
 ## Newton's Equation of Motion
+
+{{< youtube H0BCYDXEDco >}}
 
 First consider an inertial frame of reference, which is a reference environment for a mechanical system such that when a material point or particle is subject to no net force, the velocity of the particle is unchanged. In such a reference frame, particles follow Newton's equation of motion,
 
