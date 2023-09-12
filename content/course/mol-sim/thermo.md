@@ -277,7 +277,9 @@ $$
 
 for all phases $1,...,M$. But this requires that $dT$ and $d\mu_i$ are zero. That is, if we want to perturb the state of the system while maintaining the phase coexistence, we cannot possibly hold P constant. We now have (n + 2) infinitesimal quantities with M equations. Therefore, to ensure the system has solutions, we can only specify (n + 2 - M) of those variables independently. This is known as the Gibbs phase rule.
 
-
+References
+1. Kusaka, I. Statistical Mechanics for Engineers. (Springer International Publishing, 2015). doi:10.1007/978-3-319-13809-1.
+2. Callen, H, Thermodynamics and an Introduction to Thermostatistics (Wiley, 1985). ISBN: 978-0-471-86256-7.
 
 ## Problem Set
 
