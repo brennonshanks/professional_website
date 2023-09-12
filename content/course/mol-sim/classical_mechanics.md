@@ -286,6 +286,8 @@ Now we may ask what would happen if we solve the Lagrangian today ($t_A$) and to
 
 ## Hamilton's Equations of Motion
 
+{{< youtube 61CWqyocuOM >}} 
+
 The Lagrange equation of motion is an expression of the relationships between the generalized position coordinates, $z$, and the generalized velocity coordinates, $\dot{z}$. However, suppose instead that we wanted to express the time-evolution of the classical system in terms of the momenta, $p_i$, which expressed through the Lagrangian is,
 
 $$
