@@ -7,11 +7,15 @@ math: true
 
 <!--more-->
 
-An agglomerate of matter consists of an enormous amount of atoms. A single glass of water contains somewhere between $10^{24}$ and $10^{25}$ atoms alone! From a classical mechanics point of view, modeling the glass of water would require solving momentum equations for all $10^{25}$ atoms simultaneously. Clearly, this is beyond even the most powerful supercomputers that exist today. So, the question becomes, how can we study systems composed of an inconceivable number of particles without appealing to classical mechanics?
+## Introduction to Classical Thermodynamics
 
-The characteristic time period of an atomic motion is on the order of $10^{-15}$ seconds. Therefore, even during a measurement of a system that is captured in a single microsecond, the atoms of a typical solid still go through ten million vibrations. This implies that a macroscopic measurement senses only averages of the atomic coordinates. A map of how the atomic coordinates change is known as a normal mode. A normal mode is a coupled motion of atomic coordinates that include divergence (increase in particle density), convergence (decrease in particle density), and vibration. Some normal modes can be seen macroscopically, such as a change in volume or electric dipole. Others, like atomic vibrations, cannot be seen and are therefore "lost" in macroscopic observation. Classical Thermodynamics is concerned with normal modes that are observable on a macroscopic scale.
+An agglomerate of matter consists of an enormous amount of atoms. A single glass of water contains somewhere between $10^{24}$ and $10^{25}$ atoms alone! From a classical mechanics point of view, modeling the glass of water would require solving momentum equations for all $10^{25}$ atoms simultaneously. Clearly, this is beyond even the most powerful supercomputers that exist today. So, the question becomes, how can we study systems composed of an inconceivable number of particles without appealing to classical mechanics? \newline 
 
-By taking this macroscopic view, we lose a sense of how the motions of atomic coordinates can transfer energy. In Thermodynamics, we refer to this "invisible" mode of energy transfer as heat. From the Classical Mechanics perspective, heat is non-existent, since the energy of the system is completely characterized by generalized momentum and position for each particle. From this perspective, conservation of energy of a closed system requires that the change in energy be directly equal to the classical mechanical work done on the system, W'.
+The characteristic time period of an atomic motion is on the order of $10^{-15}$ seconds. Therefore, even during a measurement of a system that is captured in a single microsecond, the atoms of a typical solid still go through ten million vibrations. This implies that a macroscopic measurement senses only averages of the atomic coordinates. \newline 
+
+A map of how the atomic coordinates change is known as a normal mode. A normal mode is a coupled motion of atomic coordinates that include divergence (increase in particle density), convergence (decrease in particle density), and vibration. Some normal modes can be seen macroscopically, such as a change in volume or electric dipole. Others, like atomic vibrations, cannot be seen and are therefore "lost" in macroscopic observation. Classical thermodynamics is concerned with normal modes that are observable on a macroscopic scale.\newline
+
+By taking this macroscopic view, we lose a sense of how the motions of atomic coordinates can transfer energy. In Thermodynamics, we refer to this "invisible" mode of energy transfer as \textbf{heat}. From the Classical Mechanics perspective, heat is non-existent, since the energy of the system is completely characterized by generalized momentum and position for each particle. From this perspective, conservation of energy of a closed system requires that the change in energy be directly equal to the classical mechanical work done on the system, W'.
 
 $$
     \Delta E = W'
@@ -32,68 +36,86 @@ $$
 W and Q are path functions, meaning that they depend on the exact way that changes are brought about by them. W is a path function because, in defining it, we have lost track of microscopic displacements, whereas classical mechanical work W' is a path-independent function. An infinitesimal view of this equation is shown below.
 
 $$
-    dU = d_{inc} W + d_{inc} Q
+    dU = \dbar W + \dbar Q
 $$
 
-were $d_{inc}$ represents an "incomplete" differential of the quantity.
+where $\dbar$ indicates an imperfect differential. The differential is imperfect since W and Q are path-dependent functions.
 
-## Equilibrium Thermodynamics
+What is $\dbar W$?
+
+Consider a system with a force exerted on its boundary through a surface element dA, resulting in a linear displacement d$\mathbf{l}$. The entire system experiences differential work, $\dbar{W}$, given by
+
+$$
+   \dbar{W} = d\mathbf{l}\cdot \mathbf{t}dS
+$$
+
+Expressing the stress vector in terms of the stress tensor and noting that for an infinitely slow moving boundary the extra stress tensor $\mathbf{T_v}$ is approximately 0, we obtain, 
+
+$$
+   W = -P\int_{S}d\mathbf{l}\cdot \mathbf{n}dS = -P\int_{V}dV
+$$
+
+which is just $W = - P dV$
+
+## Thermodynamic Postulates
 
 Thermodynamics is concerned with both reversible and irreversible processes, but for now let us consider equilibrium thermodynamics. An equilibrium state is a state of the system that, given a certain set of internal parameters U, V, and $N_i$ (i = 1, ..., n), the system tends to evolve towards. This leads us to the first postulate.
 
-Postulate 1. There exist particular states, called equilibrium states, that are completely characterized by U, V, $N_i$ (i = 1, ..., n).
+Postulate 1: There exist particular states, called equilibrium states, that are completely characterized by U, V, $N_i$ (i = 1, ..., n).
 
-A system at macroscopic equilibrium is a system where all representative atomic states of the system exist in the time scale of a macroscopic measurement.
+Note that in more complex systems, we require an inclusion of elastic strain parameters and electric dipole moment (also macroscopically measurable properties). A system at macroscopic equilibrium is a system where all representative atomic states of the system exist in the time scale of a macroscopic measurement.
 
-Postulate 2. There exists a function, S, such that, S = S(U,V,N). Furthermore, the extensive parameters take values so that this function is maximized over the manifold of constrained equilibrium states.
+Postulate 2: There exists a function, S, such that, S = S(U,V,N). Furthermore, the extensive parameters take values so that this function is maximized over the manifold of constrained equilibrium states.
 
-This postulate applies only to equilibrium states. The following two postulates apply to properties of S.
+This postulate applies only to equilibrium states, but in general not to non-equilibrium states. Essentially, we are postulating the existence of some function, called the entropy, that is maximized at equilibrium with respect to all of its dependent variables. The following two postulates apply to properties of the entropy and they are shown below.
 
-Postulate 3. S is additive over subsequent subsystems. Furthermore, S is a continuous, differentiable, and a monotonically increasing function of energy.
+Postulate 3: Entropy is additive over subsequent subsystems. Furthermore, S is a continuous, differentiable, and a monotonically increasing function of energy.
 
 There are immediate consequences of this postulate which are listed below.
 
-$$
-    S = \sum_{\alpha}S^{(\alpha)}
-$$
-
-Corollary 1: The entropy of a simple system is a homogeneous, first-order function of the extensive parameters.
+Corollary 1: 
 
 $$
-    S(\lambda U, \lambda V, \lambda N) = \lambda S(U, V, N)
+S = \sum_{\alpha}S^{(\alpha)}
 $$
 
-Corollary 2: The monotonic property implies that temperature is non-negative. In other words, 
+Corollary 2: The entropy of a simple system is a homogeneous, first-order function of the extensive parameters.
 
 $$
-    \left(\frac{\partial S}{\partial U}\right)_{V,N} > 0
+S(\lambda U, \lambda V, \lambda N) = \lambda S(U, V, N)
 $$
 
-Corollary 3: Entropy can be inverted with respect to energy because it is a single-valued, continuous, and differentiable function with respect to S, V, N.
+Corollary 3: The monotonic property implies that temperature is non-negative. In other words, 
+
+$$
+\left(\frac{\partial S}{\partial U}\right )_{V,N} > 0
+$$
+
+Corollary 4: Entropy can be inverted with respect to energy because it is a single-valued, continuous, and differentiable function with respect to S, V, N.
 
 Postulate 4: The entropy of any system vanishes in the state when T = 0.
+
+## The 2nd Law of the Thermodynamics
 
 Entropy can change as a result of internal or external processes. We express the differential change in entropy as, 
 
 $$
-    dS = d_{inc}{S_e} + d_{inc}{S_i}
+dS = \dbar{S_e} + \dbar{S_i}
 $$
 
-We now accept that the expression for $d_{inc}{S_e}$ is given by,
+We (for now) accept that the expression for $\dbar{S_e}$ is given by,
 
 $$
-d_{inc}{S_e} = \frac{d_{inc}{Q}}{T} 
+\dbar{S_e} = \frac{\dbar{Q}}{T} 
 $$
 
 On the other hand, an important consequence of of the second law is that, 
 
 $$
-d{S_i} \geq 0 
+\dbar{S_i} \geq 0 
 $$
 
-Equality holds in the previous equation when the thermodynamic process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
-
-Consequences of these postulates include: the fundamental equation, equations of state, the Euler relation, Gibbs-Duhem relation, Maxwell relations, and free energies. Notes on these will be provided in the lectures.
+Equality holds in the previous equation when the process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
 
 ## Problem Set
 
