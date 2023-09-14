@@ -108,7 +108,7 @@ $$
 To examine infinitesimal changes in the energy, we compute the first differential of U to obtain,
 
 $$
-dU = \left(\frac{\partial U}{\partial S}\right )_{V,N}dS + \left(\frac{\partial U}{\partial V}\right )_{S,N}dV + \sum_{i}\left(\frac{\partial U}{\partial N_i}\right )_{S,V}dN_i
+dU = \left(\frac{\partial U}{\partial S}\right )dS + \left(\frac{\partial U}{\partial V}\right )dV + \sum_{i}\left(\frac{\partial U}{\partial N_i}\right )dN_i
 $$
 
 The previous partial derivatives are called intensive parameters, and are given the following definitions.
