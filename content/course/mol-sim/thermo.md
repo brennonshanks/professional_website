@@ -97,28 +97,6 @@ Corollary 4: Entropy can be inverted with respect to energy because it is a sing
 
 Postulate 4: The entropy of any system vanishes in the state when T = 0.
 
-## The 2nd Law of the Thermodynamics
-
-Entropy can change as a result of internal or external processes. We express the differential change in entropy as, 
-
-$$
-dS = \dbar{S_e} + \dbar{S_i}
-$$
-
-We (for now) accept that the expression for $\dbar{S_e}$ is given by,
-
-$$
-\dbar{S_e} = \frac{\dbar{Q}}{T} 
-$$
-
-On the other hand, an important consequence of of the second law is that, 
-
-$$
-\dbar{S_i} \geq 0 
-$$
-
-Equality holds in the previous equation when the process is reversible. A reversible process is such that the sequence of states visited by the system can be traversed in the opposite direction by an infinitesimal change in the boundary conditions. According to the second law, processes resulting in a decrease of the entropy are impossible for an isolated system. In terms of statistical mechanics, this is not actually the case (as will be seen later).
-
 ## Fundamental Relations and Equations of State
 
 To this point we have discussed entropy as a function on internal energy, volume, and the number of moles of each chemical species. We know that based on the properties of this function that we can solve for internal energy directly and it will be a function of entropy, volume, and the number of moles of each chemical species. Thus,
