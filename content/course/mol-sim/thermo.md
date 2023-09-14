@@ -9,8 +9,6 @@ math: true
 
 ## Introduction to Classical Thermodynamics
 
-{{< youtube Ig1JXPcgv80&t >}}
-
 An agglomerate of matter consists of an enormous amount of atoms. A single glass of water contains somewhere between $10^{24}$ and $10^{25}$ atoms alone! From a classical mechanics point of view, modeling the glass of water would require solving momentum equations for all $10^{25}$ atoms simultaneously. Clearly, this is beyond even the most powerful supercomputers that exist today. So, the question becomes, how can we study systems composed of an inconceivable number of particles without appealing to classical mechanics? 
 
 The characteristic time period of an atomic motion is on the order of $10^{-15}$ seconds. Therefore, even during a measurement of a system that is captured in a single microsecond, the atoms of a typical solid still go through ten million vibrations. This implies that a macroscopic measurement senses only averages of the atomic coordinates. 
