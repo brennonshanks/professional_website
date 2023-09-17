@@ -61,8 +61,6 @@ which is just $W = - P dV$
 
 ## Thermodynamic Postulates
 
-{{< youtube Krwwis0z7U0 >}}
-
 Thermodynamics is concerned with both reversible and irreversible processes, but for now let us consider equilibrium thermodynamics. An equilibrium state is a state of the system that, given a certain set of internal parameters U, V, and $N_i$ (i = 1, ..., n), the system tends to evolve towards. This leads us to the first postulate.
 
 Postulate 1: There exist particular states, called equilibrium states, that are completely characterized by U, V, $N_i$ (i = 1, ..., n).
@@ -100,6 +98,8 @@ Corollary 4: Entropy can be inverted with respect to energy because it is a sing
 Postulate 4: The entropy of any system vanishes in the state when T = 0.
 
 ## Fundamental Relations and Equations of State
+
+{{< youtube Krwwis0z7U0 >}}
 
 To this point we have discussed entropy as a function on internal energy, volume, and the number of moles of each chemical species. We know that based on the properties of this function that we can solve for internal energy directly and it will be a function of entropy, volume, and the number of moles of each chemical species. Thus,
 
