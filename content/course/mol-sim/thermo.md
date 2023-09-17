@@ -61,6 +61,8 @@ which is just $W = - P dV$
 
 ## Thermodynamic Postulates
 
+{{< youtube Krwwis0z7U0 >}}
+
 Thermodynamics is concerned with both reversible and irreversible processes, but for now let us consider equilibrium thermodynamics. An equilibrium state is a state of the system that, given a certain set of internal parameters U, V, and $N_i$ (i = 1, ..., n), the system tends to evolve towards. This leads us to the first postulate.
 
 Postulate 1: There exist particular states, called equilibrium states, that are completely characterized by U, V, $N_i$ (i = 1, ..., n).
