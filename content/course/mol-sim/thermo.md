@@ -259,6 +259,94 @@ $$
 
 for all phases $1,...,M$. But this requires that $dT$ and $d\mu_i$ are zero. That is, if we want to perturb the state of the system while maintaining the phase coexistence, we cannot possibly hold P constant. We now have (n + 2) infinitesimal quantities with M equations. Therefore, to ensure the system has solutions, we can only specify (n + 2 - M) of those variables independently. This is known as the Gibbs phase rule.
 
+## Thermodynamic Processes, Alternative Formulations, and Maxwell Relations
+
+The formulation of thermodynamics so far has been concerned with equilibrium states. However, this is only of use when we apply this formulation to make inferences about processes. The fundamental relation defines a thermodynamic configuration space, or in other words, a manifold in the parameters S, U, V, and $N_i$. Each point on this manifold is an equilibrium state. 
+
+If we choose an arbitrary curve on this manifold of equilibrium points, we will trace a quasi-static process. Real physics requires non-equilibrium intermediate states between each of these equilibrium states, so a quasi-static process is merely a theoretical concept. In general, real processes are irreversible, meaning, once an internal constraint is lifted and the system returns to equilibrium, it cannot go back to its original state by manipulation of constraints in the closed system. A reversible process is one where the change in entropy become arbitrarily small, so we can go back and forth between states by manipulation internal constraints. Every reversible process coincides with a quasi-static process, but not the other way around.
+
+### Alternative Formulations with the Legendre Transform
+
+Suppose that we take the fundamental relation in the energy representation, $U = U(S,V,N_i)$. Then the slope of the hyper-surface formed by this fundamental relation has the usual form, 
+
+$$
+    P_k = \frac{\partial U}{\partial X_k}
+$$
+
+Specifically, if we consider the entropy as an extensive variable we would like to remove, we consider, 
+
+$$
+    T = \frac{\partial U}{\partial S}
+$$
+
+Then, we consider the intercepts of the tangent hyper-surface of this variable; namely, 
+
+$$
+    T = \frac{U - F}{S - 0}
+$$
+
+where $F$ is the name of the function of intercepts with zero entropy. Rearranging this equation we find the Helmholtz potential, 
+
+$$
+    F = U - TS
+$$
+
+Now, we have found $F = F(T,V,N_i)$. Thus, we can compute the first differential to determine, 
+
+$$
+    dF = \left(\frac{\partial F}{\partial T}\right )dT + \left(\frac{\partial F}{\partial V}\right )dV + \sum_{i}\left(\frac{\partial F}{\partial N_i}\right )dN_i
+$$
+
+But, from the relation $F = U - TS$, taking the first differential gives,
+
+$$
+    dF = dU - TdS - SdT
+$$
+
+Recall that the internal energy is given by,
+
+$$
+    dU = TdS - PdV + \sum_{i}\mu_idN_i
+$$
+
+so we substitute this expression in and find, 
+
+$$
+    dF = - SdT - PdV + \sum_{i}\mu_idN_i
+$$
+
+This indicates the definitions of the partial derivatives of the Helmholtz potential.
+
+$$
+    \left(\frac{\partial F}{\partial T}\right )_{V,N}=-S
+$$
+
+$$
+    \left(\frac{\partial F}{\partial V}\right )_{T,N} = -P
+$$
+    
+$$
+    \sum_{i}\left(\frac{\partial F}{\partial N_i}\right )_{T,V} = \mu_i
+$$
+
+The enthalpy is found by taking the legendre transform of U by replacing V with P, and the Gibbs potential is found by replacing S and V with T and P. These will be left as exercises.
+
+### The Maxwell Relations
+
+The Maxwell relations are simply a statement of the equality of the mixed partial derivatives of the fundamental relation. If $U$ is differentiable and continous then it doesn't matter what order we take the partial derivatives. For example,
+
+$$
+  \frac{\partial^2 U}{\partial S \partial V} =  \frac{\partial^2 U}{\partial V \partial S}
+$$
+
+which implies that,
+
+$$
+  - \left(\frac{\partial P}{\partial S}\right ) =  \left(\frac{\partial T}{\partial V}\right )
+$$
+
+Given a thermodynamic potential with $(t+1)$ natural variables, there are $\frac{t(t+1)}{2}$ separate pairs of mixed partial derivatives and thus that many Maxwell relations.
+
 References
 1. Kusaka, I. Statistical Mechanics for Engineers. (Springer International Publishing, 2015). doi:10.1007/978-3-319-13809-1.
 2. Callen, H, Thermodynamics and an Introduction to Thermostatistics (Wiley, 1985). ISBN: 978-0-471-86256-7.
