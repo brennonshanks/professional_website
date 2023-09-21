@@ -349,6 +349,94 @@ $$
 
 Given a thermodynamic potential with $(t+1)$ natural variables, there are $\frac{t(t+1)}{2}$ separate pairs of mixed partial derivatives and thus that many Maxwell relations.
 
+## Jacobian Transformations for Thermodynamic Derivatives
+
+### Jacobian Transformations
+
+An excellent method for manipulation of thermodynamic derivatives is based on the mathematical properties of Jacobians. If $u,v. ...w$ are functions of $x,y,...z$, the Jacobian is defined as, 
+
+$$
+   \frac{\partial (u,v,...,w)}{\partial (x,y,...,z)} \equiv 
+   \begin{vmatrix}
+   \frac{\partial u}{\partial x}&\frac{\partial u}{\partial y}&...&\frac{\partial u}{\partial z}\\
+   \frac{\partial v}{\partial x}&\frac{\partial v}{\partial y}&...&...\\
+   \frac{\partial w}{\partial x}&...&...&\frac{\partial w}{\partial z}
+   \end{vmatrix}
+$$
+
+The property that makes this incredibly useful in thermodynamics is the relationship,
+
+$$
+    \left(\frac{\partial u}{\partial x}\right)_{y...z} = \frac{\partial (u,y,...,z)}{\partial (x,y,...,z)}
+$$
+
+Jacobians have the following nice properties.
+
+$$
+\frac{\partial (u,v,...,w)}{\partial (x,y,...,z)}= -\frac{\partial (v,u,...,w)}{\partial (x,y,...,z)}
+$$
+
+$$
+\frac{\partial (u,v,...,w)}{\partial (x,y,...,z)}= \frac{\partial (u,v,...,w)}{\partial (r,s,...,t)}\frac{\partial (r,s,...,t)}{\partial (x,y,...,z)}
+$$
+
+$$
+\frac{\partial (u,v,...,w)}{\partial (x,y,...,z)}= 1 / \frac{\partial (x,y,...,z)}{\partial (u,v,...,w)}
+$$
+
+
+
+### Example: Express $C_V$ in terms of $C_P$, $\alpha$, and $\kappa_T$
+
+The problem of the reduction of a given derivative to $C_P$, $\alpha$, and $\kappa_T$ is equivalent to the coordinate transformation to T, P, and $N_j$ as independent variables.
+
+$$
+    C_V = T\left(\frac{\partial s}{\partial T}\right)_{v} 
+$$
+
+$$
+    C_P = T\left(\frac{\partial s}{\partial T}\right)_{P} 
+$$
+
+$$
+    \alpha = \frac{1}{v}\left(\frac{\partial v}{\partial T}\right)_{P} 
+$$
+
+$$
+    \kappa_T = -\frac{1}{v}\left(\frac{\partial v}{\partial P}\right)_{T} 
+$$
+
+So, we proceed by expressing $C_V$ as a Jacobian,
+
+$$
+    C_V = T\left(\frac{\partial s}{\partial T}\right)_{v} = T \frac{\partial (s,v)}{\partial (T,v)} = T \frac{\partial (s,v)}{\partial (T,P)}/ \frac{\partial (T,v)}{\partial (T,P)}
+$$
+
+We now notice that we can apply the definition of $\kappa_T$, to obtain,
+
+$$
+    C_V =  -\frac{T}{v\kappa_T} \frac{\partial (s,v)}{\partial (T,P)}
+$$
+
+If we expand the Jacobian using the determinant definition, we find, 
+
+$$
+    C_V =  -\frac{T}{v\kappa_T} \left [\left(\frac{\partial s}{\partial T}\right)_{P}\left(\frac{\partial v}{\partial P}\right)_{T}-\left(\frac{\partial s}{\partial P}\right)_{T}\left(\frac{\partial v}{\partial T}\right)_{P}\right]
+$$
+
+Substituting for our known relation, and applying a Maxwell relation we find,
+
+$$
+    C_V =  -\frac{T}{v\kappa_T} \left [-\frac{C_P}{T}v\kappa_T + \left(\frac{\partial v}{\partial T}\right)_{P}^2\right]
+$$
+
+$$
+    C_V =  -\frac{T}{v\kappa_T} \left[ -\frac{C_P}{T}v\kappa_T + \alpha^2 v^2\right]
+$$
+
+$$
+    C_V =  C_P - \frac{Tv\alpha^2}{\kappa_T}
+$$
 
 
 References
