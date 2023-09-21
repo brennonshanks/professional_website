@@ -261,6 +261,8 @@ for all phases $1,...,M$. But this requires that $dT$ and $d\mu_i$ are zero. Tha
 
 ## Thermodynamic Processes, Alternative Formulations, and Maxwell Relations
 
+{{< youtube y8yZNhulGcw >}}
+
 The formulation of thermodynamics so far has been concerned with equilibrium states. However, this is only of use when we apply this formulation to make inferences about processes. The fundamental relation defines a thermodynamic configuration space, or in other words, a manifold in the parameters S, U, V, and $N_i$. Each point on this manifold is an equilibrium state. 
 
 If we choose an arbitrary curve on this manifold of equilibrium points, we will trace a quasi-static process. Real physics requires non-equilibrium intermediate states between each of these equilibrium states, so a quasi-static process is merely a theoretical concept. In general, real processes are irreversible, meaning, once an internal constraint is lifted and the system returns to equilibrium, it cannot go back to its original state by manipulation of constraints in the closed system. A reversible process is one where the change in entropy become arbitrarily small, so we can go back and forth between states by manipulation internal constraints. Every reversible process coincides with a quasi-static process, but not the other way around.
@@ -346,6 +348,8 @@ $$
 $$
 
 Given a thermodynamic potential with $(t+1)$ natural variables, there are $\frac{t(t+1)}{2}$ separate pairs of mixed partial derivatives and thus that many Maxwell relations.
+
+
 
 References
 1. Kusaka, I. Statistical Mechanics for Engineers. (Springer International Publishing, 2015). doi:10.1007/978-3-319-13809-1.
