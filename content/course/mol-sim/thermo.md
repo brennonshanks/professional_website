@@ -421,7 +421,7 @@ $$
 If we expand the Jacobian using the determinant definition, we find, 
 
 $$
-    C_V =  -\frac{T}{v\kappa_T} \left [\left(\frac{\partial s}{\partial T}\right)_{P}\left(\frac{\partial v}{\partial P}\right)_{T}-\left(\frac{\partial s}{\partial P}\right)_{T}\left(\frac{\partial v}{\partial T}\right)_{P}\right]
+    C_V =  -\frac{T}{v\kappa_T} \left [\bigg(\frac{\partial s}{\partial T}\bigg)\left(\frac{\partial v}{\partial P}\right)-\left(\frac{\partial s}{\partial P}\right)\left(\frac{\partial v}{\partial T}\right)\right]
 $$
 
 Substituting for our known relation, and applying a Maxwell relation we find,
