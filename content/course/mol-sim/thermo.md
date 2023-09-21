@@ -344,7 +344,7 @@ $$
 which implies that,
 
 $$
-  - \frac{\partial P}{\partial S} =  \frac{\partial T}{\partial V}
+  \frac{\partial P}{\partial S} =  -\frac{\partial T}{\partial V}
 $$
 
 Given a thermodynamic potential with $(t+1)$ natural variables, there are $\frac{t(t+1)}{2}$ separate pairs of mixed partial derivatives and thus that many Maxwell relations.
