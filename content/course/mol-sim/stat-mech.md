@@ -218,15 +218,7 @@ $$
     dU = \eta d\Theta + \Theta d\eta + d\alpha
 $$
 
-We now need to expand the $d\alpha$ term in a systematic way so that we can compare this expression with the one we are familiar with from thermodynamics. To this end, we consider an example system of particles confined to a piston cylinder device as shown below. 
-
-\begin{figure}[H]
-    \includegraphics[width=1\textwidth]{cansystem.png}
-    \centering
-    \label{fig:canonical}
-\end{figure}
-
-How do we write $H$ for this system? $H$ is a function of the particle velocities, interactions, and piston position (since it imparts an external force on the system), which we can write as,
+We now need to expand the $d\alpha$ term in a systematic way so that we can compare this expression with the one we are familiar with from thermodynamics. To this end, we consider an example system of particles confined to a piston cylinder device. How do we write $H$ for this system? $H$ is a function of the particle velocities, interactions, and piston position (since it imparts an external force on the system), which we can write as,
 
 $$
     H = \sum_{i=1}^N \frac{||\mathbf{p_i}||^2}{2m_i} + \phi(\mathbf{r}^N) + \psi(\mathbf{r}^N, \lambda)
@@ -236,7 +228,7 @@ where $\lambda$ is the position of the piston and is common to all particles in 
 
 $$
     dC = \bigg(\frac{\partial C}{\partial \Theta}\bigg) d\Theta + \bigg(\frac{\partial C}{\partial \lambda}\bigg) d\lambda
-\end{equation}
+$$
 
 and we also know from our definition of $\alpha$ that,
 
