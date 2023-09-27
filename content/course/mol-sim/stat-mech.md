@@ -92,3 +92,231 @@ $$
 
 This represents the number of copies in the phase space around the point $(q^f,p^f)$. Noting that copies of the system are neither generated nor destroyed in this process, the total copy density $N\rho$ is conserved.
 
+## Louiville's Theorem and the Canonical Ensemble
+
+### Louiville's Theorem
+
+Recall the equation of continuity from continuum mechanics. The equation of continuity amounts to writing down a mass balance on a system noting that the total mass of a system is conserved. For some fixed region of space, referred to as a control volume, the number of particles in the control volume at any moment $t$ is given by,
+
+$$
+    \int_V \rho(\mathbf{r}, t) d \mathbf{r}
+$$
+
+where $V$ denotes the control volume and $\rho(\mathbf{r}, t)$ is the number density of particles at position $\mathbf{r}$ at time $t$. If there are no chemical reactions, the rate of change of this integral with respect to time is related to the flux of atoms across the surface of the control volume so that,
+
+$$
+    \frac{d}{dt} \int_V \rho(\mathbf{r}, t) d \mathbf{r} = \oint_S \rho(\mathbf{r}, t) v(\mathbf{r}, t) \cdot \mathbf{n}(\mathbf{r}) dS
+$$
+
+where $v$ is the average velocity of particles through the surface element $dS$ and $\mathbf{n}(\mathbf{r})$ is the outward unit normal to the control volume surface. We can rewrite the left hand side using the Leibniz integral rule (which can be proved by invoking the bounded convergence theorem) such that,
+
+$$
+    \frac{d}{dt} \int \rho(\mathbf{r}, t) d \mathbf{r} = \rho(\mathbf{r}, b) \frac{d b(\mathbf{r})}{dt} -  \rho(\mathbf{r}, a) \frac{d a(\mathbf{r})}{dt} + \int^{b(\mathbf{r})}_{a(\mathbf{r})} \frac{\partial}{\partial t} \rho(\mathbf{r}, t) d \mathbf{r}
+$$
+
+where the first two terms related to the specific shape of the control volume go to zero since $a(\mathbf{r}), b(\mathbf{r})$ are fixed in time (control volume cannot deform). We then obtain,
+
+$$
+    \frac{d}{dt} \int_V \rho(\mathbf{r}, t) d \mathbf{r} = \int_V \frac{\partial}{\partial t} \rho(\mathbf{r}, t) d \mathbf{r}
+$$
+
+Now, the term on the right hand side can be rewritten according to the divergence theorem,
+
+$$
+    \oint_S \rho(\mathbf{r}, t) v(\mathbf{r}, t) \cdot \mathbf{n}(\mathbf{r}) dS = \int_V \nabla \cdot (\rho \mathbf{v}) d\mathbf{r}
+$$
+
+which after plugging into our original expression and rearranging under the integral we obtain,
+
+$$
+    \int_V \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) d\mathbf{r} = 0
+$$
+
+But since this holds for any $V$, we must have, 
+
+$$
+    \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0
+$$
+
+This is an expression for the equation of continuity in continuum mechanics. By analogy, in phase space we have a control volume in 2$f$-coordinates $(q_1, ..., q_f, p_1, ..., p_f)$ and velocities $(\dot{q}_1, ..., \dot{q}_f, \dot{p}_1, ..., \dot{p}_f)$ with a total number density of $\mathcal{N}\rho$. Plugging these into the equation of continuity gives,
+
+$$
+    \frac{\partial \mathcal{N}\rho}{\partial t} + \sum_{i=1}^f \left[\frac{\partial (\mathcal{N}\rho \dot q_i)}{\partial q_i}+\frac{\partial (\mathcal{N}\rho \dot p_i)}{\partial p_i}\right] = 0
+$$
+
+We note that $\mathcal{N}$ is a constant and apply Hamilton's equations of motion to find,
+
+$$
+    \frac{\partial\rho}{\partial t} + \sum_{i=1}^f  \left[ \frac{\partial}{\partial q_i}\bigg(\rho\frac{\partial\mathcal{H}}{\partial p_i}\bigg) - \frac{\partial}{\partial p_i} \bigg(\rho \frac{\partial \mathcal{H}}{\partial q_i}\bigg)\right] = 0
+$$
+
+which implies that,
+
+$$
+    \frac{d \rho}{d t} = \frac{\partial \rho}{\partial t} + \{\rho,H\} = 0
+$$
+
+or in other words, that $\rho$ is a constant of motion. This means that the number of copies in a statistical ensemble is conserved. This is a statement that holds whether or not the system is in statistical equilibrium or not. However, we now require that the probability be a constant of motion with respect to the Hamiltonian and that it not depend explicitly on time in order for the system to be in statistical equilibrium.
+
+### The Canonical Ensemble
+
+So now the question becomes: how do we express $\rho$ in a productive way? What functional form does it take? We first make an assumption that $\rho = \rho(H)$ only. Now, we proceed to hypothesize that $\rho$ takes the following form,
+
+$$
+    \rho(q^f,p^f) = \frac{1}{C}e^{-\beta H(q^f,p^f)}
+$$
+
+where C is determined by the normalization condition such that,
+
+$$
+    1 = \int \rho (q^f,p^f) dq^fdp^f = \int\frac{1}{C}e^{-\beta H(q^f,p^f)}dq^fdp^f 
+$$
+
+The statistical ensemble characterized by a $\rho$ of this form is referred to as the canonical ensemble. The ensemble average of the energy H is called the internal energy ($U$), and is given by,
+
+$$
+    U \equiv \langle H \rangle = \int H \rho(q^f,p^f) dq^fdp^f
+$$
+
+where all we have done is used new notation for the same integral we introduced earlier when we discussed ensemble averages,
+
+$$
+    \langle A \rangle = \int A(q^f, p^f) \rho(q^f, p^f) dq^f dp^f = \frac{1}{C}\int A(q^f, p^f) e^{-\beta H(q^f, p^f)} dq^f dp^f
+$$
+
+for the given form of $\rho$. We now have an expression for $U$ in terms of the microscopic quantities from statistical mechanics. However, we also have an expression for $U$ in thermodynamics; namely, 
+
+$$
+    dU = TdS - PdV
+$$
+
+which will allow us to relate the thermodynamic concepts of temperature, entropy, and work to the microscopic expression for $U$. To do this, we let $\Theta = \beta^{-1}$ and rewrite the canonical ensemble probability density in terms of $H$,
+
+$$
+    H = -\Theta log(\rho) - \Theta log(C)
+$$
+
+Taking the ensemble average of these quantities gives,
+
+$$
+    U = \Theta \eta + \alpha
+$$
+
+where we have defined two new variables given by,
+
+$$
+    \eta = -\langle log(\rho) \rangle
+$$
+
+$$
+    \alpha = -\Theta log(C)
+$$
+
+Taking the total derivative of $U$ we find that we can express dU as,
+
+$$
+    dU = \eta d\Theta + \Theta d\eta + d\alpha
+$$
+
+We now need to expand the $d\alpha$ term in a systematic way so that we can compare this expression with the one we are familiar with from thermodynamics. To this end, we consider an example system of particles confined to a piston cylinder device as shown below. 
+
+\begin{figure}[H]
+    \includegraphics[width=1\textwidth]{cansystem.png}
+    \centering
+    \label{fig:canonical}
+\end{figure}
+
+How do we write $H$ for this system? $H$ is a function of the particle velocities, interactions, and piston position (since it imparts an external force on the system), which we can write as,
+
+$$
+    H = \sum_{i=1}^N \frac{||\mathbf{p_i}||^2}{2m_i} + \phi(\mathbf{r}^N) + \psi(\mathbf{r}^N, \lambda)
+$$
+
+where $\lambda$ is the position of the piston and is common to all particles in the system. The point here is that we can perform work on the system by changing $\lambda$ and that the Hamiltonian is a function of $\lambda$. From the normalization condition we have that $C=C(\Theta, \lambda)$. The total derivative of $C$ is then,
+
+$$
+    dC = \bigg(\frac{\partial C}{\partial \Theta}\bigg) d\Theta + \bigg(\frac{\partial C}{\partial \lambda}\bigg) d\lambda
+\end{equation}
+
+and we also know from our definition of $\alpha$ that,
+
+$$
+    d \alpha = -\Theta d \log{C} - \log{C} d\Theta = -\Theta \frac{dC}{C} - \log{C} d\Theta
+$$
+
+and rewriting this expression by plugging in for $dC$ and $\log{C} = -\alpha/\Theta$ gives,
+
+$$
+    d\alpha = \bigg[\frac{\alpha}{\Theta} - \frac{\Theta}{C}\bigg(\frac{\partial C}{\partial \Theta}\bigg)_\lambda \bigg] d \Theta - \frac{\Theta}{C}\bigg(\frac{\partial C}{\partial \lambda}\bigg)_\Theta d\lambda
+$$
+
+Now, let's rewrite these partial derivatives with respect to the integral of the probability density function. This gives,
+
+$$
+    \frac{1}{C}\bigg(\frac{\partial C}{\partial \Theta}\bigg)_\lambda = \frac{1}{C} \frac{\partial}{\partial \Theta} \int e^{-H/\Theta}dq^fdp^f = \frac{1}{C} \int \frac{\partial}{\partial \Theta} e^{-H/\Theta}dq^fdp^f
+$$
+
+and taking the derivative of the inside gives,
+
+$$
+    = \frac{1}{C} \int \frac{H}{\Theta^2} e^{-H/\Theta}dq^fdp^f = \frac{U}{\Theta^2}
+$$
+
+Similarly,
+
+$$
+    \frac{1}{C}\bigg(\frac{\partial C}{\partial \lambda}\bigg)_\Theta = \frac{1}{C} \frac{\partial}{\partial \lambda} \int e^{-H/\Theta}dq^fdp^f = \frac{1}{C} \int \frac{\partial}{\partial \lambda} e^{-H/\Theta}dq^fdp^f
+$$
+
+which is just,
+
+$$
+    = \frac{1}{C} \int -\frac{1}{\Theta}\frac{\partial H}{\partial \lambda} e^{-H/\Theta}dq^fdp^f =  -\frac{1}{\Theta} \bigg\langle \frac{\partial H}{\partial \lambda} \bigg\rangle
+$$
+
+Combining these expressions into our expression for $d\alpha$,
+
+$$
+    d\alpha = \bigg[\frac{\alpha}{\Theta} - \Theta \frac{U}{\Theta^2} \bigg] d \Theta + \Theta \frac{1}{\Theta} \bigg\langle \frac{\partial H}{\partial \lambda} \bigg\rangle d\lambda = \frac{1}{\Theta}(\alpha - U)d\Theta + \bigg\langle \frac{\partial H}{\partial \lambda} \bigg\rangle d\lambda
+$$
+
+and finally substituting in our original expression for $U = \Theta \eta + \alpha$ we obtain,
+
+$$
+    dU = \Theta d\eta +\bigg \langle \frac{\partial H}{\partial \lambda}\bigg \rangle d\lambda
+$$
+
+Thus, we find that the first term is related to $TdS$ and the second term is related to the work done on the system. The fact that $TdS = \Theta d\eta$ means that,
+
+$$
+    \Theta \propto T
+$$
+
+$$
+    d \eta \propto dS
+$$
+
+We choose the constant of proportionality as the Boltzmann constant, $k_B$, so that,
+
+$$
+    d \eta = d\bigg(\frac{S}{k_B}\bigg)
+$$
+
+which implies that a functional form for the entropy in terms of classical statistical mechanical variables is,
+
+$$
+    S = -k_B\langle log(\rho)\rangle 
+$$
+
+Also note that we have the relation for $\alpha$ given by,
+
+$$
+    \alpha = U - \Theta \eta = U - TS = A
+$$
+
+This gives us an approximate form for the Helmholtz free energy as,
+
+$$
+    A = -k_BTlog(C)
+$$
+
