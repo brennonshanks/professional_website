@@ -239,7 +239,7 @@ $$
 and rewriting this expression by plugging in for $dC$ and $\log{C} = -\alpha/\Theta$ gives,
 
 $$
-    d\alpha = \bigg[\frac{\alpha}{\Theta} - \frac{\Theta}{C}\bigg(\frac{\partial C}{\partial \Theta}\bigg)_\lambda \bigg] d \Theta - \frac{\Theta}{C}\bigg(\frac{\partial C}{\partial \lambda}\bigg)_\Theta d\lambda
+    d\alpha = \bigg[\frac{\alpha}{\Theta} - \frac{\Theta}{C}\bigg(\frac{\partial C}{\partial \Theta}\bigg) \bigg] d \Theta - \frac{\Theta}{C}\bigg(\frac{\partial C}{\partial \lambda}\bigg) d\lambda
 $$
 
 Now, let's rewrite these partial derivatives with respect to the integral of the probability density function. This gives,
