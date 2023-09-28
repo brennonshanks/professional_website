@@ -123,7 +123,7 @@ $$
 Now, the term on the right hand side can be rewritten according to the divergence theorem,
 
 $$
-    \oint_S \rho(\mathbf{r}, t) v(\mathbf{r}, t) \cdot \mathbf{n}(\mathbf{r}) dS = \int_V \nabla \cdot (\rho \mathbf{v}) d\mathbf{r}
+    -\oint_S \rho(\mathbf{r}, t) v(\mathbf{r}, t) \cdot \mathbf{n}(\mathbf{r}) dS = \int_V \nabla \cdot (\rho \mathbf{v}) d\mathbf{r}
 $$
 
 which after plugging into our original expression and rearranging under the integral we obtain,
