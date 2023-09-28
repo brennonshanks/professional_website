@@ -351,6 +351,8 @@ Given a thermodynamic potential with $(t+1)$ natural variables, there are $\frac
 
 ## Jacobian Transformations for Thermodynamic Derivatives
 
+{{< youtube t2-ITCzWgjw >}}
+
 ### Jacobian Transformations
 
 An excellent method for manipulation of thermodynamic derivatives is based on the mathematical properties of Jacobians. If $u,v. ...w$ are functions of $x,y,...z$, the Jacobian is defined as, 
