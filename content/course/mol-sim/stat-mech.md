@@ -303,12 +303,12 @@ $$
 Also note that we have the relation for $\alpha$ given by,
 
 $$
-    \alpha = U - \Theta \eta = U - TS = A
+    \alpha = U - \Theta \eta = U - TS = F
 $$
 
-This gives us an approximate form for the Helmholtz free energy as,
+which you may recognize as just the Helmholtz free energy, F, from classical thermodynamics. This gives us an approximate form for the Helmholtz free energy as,
 
 $$
-    A = -k_BTlog(C)
+    F = -k_BTlog(C)
 $$
 
