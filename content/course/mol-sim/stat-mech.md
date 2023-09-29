@@ -14,6 +14,8 @@ We will see that statistical mechanics is a powerful tool to unite microscopic d
 
 ## Some Important Definitions
 
+{{< youtube HDl63ZSFVwM >}}
+
 Before we dive into the primary results of statistical mechanics, let's first set the stage with some important concepts, definitions, and notation.
 
 ### Dynamical Variables
