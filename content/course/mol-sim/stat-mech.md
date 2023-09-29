@@ -94,6 +94,8 @@ This represents the number of copies in the phase space around the point $(q^f,p
 
 ## Louiville's Theorem and the Canonical Ensemble
 
+{{< youtube XiFEXVWNlpg >}}
+
 ### Louiville's Theorem
 
 Recall the equation of continuity from continuum mechanics. The equation of continuity amounts to writing down a mass balance on a system noting that the total mass of a system is conserved. For some fixed region of space, referred to as a control volume, the number of particles in the control volume at any moment $t$ is given by,
