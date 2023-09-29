@@ -10,7 +10,7 @@ weight: 40
 
 In previous lectures, we have studied how particle positions and momenta evolve in time according to Hamilton's equations of motion. Of course, when dealing with real systems, we are almost never concerned with the motion of all of the particles in the system and we know that materials can be well-described by simple thermodynamic laws. However, up to this point, you may feel a bit uneasy that we have swept the dynamics of particles under the rug when we discussed thermodynamics. So far, we collected all of the microscopic modes of energy transfer into the heat term and introduced the entropy fundamental relation. From these very simple assumptions we have found that we can derive nearly all of thermodynamics. But what is heat? Or entropy? To answer these questions, we need to study statistical mechanics. 
 
-We will see that statistical mechanics is a powerful tool to unite microscopic dynamics with macroscopic theory. Statistical mechanics holds whether the system is classical or quantum mechanical, and has been applied to study systems as diverse as molecular systems, black holes, and bird flocking.
+We will see that statistical mechanics is a powerful tool to unite microscopic dynamics with macroscopic theory. Statistical mechanics holds whether the system is classical or quantum mechanical, and has been applied to study systems as diverse as molecular systems, black holes, and bird flocks.
 
 ## Some Important Definitions
 
