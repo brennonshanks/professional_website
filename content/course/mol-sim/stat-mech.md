@@ -316,3 +316,61 @@ $$
     F = -k_BTlog(C)
 $$
 
+## Physical Motivation for the Canonical Ensemble
+
+The previous section gave a definition for $\beta$ as,
+
+$$
+    \beta = \frac{1}{k_BT}
+$$
+
+In the canonical ensemble definition for the probability of observing a particle in some volume element around the point $(q^f,p^f)$, we now have,
+
+$$
+    \rho (q^f,p^f) = \frac{1}{C}e^{-H(q^f,p^f)/k_BT}
+$$
+
+But this means that the temperature of the system must be specified to determine $\rho$. To do this in practice, we need to allow for transfer of energy with a system and its surroundings. In fact, we now show that the canonical ensemble is the only possible ensemble that can account for a system in thermal contact with its surroundings. Let $\mathcal{T}$ be an isolated system containing a subsystem $\mathcal{S}$ enclosed in a rigid, impermeable wall, surrounded by subsystem $\mathcal{L}$ called the surroundings. The Hamiltonian of the system can be written as,
+
+$$
+    H_\mathcal{T}(q^{m+n},p^{m+n}) = H_\mathcal{S}(q^m,p^m) + H_\mathcal{L}(q^{n},p^{n}) + H_{int}(q^{m+n},p^{m+n})
+$$
+
+The last term arises from the interactions between the subsystem $\mathcal{S}$ and the surroundings $\mathcal{L}$. m,n are the mechanical degrees of freedom of $\mathcal{S}$ and $\mathcal{L}$, respectively. We need to assume that the internal interaction Hamiltonian is negligible in magnitude compared to the subsystem and surroundings Hamiltonian's; meaning,
+
+$$
+    H_\mathcal{T}(q^{m+n},p^{m+n}) \approx H_\mathcal{S}(q^m,p^m) + H_\mathcal{L}(q^{n},p^{n}) 
+$$
+
+This implies that the interaction between $\mathcal{S}$ and $\mathcal{L}$ is weak, but still sufficient to allow for a transfer of energy between the two systems over a long period of time. This transfer of energy is sufficient to maintain a constant temperature without contributing significantly to the total Hamiltonian. 
+
+We now split the subsystem $\mathcal{S}$ into two sub-subsystems A and B, with mechanical degrees of freedom $m_A$ and $m_B$, such that $m =m_A+m_B$. We now suppose the interactions between these two are sufficiently weak so that,
+
+$$
+    H_\mathcal{S}(q^{m},p^{m}) \approx H_A(q^{m_a},p^{m_a}) + H_B(q^{m_b},p^{m_b}) 
+$$
+
+This approximate independence implies that,
+
+$$
+    \rho_{\mathcal{S}} \approx \rho_A\rho_B
+$$
+
+since independent probabilities can be multiplied together to give the total probability. Taking the logarithm of both sides gives,
+
+$$
+    log(\rho_\mathcal{S}) \approx log(\rho_A) + log(\rho_B)
+$$
+
+However, we know from Liouville's Theorem that $\rho$ is a function of constants of motion. We also now know that the logarithm of $\rho$ is additive. This necessarily implies that $log(\rho)$ is a linear function of constants of motion that are additive. If we assume that $\rho = \rho(H)$, we will obtain the following expression,
+
+$$
+    log(\rho) = mH + b
+$$
+
+$$
+    \rho = e^be^{mH}
+$$
+
+which is precisely the form of the canonical distribution function supposed earlier. You may wonder why we can still apply Liouville's theorem here since the system in thermal contact is not isolated. The reason for this is that over a small time interval, if the interactions between systems are sufficiently weak, then the system will behave approximately isothermally over that time. If we stitch together a large number of these time intervals, we expect to find the canonical distribution.
+
