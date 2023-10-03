@@ -60,7 +60,7 @@ $$
 
 2. $\rho$ must be non-negative so that, $\rho \leq 0$.
 
-It is very reasonable to question why we would rewrite our original expression with some new, seemingly not useful function $\rho$. We haven't really made too much progress computationally, as all we have done is rearranged the problem with some new definitions. However, the hope is that by defining $\rho$ in this way that we can find a $\rho$ to use in eq \eqref{eq:dynamical} that will allow us to solve for $A_{exp}(t)$ without ever needing to solve the equations of motion directly. Furthermore, by reformulating the motion of many-particles with respect to this probability density function, perhaps we can gain novel insight that would otherwise be difficult to describe or notice.
+It is very reasonable to question why we would rewrite our original expression with some new, seemingly not useful function $\rho$. We haven't really made too much progress computationally, as all we have done is rearranged the problem with some new definitions. However, the hope is that by defining $\rho$ in this way that we can find a $\rho$ that will allow us to solve for $A_{exp}(t)$ without ever needing to solve the equations of motion directly. Furthermore, by reformulating the motion of many-particles with respect to this probability density function, perhaps we can gain novel insight that would otherwise be difficult to describe or notice.
 
 ### Statistical Equilibrium
 
