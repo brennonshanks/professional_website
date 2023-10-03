@@ -318,6 +318,8 @@ $$
 
 ## Physical Motivation for the Canonical Ensemble
 
+{{< youtube aFEovHmSvQk >}}
+
 The previous section gave a definition for $\beta$ as,
 
 $$
