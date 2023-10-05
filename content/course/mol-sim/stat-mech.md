@@ -427,13 +427,13 @@ $$
 which gives,
 
 $$
-    C \rho(\mathbf{p}_1) d\mathbf{p}_1 = \prod _{i=1}^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
+    C \rho(\mathbf{p}_1) d\mathbf{p}_1 = \prod^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
 $$
 
 and finally dividing by $C$ on both sides,
 
 $$
-    \rho(\mathbf{p}_1) d\mathbf{p}_1 = \frac{\prod _{i=1}^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N}{\prod _{i=1}^N \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N}
+    \rho(\mathbf{p}_1) d\mathbf{p}_1 = \frac{\prod^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N}{\prod^N \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N}
 $$
 
 or equivalently,
