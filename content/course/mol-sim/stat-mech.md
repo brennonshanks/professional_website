@@ -427,7 +427,7 @@ $$
 which gives,
 
 $$
-    C \rho(\mathbf{p}_1) d\mathbf{p}_1 = \prod_{i=1}^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
+    C \rho(\mathbf{p}_1) d\mathbf{p}_1 = \prod\nolimits _{i=1}^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3(N_i-1)/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
 $$
 
 and finally dividing by $C$ on both sides,
