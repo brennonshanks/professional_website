@@ -376,3 +376,105 @@ $$
 
 which is precisely the form of the canonical distribution function supposed earlier. You may wonder why we can still apply Liouville's theorem here since the system in thermal contact is not isolated. The reason for this is that over a small time interval, if the interactions between systems are sufficiently weak, then the system will behave approximately isothermally over that time. If we stitch together a large number of these time intervals, we expect to find the canonical distribution.
 
+## Applications of the Canonical Ensemble
+
+We can use the canonical probability distribution to explore many properties of a statistical mechanical system. 
+
+### The Maxwell-Boltzmann Distribution
+
+One application is to find the distribution of momentum of a particle in a system of $N$ particles held in thermal equilibrium with its surroundings. In the absence of an external field, we can write the Hamiltonian for such as a system as,
+
+$$
+    H(\mathbf{r}^N, \mathbf{p}^N) = \sum_{i = 1}^N \frac{||\mathbf{p}_i||^2}{2m_i} + \phi(\mathbf{r}^N)
+$$
+
+where $\phi(\mathbf{r}^N$) is recognized as the particle interaction potential energy contribution. To find the probability distribution on the velocity of a single particle, we can proceed to integrate out all position and momentum coordinates except for a single arbitray particle to obtain,
+
+$$
+    \rho(\mathbf{p}_1)d\mathbf{p}_1
+$$
+
+which is just the momentum probability density function for a single particle. Proceeding in this way, let's start with the partition function in the canonical ensemble,
+
+$$
+    \rho d\mathbf{r}^N d\mathbf{p}^N = \frac{1}{C}\int e^{-\beta H} d\mathbf{r}^N d\mathbf{p}^N
+$$
+
+and substituting $H$ into the equation we get,
+
+$$
+    \rho d\mathbf{r}^N d\mathbf{p}^N = \frac{e^{-\beta \bigg(\sum_{i = 1}^N \frac{||\mathbf{p_i}||^2}{2m_i} + \phi(\mathbf{r}^N)\bigg)}}{\int e^{-\beta \bigg(\sum_{i = 1}^N \frac{||\mathbf{p}_i||^2}{2m_i} + \phi(\mathbf{r}^N)\bigg)} d\mathbf{r}^N d\mathbf{p}^N} 
+$$
+
+We can begin by solving for $C$ to obtain,
+
+$$
+    C = \int e^{-\beta \bigg(\sum_{i = 1}^N \frac{||\mathbf{p_i}||^2}{2m_i} + \phi(\mathbf{r}^N)\bigg)} d\mathbf{r}^N d\mathbf{p}^N = \int \prod_{i=1}^N e^{-\beta \frac{||\mathbf{p}_i||^2}{2m_i}} d\mathbf{p}^N \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
+$$
+
+which is equal to,
+
+$$
+    C = \prod_{i=1}^N \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
+$$
+
+Recognizing that we now just need to take the integral over $\rho d\mathbf{r}^N d\mathbf{p}^N$ with respect to all variables but a single momentum, we obtain,
+
+$$
+   C \int \rho d\mathbf{r}^N d\mathbf{p}^{N-1} = \int e^{-\beta \bigg(\sum_{i = 1}^N \frac{||\mathbf{p}_i||^2}{2m_i} + \phi(\mathbf{r}^N)\bigg)} d\mathbf{r}^N d\mathbf{p}^{N-1}
+$$
+
+which gives,
+
+$$
+    C \rho(\mathbf{p}_1) d\mathbf{p}_1 = \prod_{i=1}^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N
+$$
+
+and finally dividing by $C$ on both sides,
+
+$$
+    \rho(\mathbf{p}_1) d\mathbf{p}_1 = \frac{\prod_{i=1}^{N-1} \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1 \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N}{\prod_{i=1}^N \bigg(\frac{2 \pi m_i}{\beta}\bigg)^{3/2} \int e^{-\beta \phi(\mathbf{r}^N)} d\mathbf{r}^N}
+$$
+
+or equivalently,
+
+$$
+    \rho(\mathbf{p}_1) d\mathbf{p}_1 = \bigg(\frac{m_1}{2\pi k_B T}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1
+$$
+
+This is known as the Maxwell-Boltzmann distribution.
+
+### The Equipartition Theorem
+
+You may have noticed in previous examples that each quadratic term in positions or momenta contribute a factor of $\beta^{-1/2}$ to the partition function. This implies that each quadratic term makes a contribution of $k_BT/2$ to the total energy. Let's generalize this observation here by writing our Hamiltonian in the following form,
+
+$$
+    H(q^f,p^f) = aq_1^2 + h(q_2, ..., q_f, p_1, ..., p_f)
+$$
+
+and computing the canonical ensemble average of $aq_1^2$. We proceed by writing,
+
+$$
+    \langle a q_1^2 \rangle = \frac{1}{C} \int a q_1^2 e^{-\beta a q_1^2} e^{-\beta h} d\mathbf{q}^f d\mathbf{p}^f = \frac{a}{C} \sqrt{\frac{\pi}{4(\beta a)^3}} \int e^{-\beta h} d\mathbf{q}^{f\neq 1} d\mathbf{p}^f
+$$
+
+but $C$ is equal to,
+
+$$
+    C = \int e^{-\beta a q_1^2} e^{-\beta h} d\mathbf{q}^f d\mathbf{p}^f = \sqrt{\frac{\pi}{\beta a}} \int e^{-\beta h} d\mathbf{q}^{f \neq 1} d\mathbf{p}^f 
+$$
+
+which means that,
+
+$$
+    \langle a q_1^2 \rangle = \frac{a \sqrt{\frac{\pi}{4(\beta a)^3}} \int e^{-\beta h} d\mathbf{q}^{f\neq 1} d\mathbf{p}^f}{\sqrt{\frac{\pi}{\beta a}} \int e^{-\beta h} d\mathbf{q}^{f \neq 1} d\mathbf{p}^f} = \frac{1}{2}\beta^{-1} = \frac{1}{2} k_BT
+$$
+
+Now, this result can be trivially generalized to Hamiltonian's of the form,
+
+$$
+    H(q^f, p^f) = \sum_{i=1}^f (a_iq_i^2 + b_ip_i^2)
+$$
+
+to show that $U = f k_B T$. This idea that the energy of a system is equally partitioned amongst each degree-of-freedom in the system is called the equipartition theorem.
+
