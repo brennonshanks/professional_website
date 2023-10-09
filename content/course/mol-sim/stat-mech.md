@@ -478,3 +478,125 @@ $$
 
 to show that $U = f k_B T$. This idea that the energy of a system is equally partitioned amongst each degree-of-freedom in the system is called the equipartition theorem.
 
+## Corrections from Quantum Mechanics 
+
+We derived an equation for the Helmholtz energy using classical statistical mechanics for a particle in a box. However, we need to extend this to a general argument and introduce quantum mechanical corrections to the determined equation. 
+
+Suppose we have N identical particles ($m_i = m_j$) in a rectangular box of dimension $L_x,L_y,L_z$. The Hamiltonian is given by,
+
+$$
+    H(\mathbf{r^N},\mathbf{p^N}) = \sum_{i=1}^N \frac{||\mathbf{p_i}||^2}{2m} + \psi_w (\mathbf{r^N})
+$$
+
+such that $\psi_w$ represents the interactions of the particles with the walls of the box. We can determine C by integrating $e^{-\beta H}$ over all of phase space according to,
+
+$$
+    C = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} ... \int_{-\infty}^{\infty} e^{-\beta H}dx_1dy_1dz_1dx_2...dz_Ndpx_1dpy_1...dpz_N
+$$
+
+where the integrals span the 6N-dimensional phase space. Solving this integral we find that,
+
+$$
+    C = V^N\bigg(\frac{2\pi m}{\beta}\bigg)^{3N/2}
+$$
+
+When we apply this to our equation for the Helmholtz energy, we find that,
+
+$$
+    F = -k_BT\log(V^N\bigg(\frac{2\pi m}{\beta}\bigg)^{3N/2}) = -k_BT\bigg[N\log(V) + \frac{3N}{2}\log(2 \pi m k_B T)\bigg]
+$$
+
+Now, we need to look at this function and see if it makes sense according to classical thermodynamics. The first thing to check is if $F$ is extensive so that $F(T, \lambda V, \lambda N) = \lambda F(T,V,N)$. Begin by substituting $V$ and $N$ for $\lambda V$ and $\lambda N$ so that, 
+
+$$
+    F = -k_BT\bigg[\lambda N \log(\lambda V) + \frac{3 \lambda N}{2}\log(2 \pi m k_B T)\bigg]
+$$
+
+which gives,
+
+$$
+    F = -\lambda k_BT\bigg[ N \log(\lambda V) + \frac{3 N}{2}\log(2 \pi m k_B T)\bigg] \neq \lambda F(T,V,N)
+$$
+
+Therefore, we find that $F$ is not extensive! This means that the statistical mechanics that we have developed is inconsistent with thermodynamics. The problem isn't with what we did, but rather how we started; namely, with classical mechanics. Atoms and particles are governed by quantum mechanics, and therefore we must introduce some corrections.
+
+### Indistinguishable Particles
+
+In classical mechanics, every particle is distinguishable from every other particle. In fact, we reasoned that we can track the position and velocity of every particle in a system and see how those variables evolve according to Newton's equations of motion. According to quantum mechanics, however, this can't be done even in principle! In quantum mechanics, identical particles are fundamentally indistinguishable, and therefore no computation or experiment can ever be devised to distinguish between them. This means that when we perform the integral over phase space when we calculate $C$ that we are actually over counting the number of states. To adjust for this, we just need to divide by the number of ways of labeling the particles, which is just related to the factorial operator. We therefore divide C by this degeneracy factor so that,
+
+$$
+    C' = \frac{1}{N!}\int e^{-\beta H(q^f,p^f)}dq^fdp^f
+$$
+
+Let's now check if $F$ is extensive. We know that $F = -k_BT\log C'$, which is given by,
+
+$$
+    F = -k_BT\bigg[ N \log(V) + \frac{3 N}{2}\log(2 \pi m k_B T) - \log N! \bigg]
+$$
+
+for which we can apply Sterling's approximation, $\log N! = N \log N - N$ for sufficiently large $N$,
+
+$$
+    F = -k_BT\bigg[ N \log(V) + \frac{3 N}{2}\log(2 \pi m k_B T) - N \log N + N \bigg]
+$$
+
+We now make the substitution $V$ and $N$ for $\lambda V$ and $\lambda N$ so that,
+
+$$
+    F = -k_BT\bigg[ \lambda N \log(\lambda V) + \frac{3 \lambda N}{2}\log(2 \pi m k_B T) - \lambda N \log (\lambda N) + \lambda N \bigg]
+$$
+
+which is, 
+
+$$
+    F = -\lambda k_BT\bigg[N \log(V) + \frac{3 N}{2}\log(2 \pi m k_B T) - N \log (\lambda N) + N + \cancel{(\log \lambda - \log \lambda)} \bigg]
+$$
+
+showing that, 
+
+$$
+    F(T, \lambda V, \lambda N) = \lambda F(T,V,N)
+$$
+
+for our new expression $C'$.
+
+### The Heisenberg Uncertainty Principle
+
+To this point, we have taken integrals over infinitesimally small regions of the phase space in position and momenta, which violates the uncertainty principle. The uncertainty principle demands that a simultaneous measurement of position and momentum satisfies,
+
+$$
+    (\Delta q)(\Delta p) \geq h
+$$
+
+where $h$ is Planck's constant in units of action (distance times momentum or equivalently energy times time). To think about how the uncertainty principle influences our normalization factor $C$, consider what happens when we take a phase space integral in classical mechanics. The integral,
+
+$$
+    C = \int_{p} \int_q e^{-\beta H} dq dp
+$$
+
+assumes that all states inside the infinitesimal box $dq dp$ are distinguishable states and they all contribute to $C$. In reality, we only have distinguishable states up to the phase space volume $h$, so the integral should be written as,
+
+$$
+    C = \frac{1}{h}\int_{p} \int_q e^{-\beta H} dq dp. 
+$$
+    
+For $f$ degrees-of-freedom, the integral then becomes,
+
+$$
+    C = \frac{1}{h^f}\int_{p^f} \int_{q^f} e^{-\beta H} dq^f dp^f
+$$
+
+which for $N$ particles in a three-dimensional space gives,
+
+$$
+    C = \frac{1}{h^{3N}}\int_{p^f} \int_{q^f} e^{-\beta H} dq^f dp^f
+$$
+
+Finally, combining our results from particle indistinguishability and the uncertainty principle gives the correct definition for the canonical partition function, 
+
+$$
+    Z = \frac{1}{h^{3N}N!} \int e^{-\beta H} dq^f dp^f
+$$
+
+These corrections essentially amount to preventing over-counting of true quantum states with classical mechanical integrals. 
+
