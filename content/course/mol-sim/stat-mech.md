@@ -378,6 +378,8 @@ which is precisely the form of the canonical distribution function supposed earl
 
 ## Applications of the Canonical Ensemble
 
+{{< youtube uoieTQ3Qb3M>}}
+
 We can use the canonical probability distribution to explore many properties of a statistical mechanical system. 
 
 ### The Maxwell-Boltzmann Distribution
@@ -439,7 +441,7 @@ $$
 or equivalently,
 
 $$
-    \rho(\mathbf{p}_1) d\mathbf{p}_1 = \bigg(\frac{m_1}{2\pi k_B T}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1
+    \rho(\mathbf{p}_1) d\mathbf{p}_1 = \bigg(\frac{1}{2 m_1 \pi k_B T}\bigg)^{3/2} e^{-\beta \frac{||\mathbf{p}_1||^2}{2m_1}} d \mathbf{p}_1
 $$
 
 This is known as the Maxwell-Boltzmann distribution.
