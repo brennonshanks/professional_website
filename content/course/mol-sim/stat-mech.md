@@ -602,3 +602,11 @@ $$
 
 These corrections essentially amount to preventing over-counting of true quantum states with classical mechanical integrals. 
 
+## Other Statistical Ensembles
+
+### The Microcanonical Ensemble
+
+### The Grand Canonical Ensemble
+
+### The Isothermal-Isobaric Ensemble
+
