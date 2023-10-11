@@ -551,7 +551,7 @@ $$
 which is, 
 
 $$
-    F = -\lambda k_BT\bigg[N \log(V) + \frac{3 N}{2}\log(2 \pi m k_B T) - N \log (\lambda N) + N + \cancel{(\log \lambda - \log \lambda)} \bigg]
+    F = -\lambda k_BT\bigg[N \log(V) + \frac{3 N}{2}\log(2 \pi m k_B T) - N \log (N) + N + \cancel{(\log \lambda - \log \lambda)} \bigg]
 $$
 
 showing that, 
