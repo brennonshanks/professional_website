@@ -482,6 +482,8 @@ to show that $U = f k_B T$. This idea that the energy of a system is equally par
 
 ## Corrections from Quantum Mechanics 
 
+{{< youtube 2finZu0m6WM >}}
+
 We derived an equation for the Helmholtz energy using classical statistical mechanics for a particle in a box. However, we need to extend this to a general argument and introduce quantum mechanical corrections to the determined equation. 
 
 Suppose we have N identical particles ($m_i = m_j$) in a rectangular box of dimension $L_x,L_y,L_z$. The Hamiltonian is given by,
