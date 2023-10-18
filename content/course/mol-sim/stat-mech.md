@@ -606,9 +606,103 @@ These corrections essentially amount to preventing over-counting of true quantum
 
 ## Other Statistical Ensembles
 
-### The Microcanonical Ensemble
+### Canonical Ensemble
+
+A canonical ensemble is a collection of systems that have the same values of $N$, $V$, and $T$ and evolve according to the same Hamiltonian. It therefore represents a system at thermal equilibrium with its surroundings. In the canonical ensemble, we then argued that the equilibrium probability density for a system of identical particles is, 
+
+$$
+    \rho(\mathbf{q}^f, \mathbf{p}^f) = \frac{1}{h^{3N}N!}\frac{1}{Z} e^{-\beta H}
+$$
+
+where $Z$ is the canonical partition function given by,
+
+$$
+    Z = \frac{1}{h^{3N}N!}\int e^{-\beta H} d\mathbf{q}^f d\mathbf{p}^f
+$$
+
+We then found that we could derive the free energy (Helmholtz for an $NVT$ system) in the following way,
+
+$$
+    F = U - TS = -k_B T \log Z
+$$
+
+and derive important relationships like, 
+
+$$
+    \langle H \rangle = U = -\bigg(\frac{\partial \log Z}{\partial \beta}\bigg)_V
+$$
+
+or,
+
+$$
+    P = k_B T \bigg(\frac{\partial \log Z}{\partial V}\bigg)_{T,N}
+$$
+
+The canonical ensemble describes systems that can exchange heat with the surroundings but not volume or matter. However, the canonical ensemble is just one type of system that is relevant to real systems. It doesn't take that much imagination to consider a system which can not only exchange heat (and thus equilibrate temperature with its surroundings) but also exchange volume or particles. These ensembles will have different probability density functions, free energies, and mathematical relationships.
+
+### The Isothermal-Isobaric Ensemble
+
+The isothermal-isobaric ensemble is the same as a canonical ensemble aside from the pressure being held constant instead of volume. Therefore, we refer to the isothermal-isobaric ensemble as the $NPT$ ensemble. The free energy for an $NPT$ system is the Gibbs free energy (as an exercise, perform a partial Legendre transform of internal energy $U$ to convert $S \to T$ and $V \to P$) such that,
+
+$$
+    G = U - TS + PV
+$$
+
+which can be related to statistical mechanics through the probability distribution function,
+
+$$
+    \rho(\mathbf{q}^f, \mathbf{p}^f; N) = \frac{1}{\Delta_N} e^{-\beta(H + PV)}
+$$
+
+where $\Delta_N$ is the isothermal-isobaric partition function,
+
+$$
+    \Delta_N = \frac{1}{h^{3N}N!V_0}\int^\infty_0 dV \int e^{-\beta(H + PV)} d\mathbf{q}^f d\mathbf{p}^f
+$$
+
+which can be interpreted as the volume average of canonical ensembles with weight $e^{-\beta PV}$. The Gibbs free energy is then,
+
+$$
+    G = -k_B T \log \Delta_N
+$$
+
+The isothermal-isobaric ensemble describes many experiments that are performed at constant temperature and pressure and is useful for determining the equation of state of fluids near atmospheric conditions.
 
 ### The Grand Canonical Ensemble
 
-### The Isothermal-Isobaric Ensemble
+The thermodynamic state of a system that is open, or able to exchange particles with its surroundings, is characterized by the grand potential (as an exercise, try the partial Legendre transform $U$ exchanging $N \to \mu$ and $S \to T$),
+
+$$
+    \Omega = U - TS - N\mu
+$$
+
+An ensemble of systems having the same values of chemical potential, volume and temperature ($\mu VT$) is referred to as a grand canonical ensemble. The phase space of the grand canonical ensemble is essentially just the union of canonical ensembles for every possible value of $N$. In this way, the probability distribution function is written as,
+
+$$
+    \rho(\mathbf{q}^f, \mathbf{p}^f; N) = \frac{1}{\Xi} e^{-\beta(H - N \mu)}
+$$
+
+where $\Xi$ is the grand canonical partition function,
+
+$$
+    \Xi = \sum_{N = 0}^\infty \frac{e^{\beta N \mu}}{h^{3N}N!} \int e^{-\beta H} d\mathbf{q}^f d\mathbf{p}^f
+$$
+
+The grand canonical ensemble is used in molecular simulations for vapor-liquid equilibria and adsorption processes. 
+
+### General Rules of Statistical Ensembles
+
+The problem of statistical mechanics amounts to counting - or to find ways to avoid counting - the number of equally probable ways that a system can divide up its energy. The partition function is precisely this number, so if the partition function is known for a given ensemble, we can calculate the free energy and in principle have complete knowledge of system thermodynamics. Thus, if $Q$ is some partition function for a given ensemble, we can always compute the corresponding free energy using the relation,
+
+$$
+    FE = -k_B T \log Q
+$$
+
+Additionally, the probability distribution function for a given ensemble can allow us to calculate moments of some dynamic variable according to the equation,
+
+$$
+    \langle A \rangle = \int \rho A d\mathbf{q}^f d\mathbf{p}^f
+$$
+
+regardless of the ensemble. Although we will not explore any other ensembles in this class, there are many described in the literature that must be considered in certain cases. It is therefore crucial to analyze the physical system that you want to model and determine whether or not a certain ensemble is appropriate for the target application. 
 
