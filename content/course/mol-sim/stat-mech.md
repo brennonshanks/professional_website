@@ -708,6 +708,8 @@ regardless of the ensemble. Although we will not explore any other ensembles in 
 
 References:
 [1] Kusaka, Isamu. Statistical Mechanics for Engineers. Cham: Springer International Publishing, 2015.
+
 [2] Hansen, Jean-Pierre, and I. R. McDonald. Theory of Simple Liquids: With Applications to Soft Matter. San Diego: Academic Press, 2013.
+
 [3] Goodstein, David L. States of Matter. Courier Corporation, 2014.
 
