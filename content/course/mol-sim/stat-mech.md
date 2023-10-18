@@ -707,6 +707,7 @@ $$
 regardless of the ensemble. Although we will not explore any other ensembles in this class, there are many described in the literature that must be considered in certain cases. It is therefore crucial to analyze the physical system that you want to model and determine whether or not a certain ensemble is appropriate for the target application. 
 
 References:
+
 [1] Kusaka, Isamu. Statistical Mechanics for Engineers. Cham: Springer International Publishing, 2015.
 
 [2] Hansen, Jean-Pierre, and I. R. McDonald. Theory of Simple Liquids: With Applications to Soft Matter. San Diego: Academic Press, 2013.
