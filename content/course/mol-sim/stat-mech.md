@@ -651,7 +651,7 @@ $$
 which can be related to statistical mechanics through the probability distribution function,
 
 $$
-    \rho(\mathbf{q}^f, \mathbf{p}^f; N) = \frac{1}{\Delta_N} e^{-\beta(H + PV)}
+    \rho(\mathbf{q}^f, \mathbf{p}^f; N) = \frac{1}{h^{3N}N!} \frac{1}{\Delta_N} e^{-\beta(H + PV)}
 $$
 
 where $\Delta_N$ is the isothermal-isobaric partition function,
@@ -679,7 +679,7 @@ $$
 An ensemble of systems having the same values of chemical potential, volume and temperature ($\mu VT$) is referred to as a grand canonical ensemble. The phase space of the grand canonical ensemble is essentially just the union of canonical ensembles for every possible value of $N$. In this way, the probability distribution function is written as,
 
 $$
-    \rho(\mathbf{q}^f, \mathbf{p}^f; N) = \frac{1}{\Xi} e^{-\beta(H - N \mu)}
+    \rho(\mathbf{q}^f, \mathbf{p}^f; N) = \frac{1}{h^{3N}N!} \frac{1}{\Xi} e^{-\beta(H - N \mu)}
 $$
 
 where $\Xi$ is the grand canonical partition function,
@@ -701,7 +701,7 @@ $$
 Additionally, the probability distribution function for a given ensemble can allow us to calculate moments of some dynamic variable according to the equation,
 
 $$
-    \langle A \rangle = \int \rho A d\mathbf{q}^f d\mathbf{p}^f
+    \langle A \rangle = \frac{1}{Q h^{3N}N!} \int \rho A d\mathbf{q}^f d\mathbf{p}^f
 $$
 
 regardless of the ensemble. Although we will not explore any other ensembles in this class, there are many described in the literature that must be considered in certain cases. It is therefore crucial to analyze the physical system that you want to model and determine whether or not a certain ensemble is appropriate for the target application. 
