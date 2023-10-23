@@ -1,7 +1,7 @@
 ---
 title: "Probabilistic Machine Learning for Statistical Mechanical Inverse Problems"
 location: University of Bonn, DE 
-date: 2023-10-25T08:00:00.000Zz
+date: 2023-10-25T08:00:00.000Z
 date_end: 2023-10-25T09:00:00.000Z
 all_day: false
 event: Kirchner Group Seminar
