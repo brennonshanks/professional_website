@@ -59,7 +59,7 @@ $$
     V_{stretch}(q^f) = \frac{1}{2} \sum_{ij} k_{bond, ij} (x - x_{0,ij})^2
 $$
 
-where $x_{0,ij}$ is the equilibrium bond length of bond $ij$ and $k_{bond, ij}$ is the bond spring constant. As an example, the bond between the carbons in ethane $H_3C-CH_3$ has an equilibrium bond length of 1.52 $\AA$ and a bond spring constant of 317 kcal/mol/$\AA^2$. The frequency of vibration can be solved with the generalized harmonic oscillator for a two mass system attached to a spring to give a bond frequency $\omega = \sqrt{k/\mu}$, where $\mu$ is the reduced mass, $\mu = \frac{m_1m_2}{m_1 + m_2}$, of about 10 femtoseconds.
+where $x_{0,ij}$ is the equilibrium bond length of bond $ij$ and $k_{bond, ij}$ is the bond spring constant. As an example, the bond between the carbons in ethane $H_3C-CH_3$ has an equilibrium bond length of 1.52 angstrom and a bond spring constant of 317 kcal/mol/angstrom$^2$. The frequency of vibration can be solved with the generalized harmonic oscillator for a two mass system attached to a spring to give a bond frequency $\omega = \sqrt{k/\mu}$, where $\mu$ is the reduced mass, $\mu = \frac{m_1m_2}{m_1 + m_2}$, of about 10 femtoseconds.
 
 Angle bending is also modeled as a harmonic oscillator, but this time over combinations of three bonded atoms,
 
@@ -93,7 +93,7 @@ $$
 The potential part, $V$, is what contains the most interesting information for a computer simulation since it defines all of the interactions of particles with their environment and each other. In general, we can divide up the potential part into a set of contributions from singlets, pairs, triplets, all the way to $N$ body terms such that,
 
 $$
-    V(q^f) = \sum_i v_1(\mathbf{q}_i) + \sum_i \sum_{j \neq i} v_2(\mathbf{q}_i, \mathbf{q}_j) + \sum_i \sum_{j \neq i} \sum_{k \neq i,j} v_3(\mathbf{q}_i, \mathbf{q}_j, \mathbf{q}_k) + ...
+    V(q^f) = \sum_i v_1(\mathbf{q}_i) + \sum_i \sum_{j \neq i} v_2(\mathbf{q_i}, \mathbf{q_j}) + \sum_i \sum_{j \neq i} \sum_{k \neq i,j} v_3(\mathbf{q}_i, \mathbf{q}_j, \mathbf{q}_k) + ...
 $$
 
 where the series at an $N$ sum term. The first term represents the interactions of particles with an external field, the second term depends on the relative positions of pairs of atoms, the third triples of atoms, and so on. It has been shown that the external field, pair, and triplet are highly significant in modeling liquids. Therefore, four and higher-order terms are often neglected in molecular simulations and not modeled explicitly. 
