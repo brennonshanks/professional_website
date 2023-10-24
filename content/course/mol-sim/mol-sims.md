@@ -101,7 +101,7 @@ where the series at an $N$ sum term. The first term represents the interactions 
 Despite the relative importance of three-body terms in liquid simulations, they are actually rarely used. Instead, three body terms are effectively included in a pair potential by defining an effective pair potential so that,
 
 $$
-    V_{unbound}(q^f) \approx \sum_i v_1(\mathbf{q}_i) + \sum_i \sum_{j \neq i} v^{eff}_2(\mathbf{q}_i, \mathbf{q}_j)
+    V_{unbound}(q^f) \approx \sum_i v_1(\mathbf{q_i}) + \sum_i \sum_{j \neq i} v^{eff}_2(\mathbf{q}_i, \mathbf{q}_j)
 $$
 
 where $v^{eff}_2(\mathbf{q}_i, \mathbf{q}_j)$ is optimized to some set of experimental data (often density, heat capacity, diffusivity, etc). The most significant consequence of this approximation is that the effective pair potential will now significantly depend on thermodynamic state whereas the true pair potential should not.
