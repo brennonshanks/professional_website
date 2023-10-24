@@ -81,7 +81,7 @@ $$
     V_{torsion, improp}(q^f) = \frac{1}{2} \sum_{ijk} k_{improp, ijk} (\theta - \xi_{0,ijk})^2
 $$
 
-where the sum goes over all bound, 4 atom complexes that could have improper torsions (\textit{e.g.} $BCl_3$). This gives a standard bonded contribution to the potential part or the Hamiltonian as,
+where the sum goes over all bound, 4 atom complexes that could have improper torsions (ex: $BCl_3$). This gives a standard bonded contribution to the potential part or the Hamiltonian as,
 
 $$
     V_{bound}(q^f) = \frac{1}{2} \sum_{ij} k_{bond, ij} (x - x_{0,ij})^2 + \frac{1}{2} \sum_{ijk} k_{angle, ijk} (\theta - \theta_{0,ijk})^2 + \\ 
