@@ -4,9 +4,9 @@ publication_types:
   - "2"
 authors:
   - admin
-  - H. W. Sullivan
-  - A. R. Shazed
-  - M. P. Hoepfner
+  - Harry W. Sullivan
+  - Abdur R. Shazed
+  - Michael P. Hoepfner
 doi: 10.48550/arXiv.2310.19108
 publication: arXiv
 publication_short: ""
