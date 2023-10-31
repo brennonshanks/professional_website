@@ -17,12 +17,11 @@ featured: true
 tags:
   - neutron scattering
   - statistical mechanics
-  - quantum mechanics
   - thermodynamics
   - machine learning
 image:
   filename: featured.png
   focal_point: Center
   preview_only: false
-date: 2022-12-05T18:29:49.516Z
+date: 2023-10-30T18:29:49.516Z
 ---
