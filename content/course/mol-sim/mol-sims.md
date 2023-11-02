@@ -121,3 +121,76 @@ $$
 $$
     \epsilon_{ij} = \sqrt{\epsilon_i \epsilon_j}
 $$
+
+## Tricks of the Trade
+
+### Units
+
+In molecular simulations, we need to use special units because typical values of molecular quantities in SI units are either very big or very small. Let's look at the example of where we calculate the energy of 1000 molecules in an ideal gas at 300$K$. The energy expectation, $\langle E \rangle = \frac{3}{2}Nk_BT \approx 10^{-17}$ joules. If we then proceed to multiply or add numbers at these magnitudes, floating point errors can significantly reduce the accuracy of the calculation. Therefore, we adopt a system of units called "microscopic" units. Some common microscopic units for molecular simulation are listed below.
+
+1. Mass        [=] atomic mass unit (amu)
+2. Energy      [=] kcal/mol, kJ/mol, eV
+3. Length      [=] \AA, nm
+4. Charge      [=] electron charge
+5. Temperature [=] Kelvin
+
+All other units can be derived from these base units. For example,
+
+1. Area     [=] Length$^2$
+2. Time     [=] Length * Mass$^{1/2}$ * Energy$^{-1/2}$
+3. Pressure [=] Energy * Length$^{-3}$
+4. Velocity [=] Mass$^{-1/2}$ * Energy$^{1/2}$
+
+It is also common to use so-called reduced units in which the force field parameters themselves are used as units. For example, a Lennard-Jones model of liquid argon has parameters $\sigma = 3.4$ \AA and $\epsilon = 1$ kJ/mol. To model the system in reduced units, we define the length by $\sigma$ and the energy by $\epsilon$ and derive the rest of the units from these. 
+
+1. Time        [=] $\sigma$ * Mass$^{1/2}$ * $\epsilon^{-1/2}$
+2. Pressure    [=] $\epsilon$ * Length$^{-3}$
+3. Temperature [=] Mass$^{-1/2}$ * $\epsilon^{1/2}$
+4. Density     [=] Mass * $\sigma^{-3}$
+
+Of course, reduced units will be different for every system. So if we run simulations at the same reduced units for different systems (Ar and Kr), we should be careful to recognize that these are at completely different thermodynamic states.
+
+### Boundary Conditions
+
+When we run a simulation, our goal is often to describe a system at a much larger scale than is accessible by experiment. How can we achieve this when we are severely limited by the number of atoms that we can simulate? The answer lies in implementing periodic boundary conditions that make the system behave like a bulk fluid without adding too much simulation expense. The idea behind periodic boundary conditions is that we take our original system and surround it by copies of the same system. The atoms in the original system are then made to interact with all atoms in all the copies surrounding the system, thereby eliminating any surface effects in the system and making the system behave more like a bulk fluid. 
+
+To implement periodic boundary conditions, we need a way to account for the possibility that an atom leaves the original box. Practically, we code this so that when a particle leaves the original box, it appears on the other side. As an example, consider a 1D system in which a particle moves along the x-coordinate only within a box from $x_1$ = 0 and $x_2$ = L. The following logic statements guarantee that when a particle passes outside of $x_1$ or $x_2$, it will subsequently appear on the other side of the original box.
+
+1. If $(x<0)$, then $x = x + L$
+2. Elseif $(x>L)$, then $x = x - L$
+
+We also need to be aware that by constructing copies around the original system that we may end up overcounting the number of pair interactions in the system. This problem can be directly addressed by ensuring that a particle interacts with only particles that are nearest images of a particle. In other words, if a particle on one end of a box is interacting with a particle on the other side, it will instead interact with its nearest image (which may be right next to our particle) rather than the image thats farther away in the original box. In analogy to our 1D example, we can ensure the interaction with the nearest neighbor by looking at the distances between each particle and assigning a new value to that distance which is at a minimum.
+
+1. $\Delta x = x_2 - x_1$
+2. If $\Delta x < -L/2$, $\Delta x = \Delta x + L$
+3. Elseif $\Delta x > L/2$, $\Delta x = \Delta x - L$
+
+### Potential Truncation
+
+Let's consider the long range behavior of simple pair potentials. Even in the Lennard-Jones fluid, the potential energy never becomes zero and the force is always positive at large $r$. Therefore, to really implement a Lennard-Jones potential we need a box that is infinitely large or for the system to interact with an infinite number of periodic copies. Of course, this is entirely infeasible and can be corrected by introducing so-called analytical tail corrections. Practically, we define a cutoff functions so that the interactions are only considered over a short range, 
+
+\[
+v(r) = 
+\begin{cases}
+  4\epsilon\bigg[\bigg(\frac{\sigma}{r}\bigg)^{12} - \bigg(\frac{\sigma}{r}\bigg)^{6}\bigg] & \text{if $r < r_{cut}$} \\
+  0 & \text{otherwise}
+\end{cases}
+\]
+
+which of course introduces a discontinuity in the potential at $r_{cut}$. This discontinuity can make the energy and pressure calculations incorrect, so we need a way to account for this discontinuity. The way this is usually done is to cut and shift the potential in the following manner. If the potential is less than $r_{cut}$, then add a constant to all values of the potential to shift the potential to zero at $r_cut$. Since the force is related only to the derivative of the potential, this doesn't impact the force, but it does eliminate the discontinuity. So long as $r_{cut}$ is large enough, the truncation effects should then be minimized.
+
+There are a few important considerations with respect to box size when using these analytical tail corrections. First, to preserve the mirror image convention from the previous section we must have $r_{cut} < L/2$. This means that the minimum box size should be $L = 2 r_{cut}$. However, if there are correlations in structure and/or dynamics at longer length scales, as is the case with critical properties and elastic membranes, you need much larger simulation boxes.
+
+### Neighbor Lists
+
+One of the most important considerations for molecular simulations is how computationally expensive they are to run. For instance, if a simulation of 1000 atoms takes 5 hours, how long will a simulation of 10,000 atoms take? The answer is around 500 hours! This is because the simulation time will scale by $N^2$ where $N$ is the number of atoms in the system. This is irregardless of using a potential truncation since we still need to compute the distances between all atom pairs in the system.
+
+\noindent We can address this issue by introducing a neighbor list. The first step in constructing a neighborlist is separating the simulation box into smaller cubes with length slightly smaller than $2 r_{cut}$. A neighbor list works by defining a set of atoms within $r_{cut}$ of a given origin plus a spherical shell of radius $r_{cut} + \Delta r$ where $\Delta r$ is some positive number with a usual value of $0.5 \sigma$. The $\Delta r$ is selected so that the particles can evolve within this radius without leaving or entering the larger sphere region within a few timesteps. The force calculation is then only considered over the particles in this neighbor list, reducing the time-complexity to approximately $\mathcal{O}(N)$. Then, if a particle moves beyond $\Delta r$, the list is rebuilt with the $\mathcal{O}(N^2)$ time-complexity.
+
+\begin{figure}
+    \centering
+    \includegraphics{cell_list.png}
+    \caption{}
+\end{figure}
+
+\noindent An implementation of this idea is to break up the system into cubic cells with edge lengths greater than or equal to $r_{cut}$. A sphere of radius $r_{cut} + \Delta r$ is then drawn around the center of each cell and lists of neighbors are formed. The interactions are limited to only partners of atoms within that list, while others are excluded. We simply identify what cell each member of the system is in and compute the force on that particle based on its interactions with members only within the surrounding cells.
