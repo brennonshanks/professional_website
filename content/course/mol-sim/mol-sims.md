@@ -169,13 +169,13 @@ We also need to be aware that by constructing copies around the original system 
 
 Let's consider the long range behavior of simple pair potentials. Even in the Lennard-Jones fluid, the potential energy never becomes zero and the force is always positive at large $r$. Therefore, to really implement a Lennard-Jones potential we need a box that is infinitely large or for the system to interact with an infinite number of periodic copies. Of course, this is entirely infeasible and can be corrected by introducing so-called analytical tail corrections. Practically, we define a cutoff functions so that the interactions are only considered over a short range, 
 
-\[
+$$
 v(r) = 
 \begin{cases}
   4\epsilon\bigg[\bigg(\frac{\sigma}{r}\bigg)^{12} - \bigg(\frac{\sigma}{r}\bigg)^{6}\bigg] & \text{if $r < r_{cut}$} \\
   0 & \text{otherwise}
 \end{cases}
-\]
+$$
 
 which of course introduces a discontinuity in the potential at $r_{cut}$. This discontinuity can make the energy and pressure calculations incorrect, so we need a way to account for this discontinuity. The way this is usually done is to cut and shift the potential in the following manner. If the potential is less than $r_{cut}$, then add a constant to all values of the potential to shift the potential to zero at $r_cut$. Since the force is related only to the derivative of the potential, this doesn't impact the force, but it does eliminate the discontinuity. So long as $r_{cut}$ is large enough, the truncation effects should then be minimized.
 
@@ -185,7 +185,7 @@ There are a few important considerations with respect to box size when using the
 
 One of the most important considerations for molecular simulations is how computationally expensive they are to run. For instance, if a simulation of 1000 atoms takes 5 hours, how long will a simulation of 10,000 atoms take? The answer is around 500 hours! This is because the simulation time will scale by $N^2$ where $N$ is the number of atoms in the system. This is irregardless of using a potential truncation since we still need to compute the distances between all atom pairs in the system.
 
-\noindent We can address this issue by introducing a neighbor list. The first step in constructing a neighborlist is separating the simulation box into smaller cubes with length slightly smaller than $2 r_{cut}$. A neighbor list works by defining a set of atoms within $r_{cut}$ of a given origin plus a spherical shell of radius $r_{cut} + \Delta r$ where $\Delta r$ is some positive number with a usual value of $0.5 \sigma$. The $\Delta r$ is selected so that the particles can evolve within this radius without leaving or entering the larger sphere region within a few timesteps. The force calculation is then only considered over the particles in this neighbor list, reducing the time-complexity to approximately $\mathcal{O}(N)$. Then, if a particle moves beyond $\Delta r$, the list is rebuilt with the $\mathcal{O}(N^2)$ time-complexity.
+We can address this issue by introducing a neighbor list. The first step in constructing a neighborlist is separating the simulation box into smaller cubes with length slightly smaller than $2 r_{cut}$. A neighbor list works by defining a set of atoms within $r_{cut}$ of a given origin plus a spherical shell of radius $r_{cut} + \Delta r$ where $\Delta r$ is some positive number with a usual value of $0.5 \sigma$. The $\Delta r$ is selected so that the particles can evolve within this radius without leaving or entering the larger sphere region within a few timesteps. The force calculation is then only considered over the particles in this neighbor list, reducing the time-complexity to approximately $\mathcal{O}(N)$. Then, if a particle moves beyond $\Delta r$, the list is rebuilt with the $\mathcal{O}(N^2)$ time-complexity.
 
 \begin{figure}
     \centering
@@ -193,4 +193,4 @@ One of the most important considerations for molecular simulations is how comput
     \caption{}
 \end{figure}
 
-\noindent An implementation of this idea is to break up the system into cubic cells with edge lengths greater than or equal to $r_{cut}$. A sphere of radius $r_{cut} + \Delta r$ is then drawn around the center of each cell and lists of neighbors are formed. The interactions are limited to only partners of atoms within that list, while others are excluded. We simply identify what cell each member of the system is in and compute the force on that particle based on its interactions with members only within the surrounding cells.
+An implementation of this idea is to break up the system into cubic cells with edge lengths greater than or equal to $r_{cut}$. A sphere of radius $r_{cut} + \Delta r$ is then drawn around the center of each cell and lists of neighbors are formed. The interactions are limited to only partners of atoms within that list, while others are excluded. We simply identify what cell each member of the system is in and compute the force on that particle based on its interactions with members only within the surrounding cells.
