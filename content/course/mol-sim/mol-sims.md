@@ -173,7 +173,7 @@ $$
 v(r) = 
 \begin{cases}
   4\epsilon\bigg[\bigg(\frac{\sigma}{r}\bigg)^{12} - \bigg(\frac{\sigma}{r}\bigg)^{6}\bigg] & \text{if $r < r_{cut}$} \\
-  0 & \text{otherwise}
+  ,0 & \text{otherwise}
 \end{cases}
 $$
 
