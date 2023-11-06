@@ -7,6 +7,8 @@ tags:
   - mol-sims
 ---
 
+<!--more-->
+
 ## Why Use Computer Simulations?
 
 We have just completed a rather quick introduction to statistical mechanics, and found that we could connect results from classical mechanics, quantum mechanics, and thermodynamics by studying statistical ensembles of many particles. Indeed, we were able to recover the ideal gas law by considering a collection of non-interacting particles and derive microscopic expressions for entropy and free energy. The power of the statistical mechanics framework is evident.
