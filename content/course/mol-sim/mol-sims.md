@@ -190,3 +190,131 @@ One of the most important considerations for molecular simulations is how comput
 We can address this issue by introducing a neighbor list. The first step in constructing a neighborlist is separating the simulation box into smaller cubes with length slightly smaller than $2 r_{cut}$. A neighbor list works by defining a set of atoms within $r_{cut}$ of a given origin plus a spherical shell of radius $r_{cut} + \Delta r$ where $\Delta r$ is some positive number with a usual value of $0.5 \sigma$. The $\Delta r$ is selected so that the particles can evolve within this radius without leaving or entering the larger sphere region within a few timesteps. The force calculation is then only considered over the particles in this neighbor list, reducing the time-complexity to approximately $\mathcal{O}(N)$. Then, if a particle moves beyond $\Delta r$, the list is rebuilt with the $\mathcal{O}(N^2)$ time-complexity.
 
 An implementation of this idea is to break up the system into cubic cells with edge lengths greater than or equal to $r_{cut}$. A sphere of radius $r_{cut} + \Delta r$ is then drawn around the center of each cell and lists of neighbors are formed. The interactions are limited to only partners of atoms within that list, while others are excluded. We simply identify what cell each member of the system is in and compute the force on that particle based on its interactions with members only within the surrounding cells.
+
+## Analyzing Molecular Simulation Trajectories
+
+Recall that the time average or expectation of some dynamical quantity $A$ can be written in the following way,
+
+$$
+    \langle A \rangle = \lim_{\tau \to \infty}\frac{1}{\tau} \int^{t + \tau}_t A(q^f, p^f, t) dt
+$$
+
+or in terms of the phase space probability density function,
+
+$$
+    \langle A \rangle = \int A(q^f, p^f, t) \rho(q^f, p^f, t) d p^f d q^f
+$$
+
+### The Ergodic Hypothesis
+
+We will take as a hypothesis that the time average and ensemble average are equal to each other. This is known as the ergodic hypothesis. Of course, we have not (and are not able to) prove this statement. Although we obtain excellent theoretical predictions from statistical mechanics with this hypothesis, fundamentally it is not known whether the ergodic hypothesis is true or not, and, indeed, there are a number of non-ergodic systems that exist in nature. 
+
+### Temperature
+
+Recall from thermodynamics that temperature is defined as the partial derivative of internal energy with respect to entropy,
+
+$$
+    T = \bigg(\frac{\partial U}{\partial S}\bigg)_{V,N} 
+$$
+
+which isn't immediately useful in the statistical mechanics formalism. However, from the equipartition theorem we know that each quadratic term in the Hamiltonian contributes $\frac{1}{2}k_BT$ to the ensemble average energy,
+
+$$
+    \bigg\langle \sum_i^N \frac{1}{2} m_i v_i^2 \bigg\rangle = \frac{3}{2} N k_B T
+$$
+
+which can be rearranged to give,
+
+$$
+    T = \frac{2}{3 N k_B} \bigg\langle \sum_i^N \frac{1}{2} m_i v_i^2 \bigg\rangle
+$$
+
+or at a specific instant in time,
+
+$$
+     T_{inst}(t) = \frac{2}{3 N k_B} \sum_i^N \frac{1}{2} m_i v_i^2
+$$
+
+This instantaneous temperature should fluctuate in time to conserve the total energy and can be easily measured from a molecular simulation trajectory and/or snapshot. All you need to do is compute the sum of the momenta of every particle and multiple by the leading constants to obtain an estimate of the temperature. 
+
+### Thermostats
+
+Thermostats are implemented in molecular simulations to maintain the temperature average of a system at a fixed value. In a large system at constant temperature, the shear size of the system acts as a heat bath to maintain the temperature of the system. However, it is not immediately obvious how we should enforce this behavior within a small box of simulated particles. A naive approach is to rescale the velocities at each timestep, $v_i = \alpha v_i$, where,
+
+$$
+    \alpha = \sqrt{\frac{T}{T_{inst}}}
+$$
+
+ensuring that the instantaneous temperature is always equal to the target. However, this method does not reproduce the Maxwell-Boltzmann distribution and therefore is not a physically accurate way to adjust the temperature in a simulation. A better approach involves coupling a friction term to slow down or speed up the particles until the target temperature is reached. We can write Newton's equation of motion for such a system as,
+
+$$
+    \mathbf{F_i} - \xi m_i \mathbf{v_i} = m_i \mathbf{a_i}
+$$
+
+where the time derivative of the fictitious friction variable $xi$ is given by,
+
+$$
+    \frac{\partial \xi}{\partial t} = \frac{1}{Q}\bigg[\sum_i^N \frac{1}{2} m_i v_i^2 - \frac{3N + 1}{2} k_B T\bigg]
+$$
+
+where $Q$ is a fictitious 'mass' or 'inertial' term that determines the relaxation time of the system (larger Q means the thermostat will adjust the temperature more slowly) and $T$ is the target temperature. This can be reexpressed as, 
+
+$$
+    \frac{\partial \xi}{\partial t} = \frac{1}{Q}\bigg[\frac{3N + 1}{2} k_B (T_{inst} - T)\bigg]
+$$
+
+which means that if the instantaneous temperature is larger than the target, the friction increases and if instantaneous temperature is smaller than the target, the friction decreases. This method is easily implemented in the velocity-verlet algorithm by including this friction term (try as an exercise). It is also possible to use diffusion based (Langevin thermostat) and stochastic methods (Anderson thermostat) as thermostats.
+
+### Pressure
+
+Recall that pressure can be written as the negative partial derivative of Helmholtz free energy with respect to volume at constant temperature and number of particles, or equivalently,
+
+$$
+    P = -\bigg(\frac{\partial F}{\partial V}\bigg)_{T,N} = k_B T \bigg(\frac{\partial \log Z}{\partial V}\bigg)_{T,N}
+$$
+
+We can solve this expression for $P$ (try as an exercise) as,
+
+$$
+    P = k_B T \bigg[\frac{N}{V} + \frac{1}{Q_N} \bigg(\frac{\partial Q_N}{\partial V}\bigg)_{T,N}]
+$$
+
+where $Q_N$ is the configurational part of the partition function. We can reexpress this equation in terms of the virial defined as,
+
+$$
+    \mathcal{V} = - \frac{1}{3} \sum_i^N \mathbf{r_i} \cdot \nabla_i \phi
+$$
+
+where $\phi$ is the potential energy. For pairwise additive interactions, the resulting instantaneous pressure is equal to,
+
+$$
+    P_{inst} = \frac{N k_B T}{V} + \frac{1}{3V} \sum_{i,j} \mathbf{F_{i,j}} \cdot \mathbf{r_{i,j}}
+$$
+
+which can be quickly recognized as the ideal gas pressure plus additional pressure contributions from the interactions. Therefore, attractive interactions result in a decrease in pressure whereas repulsive interactions increase the pressure. Barostats are similar to thermostats but couple to the pressure term and cause re-scaling of the box size to accommodate changes in pressure.
+
+### Structure
+
+First, the local atomic density correlation is formalized by counting the number of atomic neighbors as a function of position with respect to a reference atom and taking the ensemble average,
+
+$$
+    g(\mathbf{r}) = \frac{1}{\rho} \bigg \langle \frac{1}{N} \sum_{i=1}^N \sum_{j=1}^N \delta^3(\mathbf{r} - \mathbf{r}_j + \mathbf{r}_i) \bigg \rangle
+$$
+
+where $g(\mathbf{r})$ is referred to as the radial distribution function, $\delta^3$ is the three-dimensional Dirac delta function, $\rho$ is the thermodynamic density and $N$ is the total number of particles in the system. The radial distribution function is an important quantity used to describe the average atomic structures of molecular systems. Of course, if there are multiple atom types there will be multiple radial distribution functions for each unique atom pair.
+
+### Structure Factors
+
+We actually can't measure the radial distribution functions experimentally. Instead, methods such as neutron / X-ray scattering are able to measure how particles scatter off of atoms in the system. The resulting diffraction pattern can be analyzed to obtain estimates of the pair correlation functions. For a system containing $N$ distinct atom types, there exist $\frac{N(N+1)}{2}$ unique density pair correlation functions. The density correlation function measured in reciprocal space is known as the partial structure factor, $S_{ij}(Q)$, between unique atom pairs $i$ and $j$. In principle, we cannot determine $S_{ij}(Q)$ experimentally since the diffraction measurement contains all correlation functions in a combined, total structure factor $F(Q)$. However, we can write $F(Q)$ as a weighted sum of the $S_{ij}(Q)$ such that,
+
+$$
+    F(Q) = \sum_{i\geq j}^N [2 - \delta_{ij}]b_ib_jc_ic_jS_{ij}(Q)
+$$
+
+where $b_i$ and $c_i$ are the coherent scattering lengths and atomic concentration of species $i$, respectively. By applying the coherent scattering lengths the total structure factor is then neutron-weighted. The partial structure factor is related to the radial distribution function via Fourier transform such that,
+
+$$
+    S_{ij}(Q) = 4 \pi \rho \int^{\infty}_{0} [g_{ij}(r) - 1]\frac{\sin(Qr)}{Qr}r^2 dr
+$$
+
+where $\rho$ is the atomic number density of the combined system.
