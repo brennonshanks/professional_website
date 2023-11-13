@@ -270,7 +270,7 @@ which means that if the instantaneous temperature is larger than the target, the
 Recall that pressure can be written as the negative partial derivative of Helmholtz free energy with respect to volume at constant temperature and number of particles, or equivalently,
 
 $$
-    P = -\bigg(\frac{\partial F}{\partial V}\bigg)_{T,N} = k_B T \bigg(\frac{\partial \log Z}{\partial V}\bigg)_{T,N}
+    P = -\bigg(\frac{\partial F}{\partial V}\bigg) = k_B T \bigg(\frac{\partial \log Z}{\partial V}\bigg)
 $$
 
 We can solve this expression for $P$ (try as an exercise) as,
@@ -314,7 +314,7 @@ $$
 where $b_i$ and $c_i$ are the coherent scattering lengths and atomic concentration of species $i$, respectively. By applying the coherent scattering lengths the total structure factor is then neutron-weighted. The partial structure factor is related to the radial distribution function via Fourier transform such that,
 
 $$
-    S_{ij}(Q) = 4 \pi \rho \int^{\infty}_{0} [g_{ij}(r) - 1]\frac{\sin(Qr)}{Qr}r^2 dr
+    S_{ij}(Q) = 4 \pi \rho \int^{\infty}_0 [g_{ij}(r) - 1]\frac{\sin(Qr)}{Qr}r^2 dr
 $$
 
 where $\rho$ is the atomic number density of the combined system.
