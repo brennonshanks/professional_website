@@ -314,7 +314,7 @@ $$
 where $b_i$ and $c_i$ are the coherent scattering lengths and atomic concentration of species $i$, respectively. By applying the coherent scattering lengths the total structure factor is then neutron-weighted. The partial structure factor is related to the radial distribution function via Fourier transform such that,
 
 $$
-    S_{ij}(Q) = 4 \pi \rho \int^{\infty}_0 [g_{ij}(r) - 1]\frac{\sin(Qr)}{Qr}r^2 dr
+    S_{ij}(Q) = 4 \pi \rho \int^\infty_0 [g_{ij}(r) - 1]\frac{\sin(Qr)}{Qr}r^2 dr
 $$
 
 where $\rho$ is the atomic number density of the combined system.
