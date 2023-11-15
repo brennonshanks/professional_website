@@ -318,3 +318,111 @@ $$
 $$
 
 where $\rho$ is the atomic number density of the combined system.
+
+## Electrostatic Interactions
+
+Electrostatic interactions are strong and long-ranged. This can pose serious challenges for molecular simulations since the simulation box size is too small to accommodate long-range forces. For example, in an uncharged system of argon particles, the Lennard-Jones dispersion interaction at 3.5 $\AA$ is $\sim$-1 kJ/mol. However, at 10 $\AA$ the dispersion interaction is approximately 0 kJ/mol. Because this system has no long-range coulombic interactions, the small box sizes available to molecular simulations don't experience any issues. However, let's now consider a system of chlorine anions. At 3.5 $\AA$, the coulombic interaction has a magnitude of 400 kJ/mol! And as we extend out to 10 $\AA$ we still have a massive energy contribution of 140 kJ/mol. Even at 10 nm (100 $\AA$) the potential energy contribution is still 14 kJ/mol, roughly 14 times greater than the short-ranged dispersion interaction for noble gases. The reason for this long-range is that the coulombic interaction decays as $1/r$ according to the following equation,
+
+$$
+    U_c(r) = \frac{q_1 q_2}{4 \pi \epsilon_0 r}
+$$
+
+where $q_i$ is the charge on species $i$ and $\epsilon_0$ is the permittivity of free space. Note that the energy of the long-range tail actually diverges since,
+
+$$
+    U_{tail} = 4 \pi \rho \int_{r_{cut}}^\infty r^2 \frac{q_1 q_2}{4 \pi \epsilon_0 r} dr \to \infty 
+$$
+
+It is therefore not immediately obvious how we should implement this in a simulation framework. For instance, the simulation would be far too slow to increase the cutoff radius to a very large value as the long-ranged interactions would start interacting with both their periodic images and themselves, causing finite size error in the simulation.
+
+### Ewald Sums
+
+Under periodic boundary conditions, the total contribution to the electrostatic interaction is given by,
+
+$$
+    U_{coul} = \sum_{\mathbf{n}} \sum_{i,j} \frac{q_i q_j}{4 \pi \epsilon_0 |\mathbf{r}_{ij} + \mathbf{n}L|}
+$$
+
+where the first sum goes over the all of the "supercells" (take the particle positions in the original box and move them by vectors $\mathbf{n}L$) in the periodic images of the original system and add up over all atom pairs. However, this equation describes only a classical collection of point charges which doesn't accurately describe charges in molecular systems. Rather, the charges are "smeared out" according to some electron density function which we will call $\rho(\mathbf{r})$ evaluated from the Poisson equation (which is just an elliptic, second-order partial differential equation of the form $\nabla^2 \phi = f$),
+
+$$
+    \nabla^2 \phi_i(\mathbf{r}) = \frac{\rho_i(\mathbf{r})}{\epsilon_0}
+$$
+
+which has solutions,
+
+$$
+    \phi_i(\mathbf{r}) = \frac{1}{4 \pi \epsilon_0} \int \frac{\rho_i(\mathbf{r'})}{|\mathbf{r} - \mathbf{r'}|}d \mathbf{r'}
+$$
+
+The content of making long-ranged electrostatic interactions tractable in a molecular simulation involves splitting the electronic density into a short and long-range part,
+
+$$
+    \rho_i(\mathbf{r}) = \rho_i^S(\mathbf{r}) + \rho_i^L(\mathbf{r})
+$$
+
+A convenient construction will be to take the Dirac delta representation and add and subtract a Gaussian distribution so that,
+
+$$
+    \rho_i^S(\mathbf{r}) = q_i \delta(\mathbf{r} - \mathbf{r}_i) - q_i G(\mathbf{r} - \mathbf{r}_i)
+$$
+
+and,
+
+$$
+    \rho_i^L(\mathbf{r}) = q_i G(\mathbf{r} - \mathbf{r}_i)
+$$
+
+### The Short-Range Term Converges in Real Space
+
+Subsequently solving the Poisson equation for these two forms gives potential field equations of,
+
+$$
+    \phi_i^S(\mathbf{r}) = \frac{q_i}{4 \pi \epsilon_0 |\mathbf{r} - \mathbf{r'}|}\text{erfc}\bigg(\frac{|\mathbf{r} - \mathbf{r'}|}{\sqrt{2}\sigma}\bigg)
+$$
+
+and, 
+
+$$
+    \phi_i^L(\mathbf{r}) = \frac{q_i}{4 \pi \epsilon_0 |\mathbf{r} - \mathbf{r'}|}\text{erf}\bigg(\frac{|\mathbf{r} - \mathbf{r'}|}{\sqrt{2}\sigma}\bigg)
+$$
+
+where erf and erfc are the error and complimentary error functions and $\sigma$ is the square root of the variance of the Gaussian distribution. But why exactly is this an appropriate representation for short versus long-range interactions? The key is in the error function. For the short-range term, the complimentary error function (which is just 1 - erf), tends to 0 as $r$ tends to infinity, thereby damping the electrostatic potential energy to a short-range. This can then be calculated in the normal way in real-space, the same way we did for other potential interactions. 
+
+### The Long-Range Term Converges in Fourier Space
+
+On the other hand, the error function tends to 1 as $r$ tends to infinity, making the second term long-ranged. However, note that we can actually make these sums convergent if we first Fourier transform the charge density to rewrite the summation in reciprocal space and then inverse Fourier transform back into real space. Computing the Fourier transform of the potential field gives,
+
+$$
+    \hat{\phi_i}^L(\mathbf{k}) = \frac{1}{\epsilon_0}\sum_{j = 1}^N \frac{q_j}{k^2} \exp(-i\mathbf{k}\cdot\mathbf{r}_j) \exp(-\sigma^2 k^2/2)
+$$
+
+which has an inverse Fourier transform equal to,
+
+$$
+    \phi^L(\mathbf{r}) = \frac{1}{V \epsilon_0}\sum_{\mathbf{k} \neq 0}\sum_{j = 1}^N \frac{q_j}{k^2} \exp(-i\mathbf{k}\cdot(\mathbf{r} - \mathbf{r}_j)) \exp(-\sigma^2 k^2/2)
+$$
+
+which is now tractable at short-range due to the damping factor $\exp(-\sigma^2 k^2/2)$. 
+
+### Charge Scaling
+
+Perhaps unsurprisingly, the permittivity of free space, $\epsilon_0$, which describes the ability of an electric field to pass through a classical vacuum, does not accurately represent the permittivity experienced in a solvent. It is therefore useful to replace the vacuum permittivity with a medium specific permittivity, $\epsilon$, whose ratio is defined as the  dielectric constant,
+
+$$
+    DE = \frac{\epsilon}{\epsilon_0}
+$$
+
+The dielectric constant can be thought of as the ability of a solvent to hold an electric charge. For example, water at ambient conditions as a dielectric constant close to 80, indicating an 80-fold enhancement at holding an electric charge over a vacuum. Now, we can rewrite the potential energy of a coulombic interaction as,
+
+$$
+    U_{coul} = \frac{q_1 q_2}{4 \pi \epsilon r}
+$$
+
+\noindent which should be a more accurate representation specific to the medium the system is embedded in. One straightforward way to implement this condition is to scale the charges by the square root of the dielectric constant, for instance, the following equation is equivalent to the previous one,
+
+$$
+    U_{coul} = \frac{q_1}{\sqrt{DE}} \frac{q_2}{\sqrt{DE}} \frac{1}{4 \pi \epsilon_0 r}
+$$
+
+Thus, we can account for the relative permittivity of a medium by simply scaling the known atomic charges by the square root of the dielectric constant.
