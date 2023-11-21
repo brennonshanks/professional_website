@@ -426,3 +426,55 @@ $$
 $$
 
 Thus, we can account for the relative permittivity of a medium by simply scaling the known atomic charges by the square root of the dielectric constant.
+
+## Monte Carlo Methods
+
+Given a set of initial conditions (positions, atom type, and connectivity) a molecular dynamics simulation is entirely deterministic according to Newton's equations of motion. The trajectory of atoms moving around in the simulation box in time gives us a way to calculate time averages of statistical mechanical properties. However, according to the ergodic hypothesis, we would obtain the same averages if we looked at an ensemble of "snapshots" of the system. This is achieved by creating a simulation box with the same interaction potential and boundary conditions and then randomly sampling configurations in position and velocity. However, not all of the generated configurations are favorable or likely to be observed in a real system. The way that Monte Carlo methods work is to accept or reject randomly generated configurations based on the statistical probability that they would be observed in a certain ensemble. The statistical averages of the system are then just unweighted averages of the accepted configurations. In these calculations, there is no particle momenta, time scales, and the order that the configurations are sampled has no special significance, we only care about the averages of the accepted configurations.
+
+### Markov Processes
+
+Markov processes are a good place to start when constructing a Monte Carlo scheme. A Markov process is a stochastic process (collection of random variables indexed in time/space) where the probability of finding the system in a state at time $t+1$ is dependent only on what state the system was in at time $t$. We can express this as the probability of the system being in a given state $n$, $\mathbf{q}_n(t)$, is equal the probability of the system being in state $n-1$, $\mathbf{q}_n(t-1)$, multiplied by some transition probability matrix, $\mathbf{P}$, so that,
+
+$$
+    \mathbf{q}(t) = \mathbf{P} \cdot \mathbf{q}(t-1)
+$$
+
+where the transition matrix can be thought of as a matrix of probabilities of the state $n-1$ going to any of the other possible states $n$. Given some initial distribution, $\mathbf{q}(0)$, the distribution at time $t$ is given by,
+
+$$
+    \mathbf{q}(t) = \mathbf{P}^t \cdot \mathbf{q}_m(0)
+$$
+
+Note that if all of the values of $\mathbf{P}$ are non-zero over finite $t$, each state can be reached from each other state within a finite amount of time and the system is ergodic. When the chain is ergodic, there is some limiting distribution that is independent of the initial distribution so that,
+
+$$
+    \mathbf{Q} = \lim_{t \to \infty}\mathbf{P}^t \cdot \mathbf{q}_m(0)
+$$
+
+Beyond this point, $\mathbf{P} \cdot \mathbf{Q} = \mathbf{Q}$ and the system is said to be at steady-state and experience microscopic reversibility. Microscopic reversibility simply means that the probability of a state $n$ going into state $m$ is the same as the probability of state $m$ returning to state $n$. The limiting distribution is determined by the appropriate equilibrium probability density (for the canonical ensemble, the Boltzmann distribution). The goal of Monte Carlo methods is then to find some transition probability matrix that leads us to this limiting distribution.
+
+### The Metropolis Algorithm for Molecular Simulation
+
+Suppose that we are in some state $m$ and a trial system is generated called state $n$. The Metropolis algorithm for Monte Carlo simulation is that the probability of state $m$ going to state $n$ is,
+
+$$
+    P_{m \to n} = 1 \text{ if } Q_n \geq Q_m
+$$
+
+$$
+    P_{m \to n} = \frac{Q_n}{Q_m} \text{ if } Q_n < Q_m
+$$
+
+Let's think about what this means. The first equation says that if the generated state has a higher or equal probability to the previous state, that there is a 100\% transition probability into the new state. However, if the probability of the new state is lower than the original state, then it will transition into the new state with probability equal to the probability ratio; that is, half as likely states are accepted half the time, eighth as likely states are accepted an eighth of the time, and so on. For molecular simulations, a simple form of a Monte Carlo simulation is to create some random displacement in the position of a particle, thus transitioning the system from state 1 to state 2. If the potential energy of state 2, which is related to the Boltzmann probability distribution, is lower than state 1, then the first of the two equations is satisfied and the trial move is accepted unconditionally. On the other hand, when $\delta U > 0$, we compute the probability of each state, $\exp(-\beta U_2)$ and  $\exp(-\beta U_1)$ and take the ratio according to the second equation,
+
+$$
+    P_{m \to n} = \frac{\exp(-\beta U_2)}{\exp(-\beta U_1)} = \exp(-\beta \Delta U)
+$$
+
+which can be expressed as,
+
+$$
+    P_{m \to n} = \min{1, \exp(-\beta \Delta U)}
+$$
+
+The general principle described here can be applied to any statistical ensemble, as long as the trial moves are generated to sample the underlying probability distribution. As an example, consider a system of hard spheres. In a canonical ensemble of hard spheres, the potential energy of the system becomes infinite when particles overlap. In this case, all Monte Carlo trial moves are accepted if the particles don't overlap and are immediately rejected if they do (the probability becomes 0 since $\exp(-\beta \Delta U)$ approaches 0). 
