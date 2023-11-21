@@ -474,7 +474,7 @@ $$
 which can be expressed as,
 
 $$
-    P_{m \to n} = \min{1, \exp(-\beta \Delta U)}
+    P_{m \to n} = \min{[1, \exp(-\beta \Delta U)]}
 $$
 
 The general principle described here can be applied to any statistical ensemble, as long as the trial moves are generated to sample the underlying probability distribution. As an example, consider a system of hard spheres. In a canonical ensemble of hard spheres, the potential energy of the system becomes infinite when particles overlap. In this case, all Monte Carlo trial moves are accepted if the particles don't overlap and are immediately rejected if they do (the probability becomes 0 since $\exp(-\beta \Delta U)$ approaches 0). 
