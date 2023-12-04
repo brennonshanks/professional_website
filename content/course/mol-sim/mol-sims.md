@@ -15,6 +15,8 @@ We have just completed a rather quick introduction to statistical mechanics, and
 
 However, statistical mechanics actually has very few analytically tractable problems. Perhaps the most famous is the Nobel prize winning 2D Ising model, which represents a lattice of particles attached by springs. Some other examples include the ideal gas and Einstein crystal. Despite the difficulty in obtaining analytical solutions, many statistical mechanics problems succumb rather easily to computational techniques. Computer simulations offer an easy and affordable route to study how microscopic details of a system influence the macroscopic properties of experimental interest. These simulations can be applied to systems that we can't study experimentally due to extreme pressures and/or temperatures or in extremely hazardous environments such as nuclear reactors or planetary cores. Finally, computer simulation "experiments" can serve as a bridge between pure theory and experiment.
 
+{{< youtube npgqmAPMl6Q >}}
+
 ## Force Fields for Molecular Simulation
 
 Recall that the probability distribution functions for a system of interest were assumed to be functions of the system Hamiltonian, which is just the sum of the kinetic and potential energy contributions on the system. In our notation, we wrote the Hamiltonian of an atomic system in terms of its position and momentum so that,
@@ -123,6 +125,8 @@ $$
 $$
     \epsilon_{ij} = \sqrt{\epsilon_i \epsilon_j}
 $$
+
+{{< youtube VetTfx-MQcE >}}
 
 ## Tricks of the Trade
 
