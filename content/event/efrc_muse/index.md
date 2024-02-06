@@ -1,7 +1,7 @@
 ---
 title: "Current Challenges in Reconstructing Classical Force Fields from Neutron Scattering Data"
 location: Salt Lake City, UT
-date: 2024-01-25T10:12:00.000Z
+date: 2024-01-25T10:00:00.000Z
 date_end: 2024-01-25TT10:30:00.000Z
 all_day: false
 event: Energy Frontier Research Center Meeting
