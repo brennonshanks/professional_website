@@ -10,9 +10,4 @@ draft: false
 featured: false
 authors:
   - admin
-image:
-  filename: featured.png
-  focal_point: Smart
-  preview_only: false
-  caption: ""
 ---
