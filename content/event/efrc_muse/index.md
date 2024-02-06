@@ -5,7 +5,7 @@ date: 2024-01-25T10:12:00.000Z
 date_end: 2024-01-25TT10:30:00.000Z
 all_day: false
 event: Energy Frontier Research Center Meeting
-publishDate: 2024-01-13T18:09:28.842Z
+publishDate: 2023-10-13T18:09:28.842Z
 draft: false
 featured: false
 authors:
