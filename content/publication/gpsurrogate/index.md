@@ -7,7 +7,7 @@ authors:
   - Harry W. Sullivan
   - Abdur R. Shazed
   - Michael P. Hoepfner
-doi: 10.48550/arXiv.2310.19108
+doi: 10.1021/acs.jctc.3c01358
 publication: arXiv
 publication_short: ""
 url_code : https://github.com/hoepfnergroup/LGPMD
