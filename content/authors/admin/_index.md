@@ -41,7 +41,7 @@ education:
   courses:
     - course: Ph.D. in Chemical Engineering
       institution: University of Utah
-      year: 2024 (expected)
+      year: 2024
     - course: B.E. in Chemical Engineering and Mathematics
       institution: Ohio State University
       year: 2019
