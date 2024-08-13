@@ -1,6 +1,6 @@
 ---
 title: Dr. Brennon L. Shanks
-role: Postdoctoral Researcher at the Czech Academy of Sciences
+role: Postdoctoral Researcher
 bio: null
 interests:
   - Neutron Scattering
@@ -35,6 +35,8 @@ social:
 organizations:
   - name: Pavel Jungwirth Group
     url: https://jungwirth.group.uochb.cz/en
+  - name: Hoepfner Group
+    url: https://hoepfner.che.utah.edu/
   - name: Energy Frontier Research Center
     url: https://efrcmuse.utah.edu/
 education:
