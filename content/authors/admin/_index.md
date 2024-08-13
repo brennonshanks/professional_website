@@ -1,5 +1,5 @@
 ---
-title: Dr. Brennon L. Shanks
+title: Brennon L. Shanks
 role: Postdoctoral Researcher
 bio: null
 interests:
