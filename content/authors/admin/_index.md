@@ -1,6 +1,6 @@
 ---
-title: Brennon L. Shanks
-role: PhD Candidate in Chemical Engineering
+title: Dr. Brennon L. Shanks
+role: Postdoctoral Researcher at the Czech Academy of Sciences
 bio: null
 interests:
   - Neutron Scattering
@@ -33,8 +33,8 @@ social:
     icon_pack: ai
     link: uploads/CV.pdf
 organizations:
-  - name: Chemical Engineering at University of Utah
-    url: https://hoepfner.che.utah.edu/
+  - name: Pavel Jungwirth Group
+    url: https://jungwirth.group.uochb.cz/en
   - name: Energy Frontier Research Center
     url: https://efrcmuse.utah.edu/
 education:
