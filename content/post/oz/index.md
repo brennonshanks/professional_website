@@ -63,7 +63,7 @@ $$
     =p\overline{(n-\bar{n})^2}
 $$
 
-The biggest problem here is the cross terms which appear in our expansion (eq \eqref{expansion}), are at odds with a mutual independence approximation. Indeed, if the system were truly independent, then there would be no contribution to the mean square deviation from pairs of different volume elements. This forms the key difference between Ornstein and Zernike's formulation and that of Smulochowski.
+The biggest problem here is the cross terms which appear in our expansion are at odds with a mutual independence approximation. Indeed, if the system were truly independent, then there would be no contribution to the mean square deviation from pairs of different volume elements. This forms the key difference between Ornstein and Zernike's formulation and that of Smulochowski.
 
 ### The Ornstein-Zernike Equation
 
@@ -105,7 +105,7 @@ $$
      g(\mathbf{r_1}, \mathbf{v_1}d\mathbf{r_1}) = \int_{\mathbf{r} \neq \mathbf{r_1}} f(\mathbf{r})g(\mathbf{r} - \mathbf{r_1}, \mathbf{v_1}d\mathbf{r_1})d\mathbf{r} + f(\mathbf{r_1})\mathbf{v_1}d\mathbf{r_1}.
 $$
 
-where the integral contribution at the selected particle position $\mathbf{r_1}$ is written explicitly outside of the integral (known from the linear approximation to the Taylor expansion above) since $g$ is not defined there. Finally, note that this must be true for any choice of $\mathbf{v_1}d\mathbf{r_1}$ and that $g$ is linear in $\mathbf{v_i}d\mathbf{r_i}$ (eq \eqref{linear}), meaning that we can pull out a factor of $\mathbf{v_1}d\mathbf{r_1}$ for both instances of $g$ so that,
+where the integral contribution at the selected particle position $\mathbf{r_1}$ is written explicitly outside of the integral (known from the linear approximation to the Taylor expansion above) since $g$ is not defined there. Finally, note that this must be true for any choice of $\mathbf{v_1}d\mathbf{r_1}$ and that $g$ is linear in $\mathbf{v_i}d\mathbf{r_i}$, meaning that we can pull out a factor of $\mathbf{v_1}d\mathbf{r_1}$ for both instances of $g$ so that,
 
 $$
      g(\mathbf{r_1}) = \int_{\mathbf{r} \neq \mathbf{r_1}} f(\mathbf{r})g(\mathbf{r} - \mathbf{r_1})d\mathbf{r} + f(\mathbf{r_1}).
@@ -304,18 +304,18 @@ $$
 We now have everything we need to solve for the pair correlation function $h(r)$, given a potential. The steps we use are:
 
 1. Guess the indirect correlation function $\gamma(r)$.
-2. Compute the direct correlation function, $c(r)$, using eq \eqref{diagdirect} and a suitable closure relation for the bridge function.
+2. Compute the direct correlation function, $c(r)$, using a suitable closure relation for the bridge function.
 3. Fourier transform $c(q)$.
-4. Compute Fourier transform of the indirect correlation, $\hat{\gamma}(q)$, using eq \eqref{indirectOZ}.
+4. Compute Fourier transform of the indirect correlation, $\hat{\gamma}(q)$.
 5. Fourier transform $\hat{\gamma}(q)$ to get a new guess for $\gamma(r)$.
 5. Repeat until convergence.
 
 Now, what if we have the total correlation function from experiment but do not know the potential? In this case, we change the algorithm as follows:
 
 1. Guess the pair potential $\beta u^{(0)}(r)$.
-2. Compute the direct correlation function, $c(r)$, using eq \eqref{diagdirect} and a suitable closure relation for the bridge function.
+2. Compute the direct correlation function, $c(r)$, using a suitable closure relation for the bridge function.
 3. Fourier transform $c(r)$.
-4. Compute Fourier transform of the total correlation, $\hat{h}(q)$, using eq \eqref{OZFT}.
+4. Compute Fourier transform of the total correlation, $\hat{h}(q)$.
 5. Fourier transform $\hat{h}(q)$ to get $h(r)$.
 6. Perform iterative refinement scheme to update potential to $\beta u^{(1)}(r)$.
 7. Repeat until the computed $h(r)$ matches the experimental data.
