@@ -16,9 +16,9 @@ image:
 ---
 Airborn imaging spectroscopy is a valuable method to characterize the distribution of plant life for ecological, agricultural, and environmental research. In this study, spectroscopy measurements of 'Ohi'a Lehua, a keystone tree species on the Big Island of Haw'aii, were collected for tree samples at various locations across the island. This data was used to train support vector machine (SVM) and spectral unmixing (SU) machine learning models to identify the tree species based on the measured spectra. Then, airborn imaging spectroscopy was used to record spectroscopic measurements spanning the whole island. The SVM and SU models were implemented to predict the spatial distribution of 'Ohi'a Lehua based on the airborn imaging spectroscopy data. 
 
-Based on raw score accuracy, both the SVM and SU models performed well (> 90%). However, it was noted that the SU model tended to predict 'Ohi'a Lehua trees in grassland type areas where it is known that 'Ohi'a Lehua does not live, whereas the SVM model appeared to have a more reasonable spatial distribution.     
+Based on raw score accuracy, both the SVM and SU models performed well (> 90%). However, it was noted that the SU model tended to predict 'Ohi'a trees in grassland type areas, where it is known that 'Ohi'a tends to not grow, whereas the SVM model appeared to have a more reasonable spatial distribution based on expert knowledge. The question then is: how can we quantify which model is most likely to be correct when both provide similar raw accuracy?    
 
-In this notebook, a Gaussian process classifier (GPC) is used to classify the probability of observing 'Ohi'a Lehua independently of the spectral measurements. The GPC model was then compared to the predictions from the SVM and SU models. It is found that the SVM model agrees closely with the GPC model, as expected by our intuition and knowledge of the Big Island, whereas the SU model differs substantially. In this way, the GPC model serves as an important validation step to estimate the spatial accuracy of machine learning models for airborn imaging spectroscopy data. 
+In this notebook, we applied a Gaussian process classifier (GPC) to classify the probability of observing 'Ohi'a independently of the spectral measurements. The GPC model was then compared to the predictions from the SVM and SU models. It is found that the SVM model agrees closely with the GPC model, as expected by our intuition and knowledge of the Big Island, whereas the SU model differs substantially. In this way, the GPC model serves as an important validation step to estimate the spatial accuracy of machine learning models for airborn imaging spectroscopy data. 
 
 
 ```python
@@ -154,10 +154,8 @@ plt.show()
     
 ![png](output_9_0.png)
     
-
-
 (a) Spatial distribution calculated with GPC compared to the known samples of 'Ohi'a Lehua. Note that the high probability areas correspond with yellow regions (high probability) whereas no samples are observed in low probability regions (dark blue region). (b) Comparison of the SVM predicted distribution vs the GPC distribution shows that most SVM predicted samples are found in high probability regions. (c) Comparison of the SU predicted distribution vs GPC distribution shows that SU often predicts 'Ohi'a Lehua in low probability regions.
 
 Based on these distributions, the SVM model is more likely to reasonably model the true distribution of 'Ohi'a Lehua.
 
-[1] Seeley, M.M.; Vaughn, N.R.; Shanks, B.L.; Martin, R.E.; König, M.; Asner, G.P. Classifying a Highly Polymorphic Tree Species across Landscapes Using Airborne Imaging Spectroscopy. Preprints 2023, 2023071570. https://doi.org/10.20944/preprints202307.1570.v1
+[1] Seeley, M. M. et al. Classifying a highly polymorphic tree species across landscapes using airborne imaging spectroscopy. J. Remote Sens. 15, 4365 (2023).
