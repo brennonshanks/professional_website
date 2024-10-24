@@ -303,23 +303,19 @@ $$
 
 We now have everything we need to solve for the pair correlation function $h(r)$, given a potential. The steps we use are:
 
-\begin{enumerate}
-    \item Guess the indirect correlation function $\gamma(r)$.
-    \item Compute the direct correlation function, $c(r)$, using eq \eqref{diagdirect} and a suitable closure relation for the bridge function.
-    \item Fourier transform $c(q)$.
-    \item Compute Fourier transform of the indirect correlation, $\hat{\gamma}(q)$, using eq \eqref{indirectOZ}.
-    \item Fourier transform $\hat{\gamma}(q)$ to get a new guess for $\gamma(r)$.
-    \item Repeat until convergence.
-\end{enumerate}
+1. Guess the indirect correlation function $\gamma(r)$.
+2. Compute the direct correlation function, $c(r)$, using eq \eqref{diagdirect} and a suitable closure relation for the bridge function.
+3. Fourier transform $c(q)$.
+4. Compute Fourier transform of the indirect correlation, $\hat{\gamma}(q)$, using eq \eqref{indirectOZ}.
+5. Fourier transform $\hat{\gamma}(q)$ to get a new guess for $\gamma(r)$.
+5. Repeat until convergence.
 
 Now, what if we have the total correlation function from experiment but do not know the potential? In this case, we change the algorithm as follows:
 
-\begin{enumerate}
-    \item Guess the pair potential $\beta u^{(0)}(r)$.
-    \item Compute the direct correlation function, $c(r)$, using eq \eqref{diagdirect} and a suitable closure relation for the bridge function.
-    \item Fourier transform $c(r)$.
-    \item Compute Fourier transform of the total correlation, $\hat{h}(q)$, using eq \eqref{OZFT}.
-    \item Fourier transform $\hat{h}(q)$ to get $h(r)$.
-    \item Perform iterative refinement scheme to update potential to $\beta u^{(1)}(r)$.
-    \item Repeat until the computed $h(r)$ matches the experimental data.
-\end{enumerate}
+1. Guess the pair potential $\beta u^{(0)}(r)$.
+2. Compute the direct correlation function, $c(r)$, using eq \eqref{diagdirect} and a suitable closure relation for the bridge function.
+3. Fourier transform $c(r)$.
+4. Compute Fourier transform of the total correlation, $\hat{h}(q)$, using eq \eqref{OZFT}.
+5. Fourier transform $\hat{h}(q)$ to get $h(r)$.
+6. Perform iterative refinement scheme to update potential to $\beta u^{(1)}(r)$.
+7. Repeat until the computed $h(r)$ matches the experimental data.
