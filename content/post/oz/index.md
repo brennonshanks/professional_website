@@ -234,13 +234,13 @@ See Section 3.5 of \textit{Theory of Simple Liquids} by Hansen and McDonald.
 In practice, we usually consider liquids to be isotropic, allowing us to reduce the vector quantities introduced earlier into just the distance between particles, $r$, to give an isotropic Ornstein-Zernike relation,
 
 $$
-    h(r) = c(r) + \rho \int c(|\mathbf{r} - \mathbf{r'}|)h(r')d\mathbf{r'}
+    h(r) = c(r) + \rho \int c(|\mathbf{r} - \mathbf{r'}|)h(r')d \mathbf{r'}
 $$
 
 which you may notice is just a convolution of $h(r')$ with $c(|\mathbf{r} - \mathbf{r'}|)$,
 
 $$
-    h(r) = c(r) + \rho [h(r')*c(|\mathbf{r} - \mathbf{r'}|)](\mathbf{r})
+    h(r) = c(r) + \rho [h(r')*c(|\mathbf{r} - \mathbf{r'}|)]\mathbf{r}
 $$
 
 which under Fourier transform is simply,
