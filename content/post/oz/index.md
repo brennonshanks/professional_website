@@ -1,7 +1,7 @@
 ---
 title: The Ornstein-Zernike Equation
-date: 2023-07-20T05:53:47.038Z
-draft: true
+date: 2024-10-23T06:00:00.000Z
+draft: false
 featured: false
 authors:
   - admin
