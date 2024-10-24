@@ -15,7 +15,7 @@ image:
 
 ## Introduction
 
-In Ornstein and Zernike's seminal work, \textit{Accidental deviations of density and opalescence at the critical point of a single substance, in: KNAW, Proceedings, 17 II, 1914, pp. 793-806}, it was shown that the total correlation between molecules in a statistical mechanical system must obey an integral equation of the form, 
+In Ornstein and Zernike's seminal work, Accidental deviations of density and opalescence at the critical point of a single substance, in: KNAW, Proceedings, 17 II, 1914, pp. 793-806, it was shown that the total correlation between molecules in a statistical mechanical system must obey an integral equation of the form, 
 
 $$
     h(r_{12}) = c(r_{12}) + n\int d\mathbf{r_3} c(r_{13})h(r_{23})
