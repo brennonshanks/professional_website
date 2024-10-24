@@ -121,19 +121,11 @@ $$
 
 What exactly does this equation mean? Starting with the total correlation function $h(\mathbf{r_1})$, we notice that this function is simply the average particle density of the system at position $\mathbf{r_1}$ within a spherical coordinate system,
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{geometry.png}
-    \caption{The total correlation function, $h(\mathbf{r_1})$, is just the average density at any point in space away from the origin, $\mathcal{O}$.}
-\end{figure}
+![png](geometry.png)
 
 According to the Ornstein-Zernike equation, this total correlation function is fully described by three functions: the direct correlation function $c(\mathbf{r_1})$, the direct correlation function $c(\mathbf{r})$, and the total correlation function $h(\mathbf{r - r_1})$. These functions only make sense when we consider that the integral will go over all of the other volume elements of the system, specifically for all $\mathbf{r} \neq \mathbf{r_1}$. Our new picture is then,
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{integral_geometry.png}
-    \caption{The new vector $\mathbf{r}$ is of course integrated over all values of $\mathbf{r}$.}
-\end{figure}
+![png](integral_geometry.png)
 
 Now let's consider each of the terms. The direct correlation function $c(\mathbf{r_1})$ is a function of linear coupling constants which relate the particle density at the origin to all other volume elements in the system. There are no cross terms in the expansion, so this function only keeps track of the 'direct' coupling between volume elements, hence the name. $c(\mathbf{r_1})$ is therefore the direct coupling between the reference origin and some other volume element. The other direct correlation function $c(\mathbf{r})$ has the same interpretation, but now it represents the direct coupling between the reference and a different volume element not centered at $\mathbf{r_1}$. Finally, the total correlation $h(\mathbf{r - r_1})$ is just the density of a volume element from the reference volume element between the difference in the vectors $\mathbf{r - r_1}$. 
 
