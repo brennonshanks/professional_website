@@ -21,7 +21,7 @@ $$
     h(r_{12}) = c(r_{12}) + n\int d\mathbf{r_3} c(r_{13})h(r_{23})
 $$
 
-where $h(r_{ij})$ is the total correlation function between particles $i$ and $j$ (note that $h(r_{ij}) = g(r_{ij}) - 1$, where $g(r_{ij})$ is the more familiar radial distribution function) and $c(r_{ij})$ is the 'direct' correlation between particles $i$ and $j$. In this article, I will try and demystify this equation using physical arguments from Ornstein and Zernike's original paper as well as the more recent formulations described in \textit{Liquid State Theory} from Hansen and McDonald as well as Santos' \textit{A Concise Course on the Theory of Classical Liquids}.
+where $h(r_{ij})$ is the total correlation function between particles $i$ and $j$ (note that $h(r_{ij}) = g(r_{ij}) - 1$, where $g(r_{ij})$ is the more familiar radial distribution function) and $c(r_{ij})$ is the 'direct' correlation between particles $i$ and $j$. In this article, I will try and demystify this equation using physical arguments from Ornstein and Zernike's original paper as well as the more recent formulations described in Liquid State Theory from Hansen and McDonald as well as Santos' A Concise Course on the Theory of Classical Liquids.
 
 ## Ornstein and Zernike's Original Derivation
 
@@ -217,7 +217,7 @@ Such a physical interpretation of the direct correlation is extremely satisfying
 
 ### The OZ Equation in the Gibbs Interpretation
 
-See Section 3.5 of \textit{Theory of Simple Liquids} by Hansen and McDonald. 
+See Section 3.5 of Theory of Simple Liquids by Hansen and McDonald. 
 
 ## Numerical Implementations
 
