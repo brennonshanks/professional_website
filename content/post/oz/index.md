@@ -113,19 +113,18 @@ $$
 
 In modern symbols, the $g$ is actually just the total correlation between densities in volume elements of the system, which we write as $h$, and $f$ represents the direct coupling between volume elements, which we write as $c$. In modern symbols, the Ornstein-Zernike equation emerges,
 
-$$ \label{OZ}
+$$ 
      h(\mathbf{r_1}) = \int_{\mathbf{r} \neq \mathbf{r_1}} c(\mathbf{r})h(\mathbf{r} - \mathbf{r_1})d\mathbf{r} + c(\mathbf{r_1}).
 $$
 
 ### Physical Interpretation
 
-What exactly does eq \eqref{OZ} mean? Starting with the total correlation function $h(\mathbf{r_1})$, we notice that this function is simply the average particle density of the system at position $\mathbf{r_1}$ within a spherical coordinate system,
+What exactly does this equation mean? Starting with the total correlation function $h(\mathbf{r_1})$, we notice that this function is simply the average particle density of the system at position $\mathbf{r_1}$ within a spherical coordinate system,
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{geometry.png}
     \caption{The total correlation function, $h(\mathbf{r_1})$, is just the average density at any point in space away from the origin, $\mathcal{O}$.}
-    \label{fig:geometry}
 \end{figure}
 
 According to the Ornstein-Zernike equation, this total correlation function is fully described by three functions: the direct correlation function $c(\mathbf{r_1})$, the direct correlation function $c(\mathbf{r})$, and the total correlation function $h(\mathbf{r - r_1})$. These functions only make sense when we consider that the integral will go over all of the other volume elements of the system, specifically for all $\mathbf{r} \neq \mathbf{r_1}$. Our new picture is then,
@@ -134,7 +133,6 @@ According to the Ornstein-Zernike equation, this total correlation function is f
     \centering
     \includegraphics[width=0.5\linewidth]{integral_geometry.png}
     \caption{The new vector $\mathbf{r}$ is of course integrated over all values of $\mathbf{r}$.}
-    \label{fig:integral}
 \end{figure}
 
 Now let's consider each of the terms. The direct correlation function $c(\mathbf{r_1})$ is a function of linear coupling constants which relate the particle density at the origin to all other volume elements in the system. There are no cross terms in the expansion, so this function only keeps track of the 'direct' coupling between volume elements, hence the name. $c(\mathbf{r_1})$ is therefore the direct coupling between the reference origin and some other volume element. The other direct correlation function $c(\mathbf{r})$ has the same interpretation, but now it represents the direct coupling between the reference and a different volume element not centered at $\mathbf{r_1}$. Finally, the total correlation $h(\mathbf{r - r_1})$ is just the density of a volume element from the reference volume element between the difference in the vectors $\mathbf{r - r_1}$. 
@@ -253,7 +251,7 @@ $$
 
 or rearranging, 
 
-$$\label{OZFT}
+$$
     \hat{h}(q) = \frac{\hat{c}(q)}{1-\rho \hat{c}(q)}
 $$
 
@@ -283,7 +281,7 @@ $$
 
 which, upon rearranging, gives,
 
-$$\label{diagdirect}
+$$
     c(r) = \exp[-\beta u(r) + \gamma(r) + b(r)] - \gamma(r) - 1
 $$
 
@@ -294,7 +292,7 @@ Here a closure relation is introduced to write $b(r)$ in terms of the indirect c
 In terms of the indirect correlation, the OZ equation becomes,
 
 $$
-    \gamma(r) = \rho [(\gamma(r) + c(r))*c(|\mathbf{r} - \mathbf{r'}|)](\mathbf{r})
+    \gamma(r) = \rho [(\gamma(r) + c(r))*c(|\mathbf{r} - \mathbf{r'}|)] \mathbf{r}
 $$
 
 which, upon taking the Fourier transform, gives,
