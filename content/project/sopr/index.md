@@ -21,19 +21,17 @@ SOPR has been successfully implemented in noble gas fluids [1] and more recently
 
 ## Current Challenges
 
-1. Currently, the site-site partial radial distribution functions must be calculated from experimental neutron/X-ray diffraction data using existing techniques such as empirical potential structure refinement (EPSR) or reverse Monte Carlo (RMC). However, we are currently working towards eliminating SOPR's reliance on these methods by implementing machine learning techniques to infer these quantities probabilistically [4].
+1. Currently, the site-site partial radial distribution functions must be calculated from experimental neutron/X-ray diffraction data using existing techniques such as empirical potential structure refinement (EPSR) or reverse Monte Carlo (RMC).
 
 2. Furthermore, we want to continue to implement SOPR for systems in which understanding structure and self-assembly are critical for engineering and design. Since the SOPR potentials are also transferable to other thermodynamic properties, we aim to use SOPR to predict thermophysical properties in systems where experimental data is difficult or impossible to obtain. Such systems include high temperature and pressure liquid metals, supercritical fluids, and complicated mixtures of liquid organics.
    
 3. Finally, SOPR may have further uses in the realm of machine learning potentials (MLPs). A recent paper has shown that IBI can refine MLP potentials to improve structural representations, however, the work did not use SOPRs probabilistic framework to perform this refinement in a rigorous way.  
 
-[1] B.L. Shanks, J.J. Potoff, M.P. Hoepfner. Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement. J. Phys. Chem. Lett. 11512–11520 (2022) doi:10.1021/acs.jpclett.2c03163.
+[1] B.L. Shanks, J.J. Potoff, M.P. Hoepfner. Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement. J. Phys. Chem. Lett. 11512–11520 (2022) https://pubs.acs.org/doi/10.1021/acs.jpclett.2c03163
 
 [2] A.R. Shazed, B.L. Shanks, H.W. Sullivan, M.P. Hoepfner, (In review) Structure-optimized potential refinement for molecular liquids (2024)
 
-[3] B.L. Shanks, H.W. Sullivan, P. Jungwirth, M.P. Hoepfner. Insights into Atomic Size and Polarizability for Force Field Design using Probabilistic Iterative Boltzmann Inversion. arXiv (2024)
-
-[4] H.W. Sullivan, B.L. Shanks, M.P. Hoepfner. Radial Distribution Function Uncertainty Quantification with Non-Stationary Gaussian Processes. arXiv (2024)
+[3] B.L. Shanks, H.W. Sullivan, P. Jungwirth, M.P. Hoepfner. Experimental Evidence of Quantum Drude Oscillator Behavior in Liquids Revealed with Probabilistic Iterative Boltzmann Inversion. arXiv (2024)
 
 
 
