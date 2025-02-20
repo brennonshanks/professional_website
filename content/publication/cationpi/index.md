@@ -5,7 +5,7 @@ publication_types:
 authors:
   - Matej Cervenka
   - admin
-    Philip E. Mason
+  - Philip E. Mason
   - Pavel Jungwirth
 publication: chemrXiv
 publication_short: ""
