@@ -1,5 +1,5 @@
 ---
-title: "Cation-$\pi$ Interactions in Biomolecular Simulations by Neutron Scattering and Molecular Dynamics: Case Study of the Tetramethylammonium Cation"
+title: "Cation-pi Interactions in Biomolecular Simulations by Neutron Scattering and Molecular Dynamics: Case Study of the Tetramethylammonium Cation"
 publication_types:
   - "2"
 authors:
