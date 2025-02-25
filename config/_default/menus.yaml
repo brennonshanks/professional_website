@@ -31,6 +31,7 @@ main:
   #   weight: 20
   #   parent: courses
   - name: MLAMP Seminar
+    PageRef: mlseminar/_index.md
     url: '#mlseminar'
     weight: 70
   - name: Contact
