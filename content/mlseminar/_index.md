@@ -15,4 +15,6 @@ header:
   image: ""
 ---
 
-The Machine Learning Advances in Molecular Physics Seminar (MLAMPS) brings together researchers and practitioners at the intersection of machine learning and molecular physics to explore cutting-edge developments and applications pertitent to contemporary challenges in molecular modeling. This biweekly seminar will focus on leveraging AI and data-driven techniques to advance our understanding of molecular behavior, chemical systems, and material properties.
+## Seminar Overview
+
+The Machine Learning Advances in Molecular Physics Seminar (MLAMPS) brings together researchers at the intersection of machine learning and molecular physics to address contemporary challenges in molecular modeling. This biweekly seminar focuses on using AI and data-driven techniques to enhance our understanding of molecular behavior, chemical systems, and material properties, while serving as a landing pad for collaboration, data sharing, and idea exchange across disciplines.
