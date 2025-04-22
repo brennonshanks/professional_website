@@ -29,9 +29,9 @@ SOPR has been successfully implemented in noble gas fluids [1] and more recently
 
 [1] B.L. Shanks, J.J. Potoff, M.P. Hoepfner. Transferable Force Fields from Experimental Scattering Data with Machine Learning Assisted Structure Refinement. J. Phys. Chem. Lett. 11512–11520 (2022) https://pubs.acs.org/doi/10.1021/acs.jpclett.2c03163
 
-[2] A.R. Shazed, B.L. Shanks, H.W. Sullivan, M.P. Hoepfner, (In review) Structure-optimized potential refinement for molecular liquids (2024)
+[2] A.R. Shazed, B.L. Shanks, H.W. Sullivan, M.P. Hoepfner, (In review) Structure-optimized potential refinement for molecular liquids (2025)
 
-[3] B.L. Shanks, H.W. Sullivan, P. Jungwirth, M.P. Hoepfner. Experimental Evidence of Quantum Drude Oscillator Behavior in Liquids Revealed with Probabilistic Iterative Boltzmann Inversion. arXiv (2024)
+[3] B.L. Shanks, H.W. Sullivan, P. Jungwirth, M.P. Hoepfner. Experimental Evidence of Quantum Drude Oscillator Behavior in Liquids Revealed with Probabilistic Iterative Boltzmann Inversion. J. Chem. Phys. (2025)
 
 
 
