@@ -7,7 +7,7 @@ authors:
   - Harry W. Sullivan
   - Pavel Jungwirth
   - Michael P. Hoepfner
-doi: 10.1063/5.0260274
+doi: https://doi.org/10.1063/5.0260274
 url_code: https://github.com/brennonshanks/SOPR-QDO
 publication: Journal of Chemical Physics
 publication_short: ""
