@@ -5,6 +5,7 @@ publication_types:
 authors:
   - Harry W. Sullivan
   - admin
+  - Matej Cervenka
   - Michael P. Hoepfner
 publication: arXiv
 publication_short: ""
@@ -14,7 +15,7 @@ featured: true
 tags:
   - neutron scattering
   - machine learning
-date: 2025-02-19T18:30:49.516Z
+date: 2025-06-18T18:30:49.516Z
 ---
 
 
