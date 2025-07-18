@@ -1,6 +1,6 @@
 ---
 title: Gaussian Processes for Structural Analysis
-date: 2025-01-02T12:00:00.038Z
+date: 2024-07-02T12:00:00.038Z
 draft: false
 featured: false
 authors:
