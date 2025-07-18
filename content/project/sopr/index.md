@@ -1,6 +1,6 @@
 ---
 title: Structure Optimized Potential Refinement (SOPR)
-date: 2024-01-03T12:00:00.00Z
+date: 2025-01-03T12:00:00.00Z
 draft: false
 featured: false
 authors:
