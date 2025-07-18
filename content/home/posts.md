@@ -2,7 +2,7 @@
 widget: collection
 widget_id: post
 headless: true
-weight: 20
+weight: 40
 title: Posts
 active: true
 content:
