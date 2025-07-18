@@ -14,13 +14,9 @@ content:
       ? id
     netlify:
       captcha: false
-  email: brennon.shanks@chemeng.utah.edu
+  email: shanks.brennon@uochb.cas.cz
   appointment_url: 
   contact_links:
-    - icon: twitter
-      icon_pack: fab
-      name: DM Me
-      link: https://twitter.com/BrennonLShanks
 design:
   columns: "2"
 ---
