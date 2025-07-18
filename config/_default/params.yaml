@@ -11,6 +11,9 @@ appearance:
   font: classic
   font_size: S
 
+custom_css:
+  - css/custom.css
+
 # SEO
 
 marketing:
