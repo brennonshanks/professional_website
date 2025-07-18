@@ -35,10 +35,6 @@ social:
 organizations:
   - name: Pavel Jungwirth Group
     url: https://jungwirth.group.uochb.cz/en
-  - name: Hoepfner Group
-    url: https://hoepfner.che.utah.edu/
-  - name: Energy Frontier Research Center
-    url: https://efrcmuse.utah.edu/
 education:
   courses:
     - course: Ph.D. in Chemical Engineering
@@ -51,8 +47,8 @@ superuser: true
 last_name: Shanks
 highlight_name: true
 first_name: Brennon
-email: brennon.shanks@chemeng.utah.edu
+email: shanks.brennon@uochb.cas.cz
 ---
-I am a statistical thermodynamics researcher that applies molecular dynamics, statistical mechanics, and machine learning to study liquid state materials. My current research projects include developing machine learning approaches for neutron scattering analysis, thermodynamic characterization of high pressure and temperature liquids and liquid metals, and fundamental analysis of many-body interactions from neutron scattering experiments.
+My research focuses on developing probabilistic machine learning methods and Bayesian inference techniques to study the thermodynamics and atomic structure of liquid-state materials. I work at the intersection of molecular simulation, statistical mechanics, and data-driven modeling, with an emphasis on uncertainty quantification and interpretable predictions. A core aspect of my work involves using Gaussian Process models and Bayesian approaches to improve the accuracy and reliability of molecular dynamics simulations, particularly in modeling many-body interactions and complex fluid behavior. More broadly, my research aims to integrate physics-based simulation with machine learning to develop flexible, data-efficient models for predicting the structure and thermodynamics of condensed-phase systems.
 
-T﻿his website contains posts, projects, publications, talks, teaching and course materials. I will also occasionally post Jupyter notebooks highlighting useful machine learning techniques as well as derivations of statistical and quantum mechanical relations that are relevant to the investigation of atomic structure and interactions. 
+This website features an overview of my research projects, publications, and presentations, along with teaching resources and course materials. I also share occasional posts and Jupyter notebooks that highlight practical machine learning techniques, statistical mechanics derivations, and computational methods relevant to modeling atomic interactions and thermodynamic behavior. The goal of this site is to provide both an accessible summary of my work and a technical resource for researchers interested in probabilistic modeling and molecular simulation.
