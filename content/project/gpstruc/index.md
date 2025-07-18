@@ -1,5 +1,5 @@
 ---
-title: Gaussian Processes for Structural Analysis
+title: Gaussian Processes for Molecular Simulation
 date: 2024-07-02T12:00:00.038Z
 draft: false
 featured: false
